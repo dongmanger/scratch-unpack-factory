@@ -4,7 +4,7 @@
 
 别人发给你的游戏、作品，打包成了网页，源码没了。这个工具能把积木**还原回来**——不是猜，是每一步都有编译器级证据。
 
-[![test](https://github.com/OWNER/REPO/actions/workflows/test.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/test.yml)
+[![test](https://github.com/dongmanger/scratch-unpack-factory/actions/workflows/test.yml/badge.svg)](https://github.com/dongmanger/scratch-unpack-factory/actions/workflows/test.yml)
 ![node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)
 ![license](https://img.shields.io/badge/license-GPL--3.0-blue)
 
@@ -102,8 +102,8 @@ Scratch 项目（`.sb3`）被 TurboWarp 或 02Engine 打包后，积木图会被
 要求 **Node.js 20 及以上**。
 
 ```bash
-git clone https://github.com/OWNER/REPO.git
-cd REPO
+git clone https://github.com/dongmanger/scratch-unpack-factory.git
+cd scratch-unpack-factory
 npm ci --legacy-peer-deps
 ```
 
