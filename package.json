@@ -2,6 +2,20 @@
   "name": "scratch-unpack-factory",
   "version": "1.0.0",
   "description": "Scratch 编译产物解包还原工厂：TurboWarp / 02Engine 打包件 → 可读可打开的 .sb3",
+  "license": "GPL-3.0-or-later",
+  "author": "QQ 3949883627",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/REPO.git"
+  },
+  "keywords": [
+    "scratch",
+    "turbowarp",
+    "decompiler",
+    "unpacker",
+    "sb3",
+    "deobfuscator"
+  ],
   "type": "module",
   "bin": {
     "factory": "bin/factory.mjs"
