@@ -1,0 +1,3928 @@
+{
+  "schemaVersion": 1,
+  "kind": "portable-actual-02engine-vm-node-bundle",
+  "tools": {
+    "node": "v22.22.2",
+    "webpack": "4.47.0",
+    "babelLoader": "8.4.1",
+    "babelPresetEnv": "7.29.2"
+  },
+  "vm": {
+    "version": "2.1.46",
+    "repository": "https://github.com/02engine/scratch-vm.git",
+    "revision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+    "license": "MPL-2.0",
+    "sourceSha256": {
+      "LICENSE": "cde215e5b42363eb28ca2462c4558ff4807b38f383c537624c31e44657ac58f4",
+      "package.json": "240612909727b67c4c09b5284975b63b51b407a1170800e5e7bb6f5604eed07d",
+      "src/blocks/scratch3_control.js": "99a38761c01c8e2515acaf1b7d8c91b00963e140544ce45143ef576604748093",
+      "src/blocks/scratch3_core_example.js": "b31c4090dd2be2f71040494fae2181ade3475ce4e741a5af38db7650ad074026",
+      "src/blocks/scratch3_data.js": "23465ee49ce29c30142da9061296708c264aaac1e4c3a9ceb1e53da9f12ad21a",
+      "src/blocks/scratch3_event.js": "47a5247c4f755207f98a85a6d39e1bb3e81da909e3b315ac28574ba546132dfb",
+      "src/blocks/scratch3_looks.js": "467c96a139a26eb174e488c026054599bf998a18efd683f980be264f61886c10",
+      "src/blocks/scratch3_motion.js": "aa503c336c826c44c093bbfe7b13c4a3218dc05ce4fcf9c68bd6bfd3ef8e4e14",
+      "src/blocks/scratch3_operators.js": "37dc1a802ffeb6f23e18af6a026cae87a397ba0a89f0975101cdfb48f659f3a2",
+      "src/blocks/scratch3_procedures.js": "be78d44baa8653ea2cbfcb2cf09b690988f6e22ca668ccb8fcd22b2ddc67ba5f",
+      "src/blocks/scratch3_sensing.js": "0771c696972fc3ad2de5be124678205e77f51b5938943a277f34faf2d2ccff75",
+      "src/blocks/scratch3_sound.js": "7130a5d1d19ffe0a2269727ace79b5804f7a54232eb1278680894abe9afc430f",
+      "src/cli/index.js": "21100ca8a281e28cd1e65849531d3091de562b3ceb300fafbe87c66e21e3def7",
+      "src/compiler/compat-block-utility.js": "9ded37a8fbbccc45c93e8adb64a9ca529ed0c40762d8c364d633367e523792e0",
+      "src/compiler/compat-blocks.js": "0c3f41742adaee4b74ec56d0ab2450986b68fe1c992999c176dd3b15686737ec",
+      "src/compiler/compile.js": "727654e4230ae7ad2819bb172467773ee50ab7158ed27d5849a766359485b3a6",
+      "src/compiler/enums.js": "90f14fff8dda54d7d81b04da3d1ae9068ae31a178f031cdcbacbc95e46ef3458",
+      "src/compiler/environment.js": "e3d42fcf788decc4c4bc15816cf2d6828cc0c22a4589f9e9c8a4b58c62d433c3",
+      "src/compiler/intermediate.js": "7ea81d1b7c55d3049570b6e9fcce3a3ce9ab42ceddc863c07ab56b212a9144d6",
+      "src/compiler/irgen.js": "465c68bde3f83d75b1c53ae8bacaf3a751218e38153a410f63dd7e6db534eaa9",
+      "src/compiler/iroptimizer.js": "6097b5d7d9c72b49865d53507f0158271d037792ab594505848c15425b01867b",
+      "src/compiler/jsexecute.js": "ee523267332d3d27a7061f0f7c5a54a055f0301ffceda417c0d02bf27d51518c",
+      "src/compiler/jsgen.js": "bd8c64fd4d28250e88666c73ca18eb7470292cdd7ce4e19138e6ef48c2369813",
+      "src/compiler/old-compiler-compatibility.js": "3bc54c05c0cc0a06520d1144d04b81a6ecd036ff6b858e8b23d7e54f3a5596d4",
+      "src/compiler/variable-pool.js": "4973ef03a1b11b000b54ae6191eff9eb026ed9bdb9fc50460e904150ba102e27",
+      "src/dispatch/central-dispatch.js": "a78a2e3b30bccc10c5d5fa3456bd2d6228acf76778f57d44a47d00a6a8da842d",
+      "src/dispatch/shared-dispatch.js": "e43df456a87fda00878ddceff9c34de3da8072c352760d3085c871a1395ee010",
+      "src/dispatch/worker-dispatch.js": "13931c1772af99c1f85a3ae98b6c4cc499870e30d029ca5c25d828ffc29b21a1",
+      "src/engine/adapter.js": "a57cd369fe184ca1b89ef4d3f917abd7627a8b96e5c5419ed27013df4f34a74c",
+      "src/engine/block-utility.js": "6e8dc67f41c63ef7b9d6a256c23e99d2ac416f241b8542bec6144f3e59259751",
+      "src/engine/blocks-execute-cache.js": "e9a8cad0289f268259b98f7dbcc68b6c6370756550acdd91f7ea68710857b298",
+      "src/engine/blocks-runtime-cache.js": "ed7b6ae8b737485a2f6f30e15bd3a9383f8eb500fd694d542de15ab13e2becf1",
+      "src/engine/blocks.js": "c7a268094a2d2f265b86e9e5aae7d3dc1d8227baacbd3a85eb5e556644dc4470",
+      "src/engine/comment.js": "5b16564d403072235ec48a0f88b8061254c9c499aaacfda5fd45b537e86ecb42",
+      "src/engine/execute.js": "64d92b9a7cfd1005c60b5261d72e17cc58905a5e7d67ed61579ba997bd949eb5",
+      "src/engine/monitor-record.js": "77162ece2c0d2789ca7b2de2ba32d69970dcbeed974a40fc0e3ccd0b486bf236",
+      "src/engine/mutation-adapter.js": "3f17d427f7795ab1aec23cffebca841f6b7835dbe4c88196b75c26950c90f655",
+      "src/engine/profiler.js": "9d634fd3fd95d8c9736176d734186382f99ea486aa2a0f0e7fcd1b9997e49d49",
+      "src/engine/runtime.js": "1c37ee3d12305575fe1247807e2828822b38b21c97244f8dc3d7b281f2ad06a3",
+      "src/engine/scratch-blocks-constants.js": "4bbc184da65fb78e0a506d3e5f8e08e55a1f0ee34e1990025bbc2e4b8aa251aa",
+      "src/engine/sequencer.js": "81aadce9b30dbe9bc1bf1e54324cd12dcba1f45b56f06577871dbacda54b58b3",
+      "src/engine/stage-layering.js": "5fbe70394ac96e5f65de67b2faf71ffb8ef5c74f3772a46968399742f884ef66",
+      "src/engine/target.js": "20369e2609743095112e20b3a920444a3f13ac03c907b6fb3b3821b140d3cf73",
+      "src/engine/thread.js": "3fc417376b4ecb1edb9089966c755c6b73dda61d58bf49e4332b855adfc35c11",
+      "src/engine/tw-font-manager.js": "e50d7aa8115911817e819df8b9e8e05f50d1b6f59b0b39fad29bc0d6a96ba865",
+      "src/engine/tw-frame-loop.js": "5df4a09e64075df34ad8a00c33df1121f834d13d7e00316f8df02fbdc7f9a9d1",
+      "src/engine/tw-interpolate.js": "b1972b922162bd63c2491c3e43f1acde65c595b2590fea18a1fd6c8c58582831",
+      "src/engine/tw-platform.js": "334822c5d80f593a77716f2ef82b521b74774654fea4e5da0e1a60c10b22763f",
+      "src/engine/variable.js": "b57208f53e574f4be44bc04e769b7f3bc3a82e1647677e671426942ab6f4a1d2",
+      "src/extension-support/argument-type.js": "c7a003e948c9652b123c17fe28e8713b580f85479df2b03a587d1872997f5dba",
+      "src/extension-support/block-type.js": "cd45fcd5ae35b9e95024840f11bcb7bcf42728747361f122b9cf78925929b0bd",
+      "src/extension-support/define-messages.js": "1897cf2d3969f28b45c1d9d121fb8fcfa65a4b907f621e0bd56bec699c7f242d",
+      "src/extension-support/extension-manager.js": "2fe13533b0faaf9eba872eddb35f285a28bce0bf22d6a2f4744882b030c17cac",
+      "src/extension-support/extension-metadata.js": "61752dfbad4cbbae2e0b805836daf856e5d82aa9b1f1d527ed1ea6e002d68375",
+      "src/extension-support/extension-worker.js": "d5bd33109fc7875dd00b0c37d90f4d6b9f53b1ce8936af419287828dd47763d6",
+      "src/extension-support/reporter-scope.js": "6a5431c5264557002ef93dea9dbdcd8ca61dcc9a60b22d755572de542ec70da2",
+      "src/extension-support/target-type.js": "f58cd43364aa79fd16d1eb1273cd347880348e801f34a53ab7b7a2fb1668ee83",
+      "src/extension-support/tw-block-shape.js": "ded9fd133c976f74a9a4bf8990df5f6eff8a5ed0676457ba7bac8606dacabf94",
+      "src/extension-support/tw-default-extension-urls.js": "4b1557a567b7538e584284baf258100f10111a86bd369b62a14adc81fa3154bd",
+      "src/extension-support/tw-extension-api-common.js": "69752f2b7040444e85e64765ed52fc4bbd71c1601b5ef03faeb2fd7ce0d3400b",
+      "src/extension-support/tw-extension-worker-context.js": "a24323c9527c113da259b34feb62701be55bab430a28f0505f56711cede15e03",
+      "src/extension-support/tw-iframe-extension-worker-entry.js": "8caabde5ce67dc605c9115864db0bec5c104ac50f2fa1070d96922a6f18c042f",
+      "src/extension-support/tw-iframe-extension-worker.js": "82a198f95eeb2eeaea0f94439b6f8bb0176ae1724e3b6a71500fe9adb51c730e",
+      "src/extension-support/tw-jquery-shim.js": "3f94100a03f154d7ba48b0355a228c834533ad958a839b573123800d40004c57",
+      "src/extension-support/tw-l10n.js": "889c4e4633e3fe540362c9d084b6ead866a528e9225a03a5365b600213c4959b",
+      "src/extension-support/tw-load-script-as-plain-text.js": "019cf728df224dcfc1b1792dae7896b452505fe711bff4c26e21cb487f412d3e",
+      "src/extension-support/tw-scratchx-compatibility-layer.js": "38f712f671cb5f95b714019bb007baced4222fc20995f6b916d8c7d85e426fcc",
+      "src/extension-support/tw-scratchx-utilities.js": "973a011c29a877d6e3b56720b2ccfd6cb68639bfdd645c9005262edf0c502f84",
+      "src/extension-support/tw-security-manager.js": "382f904c2766f36bf6c32b93b929e40912b38182b9ee54962bb661becd48bc03",
+      "src/extension-support/tw-unsandboxed-extension-runner.js": "b340b8d3e62d8e6a5767406f86ef6123c93dd6762c67dacb03b7c8494af70b12",
+      "src/extensions/scratch3_boost/index.js": "8e5c4318e2d492e8081e22f07109567103aaa196a5047d9e2f1ba866d5792cff",
+      "src/extensions/scratch3_ev3/index.js": "3ec5c21989e43e963cda30b32751bc0719cd62a8689a7f24ce9be879550ee247",
+      "src/extensions/scratch3_gdx_for/index.js": "1c54a972d2ff16d997106de3a6ee8b973e72c942832a12220240aac5d4d3db5e",
+      "src/extensions/scratch3_gdx_for/scratch-link-device-adapter.js": "28e5c43954c35d604312eb80eced86a142a82bed8858eefa27934325e2748c7b",
+      "src/extensions/scratch3_makeymakey/index.js": "5bd8b8e6d2797844c0d93da1abe43690b49d1c45653ba03b7beb9c37c4322d20",
+      "src/extensions/scratch3_microbit/index.js": "b9271cca548a735803247387946cd834580ebb87921dac2d794d0f39a4d704c0",
+      "src/extensions/scratch3_music/assets/drums/1-snare.mp3": "9a196b793863d2cb265e5ed4f3cc41db99cafc58d957adcfe84ff692488d0515",
+      "src/extensions/scratch3_music/assets/drums/10-wood-block.mp3": "67d6a6fe2ebce8cbadbdd5d548a5ced6335f9034ea395cd6b8f6f765f200e524",
+      "src/extensions/scratch3_music/assets/drums/11-cowbell.mp3": "7f16eec7d97f2e3ed32edc0a6a08e983fd2e14deb4aebc7e432c0f8ad93ecadc",
+      "src/extensions/scratch3_music/assets/drums/12-triangle.mp3": "8b4039a81b67afb8342c0020f23d17b8336de129df30d9c2706331a73ce96417",
+      "src/extensions/scratch3_music/assets/drums/13-bongo.mp3": "21ed8b8b7bb39104757e4419fc70cf2253dd117fddb50d2ded494fb9971dce3b",
+      "src/extensions/scratch3_music/assets/drums/14-conga.mp3": "262c2a3563d0c748b67147ffce6fbb6a806edcfbf1ee4f1e358882e7fd410877",
+      "src/extensions/scratch3_music/assets/drums/15-cabasa.mp3": "1b55755a81def628d5d4153c0606686ae2bcdde64706aa4af2ade3f56ed6ccc5",
+      "src/extensions/scratch3_music/assets/drums/16-guiro.mp3": "15425361b0b9885d348d5087e516fdf7e9df155509083b0621187ed3a22963be",
+      "src/extensions/scratch3_music/assets/drums/17-vibraslap.mp3": "85a781f7e3cba077ff961caa4c04f7859b1413ba43165cbccb96c6f204c77dee",
+      "src/extensions/scratch3_music/assets/drums/18-cuica.mp3": "4a0aa09ebdac75d9cd8ee85adc8e0dcfdfec4d55308f6271750077db0fe77629",
+      "src/extensions/scratch3_music/assets/drums/2-bass-drum.mp3": "db8218d2431ac7ef5b56964538471a21a408a543b10eaade5b8bec03bdcbfe32",
+      "src/extensions/scratch3_music/assets/drums/3-side-stick.mp3": "f563e5b58003dbfd144ef76a46f96dcd1f8791ee12b64d78f03ad4e5c2f391a2",
+      "src/extensions/scratch3_music/assets/drums/4-crash-cymbal.mp3": "3147860410f83b8a2ed92f7cfd83e10c3ebed898537962750912e1a9adea8e88",
+      "src/extensions/scratch3_music/assets/drums/5-open-hi-hat.mp3": "1219e34dcd6e106eb2bdea5de1d2c971f6d619d8c3124f1776c3ee053991855b",
+      "src/extensions/scratch3_music/assets/drums/6-closed-hi-hat.mp3": "48d2ec6f90cf469c5f28ec545af5830a4260082a75ce6a27fa2b28e0db84713e",
+      "src/extensions/scratch3_music/assets/drums/7-tambourine.mp3": "012c323edbf9b6d4c81c2e63f29e6b7c64b5d5fc993f6cfa345fb243ad8fdf44",
+      "src/extensions/scratch3_music/assets/drums/8-hand-clap.mp3": "1db7568a75d924aa05927b2e3474be49b2829a57f616bfe6c44b18a3e3fff82d",
+      "src/extensions/scratch3_music/assets/drums/9-claves.mp3": "4147c8897bf5ef8ea936f49331005f66d752a82a997b97b076967c40b741f14d",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/108.mp3": "6b950012316d384afb404a471324a6e15c0a89442f1ada6ba3984f0cf590dfbf",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/24.mp3": "f0553cac8b27c10405887502f9583b9e391c8c34a2fddac96a755bc67a25e400",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/36.mp3": "5318818707f3350a69022777b050b7b5f57d8107ea6f730c722f9507b2f67585",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/48.mp3": "b54d281e14be994cde5521791db06c249370aec575aba4fd067cff001382cb80",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/60.mp3": "852b56f96c5d16ef33e25331d85f9b4a53b7451c5f00d76a4d9b1584cee5312a",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/72.mp3": "8371c4c3d83c264def21f9d5302d59f3939777c647fe7596089b16aaf8e52014",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/84.mp3": "ec2862bbe6ff7a6c9f03f223d42e62d2ffe397c6984fe57f9c01d6ed025e5e78",
+      "src/extensions/scratch3_music/assets/instruments/1-piano/96.mp3": "32fc998cb87da15c4e32fd04743ecbaeb78e700159d2245a3b1c56b3c0887a32",
+      "src/extensions/scratch3_music/assets/instruments/10-clarinet/48.mp3": "c67ea02f87c4c2e71edb4fd8239c34ec37055c56da86d791145c8bf682c11ddc",
+      "src/extensions/scratch3_music/assets/instruments/10-clarinet/60.mp3": "ff3e234c8464b1c7bf00f25d4adf48414ca0121e313d563cd3bd5df236de42ad",
+      "src/extensions/scratch3_music/assets/instruments/11-saxophone/36.mp3": "2eefd1e3f4f4b97f654fb8e3ffebd29bcafab38578bc6b00e32c6ac4e6941f05",
+      "src/extensions/scratch3_music/assets/instruments/11-saxophone/60.mp3": "225c55e8c1c14a77f71af82efaf5d5dbc08650d014afbdfd737fa54c30536d85",
+      "src/extensions/scratch3_music/assets/instruments/11-saxophone/84.mp3": "c351708fd39e3a6b082672f350fb4a5899459da035d29e0f5f037fa8af318304",
+      "src/extensions/scratch3_music/assets/instruments/12-flute/60.mp3": "e62df6045fa780902a8441bb255b8ec6df6d4822ef7ccfa5e3eead78671e6955",
+      "src/extensions/scratch3_music/assets/instruments/12-flute/72.mp3": "621efb62743148b0562ea2b58be9800523aee017321ac8db11a5c22320d17233",
+      "src/extensions/scratch3_music/assets/instruments/13-wooden-flute/60.mp3": "8e2c04c3604ba6be5a2699ac189b2aa1104496e3c80911209f9e8365a71f766a",
+      "src/extensions/scratch3_music/assets/instruments/13-wooden-flute/72.mp3": "9cb85e6d50d1ef2d8319679c9a9b5e764d9125e4fee2fc0d095e569085a53b26",
+      "src/extensions/scratch3_music/assets/instruments/14-bassoon/36.mp3": "4d2395e114f95760eeb1ac2aa4cdc1a1833e7918f7fa4769b9e17b7a5f7a18bd",
+      "src/extensions/scratch3_music/assets/instruments/14-bassoon/48.mp3": "18c38adac98f8b9d33721d158690e3e9d89321ea80cf8f7f125c7d44303a5cb6",
+      "src/extensions/scratch3_music/assets/instruments/14-bassoon/60.mp3": "9a03c085c7c8433b454b4e0fd8766c1222aa1899842fbcd248dece1563a93467",
+      "src/extensions/scratch3_music/assets/instruments/15-choir/48.mp3": "23cfb9ff287bcc8cc0adda7602805fb21a75e4df008754c233cd9cc7aeceddad",
+      "src/extensions/scratch3_music/assets/instruments/15-choir/60.mp3": "184161cf9660a2c349b2b2765d2a2a0b0939812bbdf4615a1fb3a4cabcc8c538",
+      "src/extensions/scratch3_music/assets/instruments/15-choir/72.mp3": "a7a3d8311e8b6f3e235660687423613c78ae856cda279c03f82d543438378011",
+      "src/extensions/scratch3_music/assets/instruments/16-vibraphone/60.mp3": "0778febbf85ee1449b47042478ec16cd3456fbb8799ca1fc1c5817627c280ac3",
+      "src/extensions/scratch3_music/assets/instruments/16-vibraphone/72.mp3": "4d72cd46b1b6b982961c07fa5b97bee17d04dff764edfb6209ec323484c4c1d7",
+      "src/extensions/scratch3_music/assets/instruments/17-music-box/60.mp3": "33c2354b2713f552712a54c3eeaa8366654a6c660be44c9775d7f46f9ed20664",
+      "src/extensions/scratch3_music/assets/instruments/18-steel-drum/60.mp3": "8ff87d762a611fda1eff5b7abda2711c1679470292497107109b6ee52b3fbe60",
+      "src/extensions/scratch3_music/assets/instruments/19-marimba/60.mp3": "9b6e5f2c55fb4bdc0acdbf9e5fb38bb43db23bbc9b4dd0d0352741ae3924e6f6",
+      "src/extensions/scratch3_music/assets/instruments/2-electric-piano/60.mp3": "f76b9025bf727c3120abece4c9fcb31db3e99702a0cfc7089488e0d2d6013b70",
+      "src/extensions/scratch3_music/assets/instruments/20-synth-lead/60.mp3": "4a9c6af011be1272a9c5c792237e29375d63f8c559139f6da4338510774507af",
+      "src/extensions/scratch3_music/assets/instruments/21-synth-pad/60.mp3": "3c9e82829e7a193a590c45203ea08d9e0a4d3e54e81bf1e27957f5e02f4e4302",
+      "src/extensions/scratch3_music/assets/instruments/3-organ/60.mp3": "a7d6e0f30c1731a62fdb913fb504af7e45e526a7beb8a33b16362ddf323c7630",
+      "src/extensions/scratch3_music/assets/instruments/4-guitar/60.mp3": "0f50f96605817905fc60e1d607be0ff54ba2f09b89cd3815a6af99ee432c49a9",
+      "src/extensions/scratch3_music/assets/instruments/5-electric-guitar/60.mp3": "11569780c2f365fc4957fcff4214359f5315b661428c7d78e7558c21bf1f1724",
+      "src/extensions/scratch3_music/assets/instruments/6-bass/36.mp3": "11e2352364a63c6a6cf1534d8763bd80fd99222f5edcc70a8ecce2b73bdf55d5",
+      "src/extensions/scratch3_music/assets/instruments/6-bass/48.mp3": "36ffba825e743d097032f119c8382cbd390ea78123d7c713dabb1aa816b9629f",
+      "src/extensions/scratch3_music/assets/instruments/7-pizzicato/60.mp3": "2d216e46fc0d5e6ef07fdaebf41554a40d5abfb7dd941f93d3b5871a8fbc45fd",
+      "src/extensions/scratch3_music/assets/instruments/8-cello/36.mp3": "f2f8c225b4c9a3e48e45c1c204b37421cd4bb1c73f4ff2b69c90a18a37093eb1",
+      "src/extensions/scratch3_music/assets/instruments/8-cello/48.mp3": "87d0a833c85262a59fc983c783461b386b393bcb9e0d17cc752255b6cd9632e2",
+      "src/extensions/scratch3_music/assets/instruments/8-cello/60.mp3": "2e90d51c9970d5cd7604ba7f594b7c44808f74c7166a55b43af8904060cef841",
+      "src/extensions/scratch3_music/assets/instruments/9-trombone/36.mp3": "6afbf9ffd8278efe21b23760f09109ebb276d025a03e04edec9e14dec7f8fa1c",
+      "src/extensions/scratch3_music/assets/instruments/9-trombone/48.mp3": "fc6df03907c28869574ab62373d060a94c8dd62adb46f0ab86246a35b3b83d75",
+      "src/extensions/scratch3_music/assets/instruments/9-trombone/60.mp3": "c371fa897001f1c8a2c72308acd3c8cc035c224077a6902ed35a66567bb737d4",
+      "src/extensions/scratch3_music/index.js": "9ce983bc904fa7c6965cf27295807fb5ea4a01589502f88299f4db198ef23313",
+      "src/extensions/scratch3_music/manifest.js": "feb945a6a9f1e2ff7cbcef61f89988eed456855ef3b77b82bd1a837624212f7e",
+      "src/extensions/scratch3_pen/index.js": "6d389603637311d7f0b634ef0439e939cc9e9a6ab4adc2aab4daded7137fc95e",
+      "src/extensions/scratch3_speech2text/index.js": "d7a0f3da7cbbc2f17216b3ad7363b453cf857538815f4fefc9145aa7a0886f1a",
+      "src/extensions/scratch3_text2speech/index.js": "659f23984f4e5be563a5973ecb666e3d3c70e3274d72ad9064e104fe9722a89d",
+      "src/extensions/scratch3_translate/index.js": "77031a7c300715d37b54313703c38c57b4fc316f3068e537f53a329ac8706538",
+      "src/extensions/scratch3_video_sensing/debug.js": "c0f34891fb0521e7270975f16122e8d76e6acbdca3cb5339dc57b9812664df8b",
+      "src/extensions/scratch3_video_sensing/index.js": "7e2081ceb40974a4a5052e82271e39fc89a12d35a2ed1b63dfd6cee54c567ce0",
+      "src/extensions/scratch3_video_sensing/library.js": "fdebe928a282b82332925faaec0b01fa688c0c6bdd07cf027496d1cb4d503e3e",
+      "src/extensions/scratch3_video_sensing/math.js": "2060ba348af0892d480adec469d19726050d92cdcb221f34aa7c0e3070263ad3",
+      "src/extensions/scratch3_video_sensing/view.js": "8c110e29b0b1e6a91177a4ae8a331dd8e938c3eaa49216fc3b5a3d20803e8ffe",
+      "src/extensions/scratch3_wedo2/index.js": "e35288e87f00518198a97ee2090d2494ca5b4681bb2434c8f182bb6c2bfd1979",
+      "src/extensions/tw/index.js": "65f2af368efc8fff4f6bba24e11d6233826c1d58f64f69361a32f521f341300a",
+      "src/import/load-costume.js": "d13d05b1828994d610733f07286f8d19623f9b94172b61ed4fd5d2b7ba8154a2",
+      "src/import/load-sound.js": "6097960a93960df25e45b7e1a2ced522cc7ad14d621209512433400884f81864",
+      "src/index.js": "2a505bce8097465b1389d8058e20378c425681818faaa0f7406f5046580ddc67",
+      "src/io/ble.js": "d95a156a8e27b2af4da9f60b046eea382a2d7db467c82566d61274490b7ce5bc",
+      "src/io/bt.js": "1a9aba4482cd3caa427784a2ba6d98945607f4f080950c891eacab1a842d4e0e",
+      "src/io/clock.js": "062a944ace6a3a95ed54f7702eb7acdac686185d58e00bb5822174588c3108d6",
+      "src/io/cloud.js": "aea302e7b16d7cbb758b912690ebe7836f9ee51684e35eb60210bcc7dd0aadb2",
+      "src/io/keyboard.js": "7ac377192a19465b6cb55242207ac2dddc76acc3323a3aa43d83703913d8a49f",
+      "src/io/mouse.js": "357b8922f1795e956e1f993ecb2677d2a3d113ed315be75f54c74f2d4d97130f",
+      "src/io/mouseWheel.js": "e135eece2dab3a39e5b7d9e5daba4cb8ad6f5cda79359618581cb513724c68ce",
+      "src/io/userData.js": "f64adb75d1a73c1a1e956de3ec426a742a6f1690173a0ef6c116a2dffedc753e",
+      "src/io/video.js": "19ab0bc3dac8b6d42b5ec78b3d794b8c87499ff0720ec4d67bf5459753919822",
+      "src/playground/benchmark.css": "0e960392fdca3bed4674df1ee807c428e0f4767895340daed2ab6914ca64cba1",
+      "src/playground/benchmark.js": "c1c324a52938e8b8f1de19fb8ca43c02433a9d712578f2377b8db3baff5c9cd7",
+      "src/playground/index.html": "f10ef9336111aa1d8d8eb156c7bee2c80e19164ae2c794cdc9681c3ff26990b6",
+      "src/playground/suite.css": "76cb5b9604fcc2ce9590c64def9a5261e443a1a6d06cae75826ad932c3c38434",
+      "src/playground/suite.html": "2ba509a5f4a7caf0f40933fe2844766313565cff85f0a0a936760d275254f72e",
+      "src/playground/suite.js": "12b9f6f345f4715d032d4242547ab964e9e26df5de07bf4b39d9e036665d11bf",
+      "src/playground/video-sensing.html": "fd03f94c3c8431d8dfb25be2020884ad3de1edd874078aefce91b20b7c4e5c3b",
+      "src/playground/video-sensing.js": "47d1a2eaa468dce39981d54ffb68917e06e192f3c60422d187edf2f7cd6e6754",
+      "src/serialization/deserialize-assets.js": "4aa5c99fb64a948c9e17aa4a3b88b4c9b8295d085ec166378bbb2082af1acda4",
+      "src/serialization/sb2.js": "48b91b7b633be026e67521c5acc132a26457cc454784cb0b5f9fec7439281e38",
+      "src/serialization/sb2_specmap.js": "db8246cc353e59486daff0dd2fea4c62b5146059ccb9b51103d431b44660b786",
+      "src/serialization/sb3.js": "f61ded8b660982bc30c227bf20184d5614d2964da9d784d1dbe723870adc7d18",
+      "src/serialization/serialize-assets.js": "b167874dcfd89f3acbcddab50900ef7d6c719750f83ada86807d3720daf3d680",
+      "src/serialization/tw-compress-sb3.js": "4e62f297d887af620fa35c3a46c06ac7059f385cb5601fee0f2994affd667e67",
+      "src/serialization/tw-costume-import-export.js": "26da86210b7beec6128a2510933dbd161dde8f9636c135097e85f0e8ce9e9aaa",
+      "src/sprites/rendered-target.js": "05a2b105d950660565010013ed5c814dc6d7dffa3cc704b0bbb71c52fd64502e",
+      "src/sprites/sprite.js": "b8dea5c0a29bf2a9dbec9dbf18b0786e39484d46459f6bca61dd02d97fb3377d",
+      "src/util/async-limiter.js": "aafafe1321138d44ef6318506b9b524f5f5548186e5c242b7ac5e2b36dd1ebcc",
+      "src/util/base64-util.js": "2a91b6c8a01d7a7985f7e9d0a7a387e19f8e2315d90ec0d4bbdf316bb7782850",
+      "src/util/cast.js": "6b9b60444b93b66c3e3100f1e77634c618abb72bebd35809f5892d03ebd0006b",
+      "src/util/clone.js": "3e80d4c448deb86af0dafb63fd25692e46370c1bea02139198f38aa49cc7056f",
+      "src/util/color.js": "4769f0d2cd10a2185c7065b02b2dc5ffdc50b7f7a5cfdbc73311bc903a28a35e",
+      "src/util/fetch-with-timeout.js": "aef9b38f9c1619aa5217ead10d4f8f3fe070fa67a308dc1bbe6d7ad5ffadd72b",
+      "src/util/get-monitor-id.js": "62ef8ce4a8954190270739c16edd4c83c9063e0b35fd6ff5511984d75a4ddcff",
+      "src/util/is-advanced-value.js": "dd12a604ac83c3014aeeb632c444896ed1f9e15fc0c4b9b4b3ac35cae01bd191",
+      "src/util/jsonrpc.js": "01592c93f684f4a827bfb3bc7cfa37c8f77352ee0b14abcb8d0323a2394c4820",
+      "src/util/log.js": "8e1a8078e75842ed8e753ea865b6296547838814b489342a6b880ff869849ddd",
+      "src/util/math-util.js": "bfc9ac28a06a294c248dc41059c3d8303c64e28d8f509212efd81cec5888e37c",
+      "src/util/maybe-format-message.js": "00b568d92eecbbf740f4a18689d189e57e708152bcd422a5652a8833620de057",
+      "src/util/new-block-ids.js": "72b818d3782572558911ec8f048c777d16a1bc053bf8d1726c120d6ec5d45634",
+      "src/util/rateLimiter.js": "0edfa0299a5946b98e2538f5f463028f2d7743889e88dbe1ef22f919b93eb9dd",
+      "src/util/scratch-link-websocket.js": "a197aa8b2044d5fd4811776d4383abd5d7bb354d6712ae0e1d4f5b731c7149a2",
+      "src/util/string-util.js": "52ea91c65a2c725faf15aff12603fb2f24452d4b73b81d7a573ad4f03bb8ca12",
+      "src/util/task-queue.js": "12403abe2462487fe17a13b54c792b2db2eac49e4cca2aaa3c636785124cd5a2",
+      "src/util/timer.js": "4fb81ae7f8c9a38df76e5a6e2effcb3eb8c44eb1948025873a45f6ae7c36e152",
+      "src/util/tw-asset-util.js": "f833635974edadb4f5073d30a24b1d972ec2294a5456dc4afa8e9343d3935e95",
+      "src/util/tw-static-fetch.js": "19d14906fdaa44e20515675682537dec54ee8fd2f1c79cd46b06e7c99c31949b",
+      "src/util/uid.js": "8c6196aaa33a588c72c627f07e43e03f10e11d6100c08a5854ecaabfd792907f",
+      "src/util/variable-util.js": "d12854e631752a31744924526e14bcb96dc65b51668737439de5263c1f054222",
+      "src/util/xml-escape.js": "6c5c6ce97f41a10f997d0029422fd334aeadbd105eaf64be1eb6f758a09ba460",
+      "src/virtual-machine.js": "3184de84299fb2ceb00e3ebff2c6037187dfe74141aaf26542f1713d0c29a24c"
+    },
+    "bundledSourceModules": 185
+  },
+  "storage": {
+    "name": "@turbowarp/scratch-storage",
+    "version": "0.0.202505311821",
+    "entry": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/index.js",
+    "installedNodeMain": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/dist/node/scratch-storage.js",
+    "reason": "Original installed package source allows inline worker/builtin bytes and complete transitive provenance"
+  },
+  "packager": {
+    "revision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+    "evidenceSha256": {
+      ".factory-build/webpack.real-02.cjs": "2e2ac6a57058816756e0e16b8def7b0967ae99740056584678cb4e89388ec198",
+      "webpack.config.js": "444aae73218c177aa47316ba8b1f0cfcb87a540f03cf582d8bcb3b220c807eab",
+      "src/build/inline-worker-loader/worker-loader.js": "4ef12d52d8de10f1e932db4ae8b30577857c19b6f5508587833e54b36bf1dea2",
+      "src/build/eager-dynamic-import-plugin.js": "a5f616a918f6048c9fed69a01f5726f0f626847415fc55ff46911bff3967f14d",
+      "bun.lock": "1a4bc2fd1c9b0885e1d999068571dc3d9d49b9b49967f34ada64721621c4c140"
+    },
+    "lockedVmRevision": "a1f3a7d",
+    "localVmOverride": "57871aba53cf739fd1f9bef2e57797f6a999f294"
+  },
+  "build": {
+    "command": "node factory/test/build-vm-adapter.mjs",
+    "target": "node",
+    "mode": "production",
+    "runtimeNode": "22",
+    "babelSyntaxTarget": "12",
+    "commonJS": true,
+    "runtimeFiles": [
+      "02-vm.cjs"
+    ],
+    "builtinExternals": [
+      "buffer",
+      "crypto",
+      "events",
+      "http",
+      "https",
+      "punycode",
+      "stream",
+      "string_decoder",
+      "url",
+      "util",
+      "zlib"
+    ],
+    "aliases": {
+      "@turbowarp/json$": "packager/node_modules/.bun/@turbowarp+json@0.1.2/node_modules/@turbowarp/json/lib/cjs.cjs",
+      "@turbowarp/jszip$": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/index.js",
+      "@turbowarp/nanolog$": "packager/node_modules/@turbowarp/nanolog/index.js",
+      "@vernier/godirect$": "packager/node_modules/@vernier/godirect/dist/godirect.min.cjs.js",
+      "arraybuffer-loader$": "packager/node_modules/arraybuffer-loader/index.js",
+      "atob$": "packager/node_modules/atob/node-atob.js",
+      "btoa$": "packager/node_modules/btoa/index.js",
+      "canvas-toBlob$": "packager/node_modules/canvas-toBlob/canvas-toBlob.js",
+      "decode-html$": "packager/node_modules/decode-html/index.js",
+      "diff-match-patch$": "packager/node_modules/diff-match-patch/index.js",
+      "format-message$": "packager/node_modules/format-message/index.js",
+      "htmlparser2$": "packager/node_modules/htmlparser2/lib/index.js",
+      "immutable$": "packager/node_modules/immutable/dist/immutable.js",
+      "scratch-parser$": "packager/node_modules/scratch-parser/index.js",
+      "scratch-sb1-converter$": "packager/node_modules/scratch-sb1-converter/index.js",
+      "scratch-translate-extension-languages$": "packager/node_modules/scratch-translate-extension-languages/languages.json",
+      "text-encoding$": "packager/node_modules/text-encoding/index.js",
+      "uuid$": "packager/node_modules/uuid/dist/index.js",
+      "worker-loader$": "packager/node_modules/.bun/worker-loader@2.0.0+470ba061f0322128/node_modules/worker-loader/dist/cjs.js",
+      "scratch-vm$": "scratch-vm/src/index.js",
+      "@turbowarp/scratch-storage$": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/index.js",
+      "@turbowarp/scratch-svg-renderer$": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/index.js",
+      "scratch-render-fonts$": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/index.js"
+    },
+    "dependencyResolution": "Original package-local node_modules first; packager node_modules fallback. Exact VM direct dependencies use installed packager packages.",
+    "licenseSupplementsSha256": "4cb3fedcefc55291679c7c722101c8e446781a07c3d780ec8a0222cb00bcfa75",
+    "loaders": [
+      "babel-loader (isolated config)",
+      "url-loader (always inline music/image URLs)",
+      "arraybuffer-loader (Storage builtin SVG/PNG/WAV bytes)",
+      "base64-loader (original inline WOFF2 requests)",
+      "packager inline-worker-loader (inline, fallback=false)",
+      "style-loader + css-loader (packager evidence)"
+    ],
+    "eagerDynamicImports": true,
+    "behavioralShims": [],
+    "upstreamSourcesModified": false,
+    "entrySource": "'use strict';\nconst VM = require('scratch-vm');\nconst Storage = require('@turbowarp/scratch-storage');\nclass FactoryVirtualMachine extends VM {}\nFactoryVirtualMachine.Storage = Storage;\nmodule.exports = FactoryVirtualMachine;\n",
+    "entrySha256": "5aa4e8f355dd9c57ba45edc688e3b93f1b916785013f7d9f705b21352ab0c3e1",
+    "scriptSha256": "c603e1922820879235dc346d0ae0c70d573e7f7e5d7b7b6e9eafda65926fa70a",
+    "warnings": [
+      "D:/rebuild&unpack/research/02engine/packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/lib/index.js\nModule not found: Error: Can't resolve 'encoding' in 'D:\\rebuild&unpack\\research\\02engine\\packager\\node_modules\\.bun\\@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128\\node_modules\\@turbowarp\\scratch-storage\\node_modules\\cross-fetch\\node_modules\\node-fetch\\lib'"
+    ],
+    "contexts": []
+  },
+  "dependencies": [
+    {
+      "name": "@02engine/packager",
+      "version": "3.1.0",
+      "license": "MPL-2.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/02engine/packager.git"
+      },
+      "source": "D:/rebuild&unpack/research/02engine/packager",
+      "packageSha256": "d1e38efa2b90486e952c53c693aa1153184aa8ef0ebcb7d2f148a8b9deb491fd",
+      "includedAs": {
+        "runtime": true,
+        "loader": true
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cde215e5b42363eb28ca2462c4558ff4807b38f383c537624c31e44657ac58f4"
+        }
+      ]
+    },
+    {
+      "name": "@turbowarp/json",
+      "version": "0.1.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TurboWarp/json.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+json@0.1.2/node_modules/@turbowarp/json",
+      "packageSha256": "82656200b1dacc205d61340112d2a45ab5749d6f9ab2fa9ca304a2eeb9015191",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "10d797cce819ea381415b38be32f79446cb3dc1c94d0e8209b8eb8f4d9dcc1d1"
+        }
+      ]
+    },
+    {
+      "name": "@turbowarp/jszip",
+      "version": "3.12.0",
+      "license": "(MIT OR GPL-3.0-or-later)",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Stuk/jszip.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip",
+      "packageSha256": "13425dbd1b17dea1563a60616a8463102fe0327eeb205c72f9df841ae6475e0c",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.markdown",
+          "sha256": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4"
+        }
+      ]
+    },
+    {
+      "name": "@turbowarp/nanolog",
+      "version": "0.2.0",
+      "license": "MIT",
+      "repository": null,
+      "source": "packager/node_modules/@turbowarp/nanolog",
+      "packageSha256": "a443c795f5205516d4b72db8a1ac0ba9a9e66f238ae62410361bd90ec8b9ab6b",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "a65eb54ac7dbe4b5f01dd531f013cc8963bdd53c4e52601fb5e6f7db9ce2e997"
+        }
+      ]
+    },
+    {
+      "name": "@turbowarp/sb3fix",
+      "version": "0.3.7",
+      "license": "MPL-2.0",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TurboWarp/sb3fix.git"
+      },
+      "source": "packager/node_modules/@turbowarp/sb3fix",
+      "packageSha256": "9d0838f837b36ab9fe3a3ea656b2783ea671f38aa3a2493c4cc1f91a56196093",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "9221c2f936159b8446d329249fb4c0f25be510f447383a0f13336ac7985668a3"
+        }
+      ]
+    },
+    {
+      "name": "@turbowarp/scratch-storage",
+      "version": "0.0.202505311821",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/TurboWarp/scratch-storage.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage",
+      "packageSha256": "b7da72fc84ba00121894700f86cbef6094f16c48ae259428832da623ec4e925a",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "4d7f8fd635fa6e9b318ca895132274d2acf1ef1e7d689f9e7bc96ed53d6de862"
+        }
+      ]
+    },
+    {
+      "name": "@turbowarp/scratch-svg-renderer",
+      "version": "1.0.0",
+      "license": "MPL-2.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/TurboWarp/scratch-svg-renderer.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer",
+      "packageSha256": "33e8281b44e601b083a5c315977b26951368826915686a955437f717f3d84ec2",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": "Deep-sea-lab-scratch-svg-renderer-587df0a",
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04"
+        }
+      ]
+    },
+    {
+      "name": "@vernier/godirect",
+      "version": "1.5.0",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/VernierST/godirect-js"
+      },
+      "source": "scratch-vm/node_modules/@vernier/godirect",
+      "packageSha256": "ce045a60df96c4cd4ef1f7f033549d6fb63fa502a34a9c8d8b182b29d510db0a",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "f8d83ea989dacf767f0d22d111f16fc387015736580b92414111a78401ac265c"
+        }
+      ]
+    },
+    {
+      "name": "ajv",
+      "version": "6.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/epoberezkin/ajv.git"
+      },
+      "source": "packager/node_modules/scratch-parser/node_modules/ajv",
+      "packageSha256": "7871b2c7376db047443629466443b47ef036e5df4c5f9022cba29d7f7df1803e",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "e85e131fa4ed25538ff1f4962ced1fb6f68b079bd9164a790597a0f30b8fd030"
+        }
+      ]
+    },
+    {
+      "name": "arraybuffer-loader",
+      "version": "1.0.8",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/pine/arraybuffer-loader"
+      },
+      "source": "packager/node_modules/arraybuffer-loader",
+      "packageSha256": "46a17c78d357c25b98edff4934e20d2da30fe68751ecbf3f37a4302d6a537004",
+      "includedAs": {
+        "runtime": true,
+        "loader": true
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "1c357d609ceed82ffdf658ce0273b35256175579531c35e01a3af165871ed554"
+        }
+      ]
+    },
+    {
+      "name": "atob",
+      "version": "2.1.2",
+      "license": "(MIT OR Apache-2.0)",
+      "repository": {
+        "type": "git",
+        "url": "git://git.coolaj86.com/coolaj86/atob.js.git"
+      },
+      "source": "packager/node_modules/atob",
+      "packageSha256": "ec5f817e82b3589ffa74b5d955a87b10d314357f992e7171c9f2669521f75098",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "21426d8b8bcbfd772a7d0a382f0e1eea935d32906b0f2deec2f4d457ea4e9606"
+        },
+        {
+          "path": "LICENSE.DOCS",
+          "sha256": "5138a74ac20f2965d97b2a9c35219ca74e24f4a93618b33f0e36e4b3c7873197"
+        }
+      ]
+    },
+    {
+      "name": "babel-loader",
+      "version": "8.4.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/babel/babel-loader.git"
+      },
+      "source": "packager/node_modules/.bun/babel-loader@8.4.1+b879ea8bb99843a6/node_modules/babel-loader",
+      "packageSha256": "e441d025ad95b55b7270a69f83be112a4770c7772355c295e893dfb0042bc5d5",
+      "includedAs": {
+        "runtime": false,
+        "loader": true
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "1d4bf0564b5252d3d38f65ba11b58128eac5db6cba734e022e43dd20e9b7494f"
+        }
+      ]
+    },
+    {
+      "name": "base64-js",
+      "version": "1.2.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/beatgammit/base64-js.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/node_modules/base64-js",
+      "packageSha256": "8f6ebdb3af2e22e9685c5de096cbd7d2667d3e4802ff7f5cb8c2cd9c7265bd15",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "136239d1783a151cdbf6fd7935dd945082b9d0ee2cbb8497cc0ae49e8a743a47"
+        }
+      ]
+    },
+    {
+      "name": "base64-js",
+      "version": "1.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/beatgammit/base64-js.git"
+      },
+      "source": "packager/node_modules/.bun/base64-js@1.3.0/node_modules/base64-js",
+      "packageSha256": "2c1bd803f34b454e8be92e4687c1388961ecd71dffa0d0a8c023af4941aa89de",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "136239d1783a151cdbf6fd7935dd945082b9d0ee2cbb8497cc0ae49e8a743a47"
+        }
+      ]
+    },
+    {
+      "name": "base64-loader",
+      "version": "1.0.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/antelle/base64-loader.git"
+      },
+      "source": "packager/node_modules/base64-loader",
+      "packageSha256": "dcdf06fb4638cd249f2f1f7ab717860570f9726a7d48da8d1a14be928ced7e99",
+      "includedAs": {
+        "runtime": false,
+        "loader": true
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "README.md",
+          "kind": "original-readme-license-section",
+          "sha256": "739480eeb067efee932503e68c88ab6742504889132fe7d99736390fc7537f5a"
+        }
+      ]
+    },
+    {
+      "name": "btoa",
+      "version": "1.2.1",
+      "license": "(MIT OR Apache-2.0)",
+      "repository": {
+        "type": "git",
+        "url": "git://git.coolaj86.com/coolaj86/btoa.js.git"
+      },
+      "source": "packager/node_modules/btoa",
+      "packageSha256": "8f7b0b50690041afab2c1280344428eb86f3a655633c93b08059b5d7bae7d99b",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "73ba74dfaa520b49a401b5d21459a8523a146f3b7518a833eea5efa85130bf68"
+        },
+        {
+          "path": "LICENSE.DOCS",
+          "sha256": "5138a74ac20f2965d97b2a9c35219ca74e24f4a93618b33f0e36e4b3c7873197"
+        }
+      ]
+    },
+    {
+      "name": "canvas-toBlob",
+      "version": "1.0.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/eligrey/canvas-toBlob.js.git"
+      },
+      "source": "packager/node_modules/canvas-toBlob",
+      "packageSha256": "52feafdd392d873e8ba4863cae4ea4dc11b6b289d750db432711dce21b5d2d4c",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "16cb23e7e1d6b4650424b6145b9222db7b285ce8b4a9d6e2d91f8487c77dfe7b"
+        }
+      ]
+    },
+    {
+      "name": "core-util-is",
+      "version": "1.0.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/isaacs/core-util-is"
+      },
+      "source": "packager/node_modules/.bun/core-util-is@1.0.3/node_modules/core-util-is",
+      "packageSha256": "0067bcd4ef1c86da02a45ad770883b39a9d14aa0b00113071609d5fb3dce0bc0",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "33b734d60042d0fe0c92dd1fc1e874193a1c899ec3e276a2eb935d2d0bf5b710"
+        }
+      ]
+    },
+    {
+      "name": "cross-fetch",
+      "version": "3.1.5",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/lquixada/cross-fetch.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch",
+      "packageSha256": "5d514c3420e6fca1564a1e3f6a7e50e92391612d46ef35fd539a83e94a205c3e",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "821a6be45c3fd08815688b30b6210fc97848cf88c7a6ed8afb22ae75b83571b4"
+        }
+      ]
+    },
+    {
+      "name": "decode-html",
+      "version": "2.0.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/intesso/decode-html.git"
+      },
+      "source": "packager/node_modules/decode-html",
+      "packageSha256": "6c478431beaddac6d416b0a39e3891fa65b3e8edf58883ed7874bd343eb08abe",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "56c809055544ce7d78b2b9dbe56c81ff35be24321092dbbfcc8d729ec6fd2bc0"
+        }
+      ]
+    },
+    {
+      "name": "dom-serializer",
+      "version": "0.2.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/cheeriojs/dom-renderer.git"
+      },
+      "source": "packager/node_modules/dom-serializer",
+      "packageSha256": "577a6ca0521104458154345644b197d32c3ca398b0781ecbc60aab4b315e1c14",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "94cfe87de9b178e8fee313a19178e625129e2ce559db32e772e7bd95114ee6ff"
+        }
+      ]
+    },
+    {
+      "name": "domelementtype",
+      "version": "2.3.0",
+      "license": "BSD-2-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/fb55/domelementtype.git"
+      },
+      "source": "packager/node_modules/dom-serializer/node_modules/domelementtype",
+      "packageSha256": "4ddf28a1e60ae7ec15f62cda0d72eb06bcae05b3819942d971c841b7cc0b6930",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+        }
+      ]
+    },
+    {
+      "name": "domelementtype",
+      "version": "1.3.1",
+      "license": "BSD-2-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/fb55/domelementtype.git"
+      },
+      "source": "packager/node_modules/domelementtype",
+      "packageSha256": "f50e652e1cd48ada00210fa948baf45543853fe1a5e59497bc20744d454a2d5b",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+        }
+      ]
+    },
+    {
+      "name": "domhandler",
+      "version": "2.4.2",
+      "license": "BSD-2-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/fb55/DomHandler.git"
+      },
+      "source": "packager/node_modules/domhandler",
+      "packageSha256": "a1a7d0a408d22be6dbb1fa4fe3fd6cdafe90aabd83d61786fb98fe6d2c3abb8c",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+        }
+      ]
+    },
+    {
+      "name": "dompurify",
+      "version": "2.5.9",
+      "license": "(MPL-2.0 OR Apache-2.0)",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/cure53/DOMPurify.git"
+      },
+      "source": "packager/node_modules/.bun/dompurify@2.5.9/node_modules/dompurify",
+      "packageSha256": "f6413397358100e541ec7b5ce6cc567c8b60d74d5fb8823a1b24ac585ac8050f",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "1b02e03c3fb4f87d476c128f0eb9def1f5a1709d28b180465228bd41574623b7"
+        }
+      ]
+    },
+    {
+      "name": "domutils",
+      "version": "1.7.0",
+      "license": "BSD-2-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/FB55/domutils.git"
+      },
+      "source": "packager/node_modules/domutils",
+      "packageSha256": "76471675d7cbdba17585fd80bda9dc986638bc2080c121b53e4ba4ec5f8ee90a",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "version": "2.2.0",
+      "license": "BSD-2-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/fb55/entities.git"
+      },
+      "source": "packager/node_modules/dom-serializer/node_modules/entities",
+      "packageSha256": "e551da4eee00694ea973b9d0a0aaa696256007fc4083a80c8fb2b005c788fca1",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "version": "1.1.2",
+      "license": "BSD-2-Clause",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/fb55/entities.git"
+      },
+      "source": "packager/node_modules/entities",
+      "packageSha256": "b81c2903f7cff786e71c8560c4d736aa6df68d4b982c0eb15cbac88c172f5752",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+        }
+      ]
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "1.1.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/epoberezkin/fast-deep-equal.git"
+      },
+      "source": "packager/node_modules/scratch-parser/node_modules/ajv/node_modules/fast-deep-equal",
+      "packageSha256": "c03a1419adaf932d6419f855d0e17c1057c04526c60f27a535bb907d10b29235",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+        }
+      ]
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "version": "2.1.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/epoberezkin/fast-json-stable-stringify.git"
+      },
+      "source": "packager/node_modules/fast-json-stable-stringify",
+      "packageSha256": "c4907a6cf1a242f65589b9bb762b9330088aa4a940d382b470d3c47b5309ef44",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "a833d366242c298cf1b10263516572fb8dcbe68eb5072cdcac2b4546e2b4eb36"
+        }
+      ]
+    },
+    {
+      "name": "format-message",
+      "version": "6.2.1",
+      "license": "MIT",
+      "repository": "format-message/format-message",
+      "source": "packager/node_modules/format-message",
+      "packageSha256": "39afd2b9c674ae98d21699735223c5605469f0c9a90627860a3fc64113db3c77",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "02-vm.license-supplements.json",
+          "sourceUrls": [
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.1/LICENSE-MIT",
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.4/LICENSE-MIT"
+          ],
+          "sha256": "60a3946f201f9fa04ad5b02f24c5d92f07ccfdee3948900723c70ca23e4055fd"
+        }
+      ]
+    },
+    {
+      "name": "format-message-formats",
+      "version": "6.2.4",
+      "license": "MIT",
+      "repository": "format-message/format-message",
+      "source": "packager/node_modules/format-message-formats",
+      "packageSha256": "a7eac8985f300aac400c3fb90bfc606a11e3162aa3c3eb1fccc404854caaa0dc",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "02-vm.license-supplements.json",
+          "sourceUrls": [
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.1/LICENSE-MIT",
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.4/LICENSE-MIT"
+          ],
+          "sha256": "60a3946f201f9fa04ad5b02f24c5d92f07ccfdee3948900723c70ca23e4055fd"
+        }
+      ]
+    },
+    {
+      "name": "format-message-interpret",
+      "version": "6.2.4",
+      "license": "MIT",
+      "repository": "format-message/format-message",
+      "source": "packager/node_modules/format-message-interpret",
+      "packageSha256": "e1feb28c89afadbcdc134d3d5ec287af599fcbd397fe5d2aa9277b9182406398",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "02-vm.license-supplements.json",
+          "sourceUrls": [
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.1/LICENSE-MIT",
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.4/LICENSE-MIT"
+          ],
+          "sha256": "60a3946f201f9fa04ad5b02f24c5d92f07ccfdee3948900723c70ca23e4055fd"
+        }
+      ]
+    },
+    {
+      "name": "format-message-parse",
+      "version": "6.2.4",
+      "license": "MIT",
+      "repository": "format-message/format-message",
+      "source": "packager/node_modules/format-message-parse",
+      "packageSha256": "b33fbe65333691f4dafd4735c63ac81d5bd7123e92b4f15dc61552fa1b36c8f7",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "02-vm.license-supplements.json",
+          "sourceUrls": [
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.1/LICENSE-MIT",
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.4/LICENSE-MIT"
+          ],
+          "sha256": "60a3946f201f9fa04ad5b02f24c5d92f07ccfdee3948900723c70ca23e4055fd"
+        }
+      ]
+    },
+    {
+      "name": "htmlparser2",
+      "version": "3.10.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/fb55/htmlparser2.git"
+      },
+      "source": "packager/node_modules/htmlparser2",
+      "packageSha256": "f1c6449af6bd56b000ac286004e296490a1cc59f3887ddd897369c7f39acfa35",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "204cfa747341660e4da64cd23e8c876c6b20279d247f48564993d3fc4a2eab47"
+        }
+      ]
+    },
+    {
+      "name": "immediate",
+      "version": "3.0.6",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/calvinmetcalf/immediate.git"
+      },
+      "source": "packager/node_modules/.bun/immediate@3.0.6/node_modules/immediate",
+      "packageSha256": "1e40d711ce5348d237f7a2093d1707ca7c34fc56369f6be10c8e2dc9bcae0a96",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "809e66de579fb7d92503848bbe6d1f348f4f6521a71e5d294fe7cc0c87a3b4ff"
+        }
+      ]
+    },
+    {
+      "name": "immutable",
+      "version": "3.8.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/facebook/immutable-js.git"
+      },
+      "source": "packager/node_modules/immutable",
+      "packageSha256": "d2e7a05fa97d86677dd0072831c07cbf43567159939924876ce40fc32b8d6e54",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "51887a3d47051ac2fce1210562e5b9fe0830a8a8fabeb272c2d586eeb18a05fd"
+        }
+      ]
+    },
+    {
+      "name": "inherits",
+      "version": "2.0.4",
+      "license": "ISC",
+      "repository": "git://github.com/isaacs/inherits",
+      "source": "packager/node_modules/.bun/inherits@2.0.4/node_modules/inherits",
+      "packageSha256": "be645800bc94fd8de29c8ae91690549b316cc437100108aeea7b2f347693cc80",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
+        }
+      ]
+    },
+    {
+      "name": "inherits",
+      "version": "2.0.4",
+      "license": "ISC",
+      "repository": "git://github.com/isaacs/inherits",
+      "source": "packager/node_modules/inherits",
+      "packageSha256": "be645800bc94fd8de29c8ae91690549b316cc437100108aeea7b2f347693cc80",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
+        }
+      ]
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/juliangruber/isarray.git"
+      },
+      "source": "packager/node_modules/.bun/isarray@1.0.0/node_modules/isarray",
+      "packageSha256": "93165ce56e458216c18240cd961a522af5b18e51da06f55d88ac552234455d95",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "README.md",
+          "kind": "original-readme-license-section",
+          "sha256": "5a7e5e454c81d982ef21ca20f11cc1551ed0216e8447e7ab55a096a0a853d0bb"
+        }
+      ]
+    },
+    {
+      "name": "js-md5",
+      "version": "0.7.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/emn178/js-md5.git"
+      },
+      "source": "packager/node_modules/.bun/js-md5@0.7.3/node_modules/js-md5",
+      "packageSha256": "250bd34e1fb1db29d3b3dbeec78388e669d20a704a7cef1e7ed13db6fbd1c032",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "2f6d4ea58919464f677b4560094d34b7fe12ebfd38bf0b62a8a502a25d2acedd"
+        }
+      ]
+    },
+    {
+      "name": "js-md5",
+      "version": "0.7.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/emn178/js-md5.git"
+      },
+      "source": "packager/node_modules/js-md5",
+      "packageSha256": "250bd34e1fb1db29d3b3dbeec78388e669d20a704a7cef1e7ed13db6fbd1c032",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "2f6d4ea58919464f677b4560094d34b7fe12ebfd38bf0b62a8a502a25d2acedd"
+        }
+      ]
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "0.3.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/epoberezkin/json-schema-traverse.git"
+      },
+      "source": "packager/node_modules/scratch-parser/node_modules/ajv/node_modules/json-schema-traverse",
+      "packageSha256": "a19ad7195556147406464616140033139274f05e671a5217984b23d2c4c5f90e",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+        }
+      ]
+    },
+    {
+      "name": "lie",
+      "version": "3.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/calvinmetcalf/lie.git"
+      },
+      "source": "packager/node_modules/.bun/lie@3.3.0/node_modules/lie",
+      "packageSha256": "3faafb3b558146534b1849e6d2ed8a9c9c88eff27ef868827d8de17b979cf701",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "license.md",
+          "sha256": "5c81b0caa98593408b03125efa25efe622341ed87ae55561968828cd887d64a4"
+        }
+      ]
+    },
+    {
+      "name": "lookup-closest-locale",
+      "version": "6.2.0",
+      "license": "MIT",
+      "repository": "format-message/format-message",
+      "source": "packager/node_modules/lookup-closest-locale",
+      "packageSha256": "6276f14e43c2fa8c460fa1ccbc47802053afa09363aab7c43b35b0f231c99120",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "02-vm.license-supplements.json",
+          "sourceUrls": [
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.1/LICENSE-MIT",
+            "https://raw.githubusercontent.com/format-message/format-message/v6.2.4/LICENSE-MIT"
+          ],
+          "sha256": "60a3946f201f9fa04ad5b02f24c5d92f07ccfdee3948900723c70ca23e4055fd"
+        }
+      ]
+    },
+    {
+      "name": "node-fetch",
+      "version": "2.6.7",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/bitinn/node-fetch.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch",
+      "packageSha256": "e9605e9f04bff16a43684c5d4f0ae9507f3771ef53faa282ed612bde2e3ac7ba",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "84eaa985e1ef71b8c630e8aba73404c219ff425c6fdb45c62e998b58d4fbdc8e"
+        }
+      ]
+    },
+    {
+      "name": "pako",
+      "version": "1.0.11",
+      "license": "(MIT AND Zlib)",
+      "repository": "nodeca/pako",
+      "source": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako",
+      "packageSha256": "0014f350a6834ed6a2d1211e0a2e3aa471cb426edf63379c785f9647ea2b4e01",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539"
+        }
+      ]
+    },
+    {
+      "name": "pify",
+      "version": "4.0.1",
+      "license": "MIT",
+      "repository": "sindresorhus/pify",
+      "source": "packager/node_modules/scratch-parser/node_modules/pify",
+      "packageSha256": "6f3beed79477c32ec1533609a75bef5cc3998e96657277519b3d66bfcc6d046d",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "license",
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        }
+      ]
+    },
+    {
+      "name": "process-nextick-args",
+      "version": "2.0.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/calvinmetcalf/process-nextick-args.git"
+      },
+      "source": "packager/node_modules/.bun/process-nextick-args@2.0.1/node_modules/process-nextick-args",
+      "packageSha256": "6d6d93d057f39bc3173d53e694b61833fd0ce89c1d669156169136d31a968131",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "license.md",
+          "sha256": "ecdccbcf39024f624ded480c01c0b25458e1eca8f26ecf040933865ce56d9a4f"
+        }
+      ]
+    },
+    {
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/nodejs/readable-stream"
+      },
+      "source": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream",
+      "packageSha256": "67bde829e31cba3f50c77d14a30fa0f2295223b7ffa07f3b84606a5a79bb97f8",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54"
+        }
+      ]
+    },
+    {
+      "name": "readable-stream",
+      "version": "3.6.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/nodejs/readable-stream"
+      },
+      "source": "packager/node_modules/htmlparser2/node_modules/readable-stream",
+      "packageSha256": "469ea81f64037d1f179bcd46412217903a2924dd2e7d7d9b728659b6f12c3e69",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "ec62dc96da0099b87f4511736c87309335527fb7031639493e06c95728dc8c54"
+        }
+      ]
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/feross/safe-buffer.git"
+      },
+      "source": "packager/node_modules/.bun/safe-buffer@5.1.2/node_modules/safe-buffer",
+      "packageSha256": "3d8b6d944be9e931a178914afbb3d6b79bfa199c032872b687bed41ed996c747",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+        }
+      ]
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.2.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/feross/safe-buffer.git"
+      },
+      "source": "packager/node_modules/safe-buffer",
+      "packageSha256": "e4018fdbfe625433371f48274fee26f520bbe865e0d8c85bf3aa07424134b90c",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+        }
+      ]
+    },
+    {
+      "name": "scratch-parser",
+      "version": "0.0.0-development",
+      "license": "MPL-2.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/02engine/scratch-parser.git"
+      },
+      "source": "packager/node_modules/scratch-parser",
+      "packageSha256": "887466122d8a867cfc42462d483b44222b7cf51ecdaf6de67a7e36c43e526560",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": "02engine-scratch-parser-7eac2e4",
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        }
+      ]
+    },
+    {
+      "name": "scratch-render-fonts",
+      "version": "1.0.0",
+      "license": null,
+      "repository": {
+        "type": "git",
+        "url": "https://git@github.com/02engine/scratch-render-fonts.git"
+      },
+      "source": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts",
+      "packageSha256": "16b3116771b431b1315641b610d134e11b2313c5d253d04bdca7a1ee216b701d",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": "02engine-scratch-render-fonts-a5c0296",
+      "licenses": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "OFL.txt",
+          "sha256": "c5f255fc32be644ae348b590b9d73124d6dda1dfb45d65e637a9e80485523640"
+        }
+      ]
+    },
+    {
+      "name": "scratch-sb1-converter",
+      "version": "0.2.7",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/02engine/scratch-sb1-converter.git"
+      },
+      "source": "packager/node_modules/scratch-sb1-converter",
+      "packageSha256": "df707350e918370a1cab96673287c651193885396465b14f9fc8fa30d0c1638f",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": "02engine-scratch-sb1-converter-237025e",
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "7dbd84096ab473f2b5395c18c4adbb6bd2d2351e29dc41219511bb24176fcb72"
+        }
+      ]
+    },
+    {
+      "name": "scratch-translate-extension-languages",
+      "version": "0.0.20191118205314",
+      "license": "BSD-3-Clause",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/02engine/scratch-translate-extension-languages.git"
+      },
+      "source": "packager/node_modules/scratch-translate-extension-languages",
+      "packageSha256": "90e5a212deb95db46eaa7a9d7cee8338a4283fa8c0eef747720a9668afbbe5ba",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": "02engine-scratch-translate-extension-languages-45ef3f9",
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "4d7f8fd635fa6e9b318ca895132274d2acf1ef1e7d689f9e7bc96ed53d6de862"
+        }
+      ]
+    },
+    {
+      "name": "scratch-vm",
+      "version": "2.1.46",
+      "license": "MPL-2.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/02engine/scratch-vm.git"
+      },
+      "source": "D:/rebuild&unpack/research/02engine/scratch-vm",
+      "packageSha256": "240612909727b67c4c09b5284975b63b51b407a1170800e5e7bb6f5604eed07d",
+      "includedAs": {
+        "runtime": true,
+        "loader": true
+      },
+      "bunTag": "02engine-scratch-vm-5c41578",
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "cde215e5b42363eb28ca2462c4558ff4807b38f383c537624c31e44657ac58f4"
+        }
+      ]
+    },
+    {
+      "name": "setimmediate",
+      "version": "1.0.5",
+      "license": "MIT",
+      "repository": "YuzuJS/setImmediate",
+      "source": "packager/node_modules/.bun/setimmediate@1.0.5/node_modules/setimmediate",
+      "packageSha256": "56c7968c8062ad56e94b8ddb477e514098e0fa34b060aa86b67232fdb12e184d",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "c4b4ad3a5746f1f5249a6dd90396ec519264e1bb02e01e48a6522c48a3a97cb4"
+        }
+      ]
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/nodejs/string_decoder.git"
+      },
+      "source": "packager/node_modules/.bun/string_decoder@1.1.1/node_modules/string_decoder",
+      "packageSha256": "e278ca18803862a6d1b6bedc6a3394159ac86e5c4a162614fef006c79dcda3a2",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b"
+        }
+      ]
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.3.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/nodejs/string_decoder.git"
+      },
+      "source": "packager/node_modules/string_decoder",
+      "packageSha256": "31984c85cd4f3df0aa75075acdec98c25961496897d1f46d04ed4a701f129c54",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "11f2aafb37d06b3ee5bdaf06e9811141d0da05263c316f3d627f45c20d43261b"
+        }
+      ]
+    },
+    {
+      "name": "text-encoding",
+      "version": "0.7.0",
+      "license": "(Unlicense OR Apache-2.0)",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/inexorabletash/text-encoding.git"
+      },
+      "source": "packager/node_modules/text-encoding",
+      "packageSha256": "5fdc1b1e5e346324ec3f451c50e09bd5510d66c63677464460f655eccf0edacd",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "d1c15dc8470e037b82da06a95b1a91558414a83625549c47dc3997a9985efa17"
+        }
+      ]
+    },
+    {
+      "name": "tr46",
+      "version": "0.0.3",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sebmaster/tr46.js.git"
+      },
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/node_modules/tr46",
+      "packageSha256": "615087f58ee138fd35c2b414c355b72e36e5919725b8aecc1c34f6a5585b9779",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "02-vm.license-supplements.json",
+          "sourceUrls": [
+            "https://raw.githubusercontent.com/Sebmaster/tr46.js/master/LICENSE.md"
+          ],
+          "sha256": "499d6d466d064e0460427967a344e2a32fcb86ea8c6cd1a285ec4f1fa03fba67"
+        }
+      ]
+    },
+    {
+      "name": "transformation-matrix",
+      "version": "1.15.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chrvadala/transformation-matrix.git"
+      },
+      "source": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix",
+      "packageSha256": "55f273bf55ab55c80cfd553bce4da3ad2584da985297213c187a31f644b3f218",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "785c27ebb467217f925b57dfa09e5a33ca6bacaaee6da1eda68770e5e067f6f3"
+        }
+      ]
+    },
+    {
+      "name": "url-loader",
+      "version": "4.1.1",
+      "license": "MIT",
+      "repository": "webpack-contrib/url-loader",
+      "source": "packager/node_modules/.bun/url-loader@4.1.1+1b0a898e5553b606/node_modules/url-loader",
+      "packageSha256": "52a8063dd1ed8fc66526ee370afa39c18e5d1f113b5f13d076f4a4c899d0eaed",
+      "includedAs": {
+        "runtime": false,
+        "loader": true
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "9068a8782d2fb4c6e432cfa25334efa56f722822180570802bf86e71b6003b1e"
+        }
+      ]
+    },
+    {
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/TooTallNate/util-deprecate.git"
+      },
+      "source": "packager/node_modules/.bun/util-deprecate@1.0.2/node_modules/util-deprecate",
+      "packageSha256": "7bba467f049074957e693fc06672848b040c38fa071b6eed8690f5fbe090a8b2",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7"
+        }
+      ]
+    },
+    {
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/TooTallNate/util-deprecate.git"
+      },
+      "source": "packager/node_modules/util-deprecate",
+      "packageSha256": "7bba467f049074957e693fc06672848b040c38fa071b6eed8690f5fbe090a8b2",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "0154425673db15cdfa80ecba2c9b1f1a867f7197a006764712849bfc3a93cbb7"
+        }
+      ]
+    },
+    {
+      "name": "uuid",
+      "version": "8.3.2",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/uuidjs/uuid.git"
+      },
+      "source": "packager/node_modules/uuid",
+      "packageSha256": "56c3eae5f83172f7ab5205980ebd9a1328f6436628d893720938d5679208922c",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "beaa6b04fb82e41dd2ad679e19e27953afb5999b1abbb455b6564e78ebfeb332"
+        }
+      ]
+    },
+    {
+      "name": "webidl-conversions",
+      "version": "3.0.1",
+      "license": "BSD-2-Clause",
+      "repository": "jsdom/webidl-conversions",
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/node_modules/webidl-conversions",
+      "packageSha256": "e26568c06b82596d754c7490fd568b4b3f970b3b97c55020d42f65990d0c86af",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "a889cc4dbee2ae172c179856b25d75b0b7a5a136e1b97109b9b590b2ff1a879c"
+        }
+      ]
+    },
+    {
+      "name": "webpack",
+      "version": "4.47.0",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/webpack/webpack.git"
+      },
+      "source": "packager/node_modules/.bun/webpack@4.47.0+470ba061f0322128/node_modules/webpack",
+      "packageSha256": "86a61654dc1bb300aaeffb97dad32b97e3ca345b6ebc27020650e0f23c326155",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "9068a8782d2fb4c6e432cfa25334efa56f722822180570802bf86e71b6003b1e"
+        }
+      ]
+    },
+    {
+      "name": "whatwg-url",
+      "version": "5.0.0",
+      "license": "MIT",
+      "repository": "jsdom/whatwg-url",
+      "source": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url",
+      "packageSha256": "05a015c4176246f051bbaa3a543ed82480a4a4d85360283e049f159ba014b008",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "6b7a1792144374d84dc5ed3655b8bbe2754d06f4f1f64a9fb8b9de2d6f448b85"
+        }
+      ]
+    },
+    {
+      "name": "worker-loader",
+      "version": "2.0.0",
+      "license": "MIT",
+      "repository": "https://github.com/webpack-contrib/worker-loader.git",
+      "source": "packager/node_modules/.bun/worker-loader@2.0.0+470ba061f0322128/node_modules/worker-loader",
+      "packageSha256": "863255c94ae886757cc67527c132adbe22fed148396fe0ab242bcd0712a66059",
+      "includedAs": {
+        "runtime": true,
+        "loader": false
+      },
+      "bunTag": null,
+      "licenses": [
+        {
+          "path": "LICENSE",
+          "sha256": "9068a8782d2fb4c6e432cfa25334efa56f722822180570802bf86e71b6003b1e"
+        }
+      ]
+    }
+  ],
+  "moduleInputSha256": [
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+json@0.1.2/node_modules/@turbowarp/json/lib/cjs.cjs",
+      "sha256": "bea80c3669c5041046b1a7cde32420b4e42e21750d3f633478a25d65640d780a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/base64.js",
+      "sha256": "5df6b73d9ed6c317c67835f3427d860c16fd93acf503eb471fd897167e747fdb"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/compressedObject.js",
+      "sha256": "b91f823d32f39cda4002bc0954993f20ffea6747d42109253b7d6347b4abb31b"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/compressions.js",
+      "sha256": "50e650a7eaf2a54ede299c12dfba30a362c7644e7c00df0d16ab3cf228bb77b0"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/crc32.js",
+      "sha256": "63750f4131b1eabb545a4718c863af860184baf033c76851be282f1c7f5dcba9"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/defaults.js",
+      "sha256": "585eeeb04375fe7bd27e846d8941d26fd435efb36a87fba9ff137fd8b97880a6"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/external.js",
+      "sha256": "982fed36a600668223d1d0ce8c446f87ccd1f82634df18f206b4a2f4096e31c7"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/flate.js",
+      "sha256": "ff8b9b6bc235258d518549ab6eeac85c7948e183935ebf7a970a6d706b38386a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/generate/ZipFileWorker.js",
+      "sha256": "907d84ea582def3954aade073444f398bef6edf1b931084da4a77bb4dc26c1c8"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/generate/index.js",
+      "sha256": "19f13a6ff615464657aa5b8651e669950c633095cea37d3179a51d8c645adb3b"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/index.js",
+      "sha256": "4ea0fc951e39eac1a9bbaa3a56d6df9d9f37068e576ca6a10b05d4fd9c726d22"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/load.js",
+      "sha256": "7e3181c7669cfc584f29f3060cdf210021ec5c723c36af039fb5433de52d25da"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/nodejsUtils.js",
+      "sha256": "763d0af1cde619da6d9cfbe1ee82e2e32d86349d8abe32613c7481e8143740e1"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/nodejs/NodejsStreamInputAdapter.js",
+      "sha256": "dcf35c72168e825d2e634cfa13a289ba8c7a76da0584a39b785611d0d736ddd9"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/nodejs/NodejsStreamOutputAdapter.js",
+      "sha256": "cc88c3a8e6aa74262bd1ecc452ee8f78c48a16a0b6095d2f9df7500320957799"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/object.js",
+      "sha256": "f41f5185e5c216777474f1097b0d3e0b74b9408bc6ff1f225eaf41aeaec8ab39"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/reader/ArrayReader.js",
+      "sha256": "bb711509472587e8c88e8e311d5c86bde76528286793afbc6573c1ddd9674814"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/reader/DataReader.js",
+      "sha256": "e8e0b4728ddc6fc3dbe5b449d87b884c4b3be99862bd1edf6a700ecfb3b3b247"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/reader/NodeBufferReader.js",
+      "sha256": "4fa232442a0af80ea099e1534bdb6047abf45331a8ea3a5c40b83dfd735a4ce2"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/reader/StringReader.js",
+      "sha256": "477a2e887eee11a56a50726152327b2a4d75d778f96463933197706e1ce90d59"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/reader/Uint8ArrayReader.js",
+      "sha256": "1bb123e53b237f6e830f3dbfa6ce00272a655829bcff704682fee199c9d6ddce"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/reader/readerFor.js",
+      "sha256": "1eef5a73bba844922812893f9a7e01cfdb54072aae42f7ecf67c41dc925ea9cf"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/signature.js",
+      "sha256": "18e10348490604003a2480aea813a6e90eaaac26c050d559c281618b9aaded56"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/stream/ConvertWorker.js",
+      "sha256": "ae1dc8573bab7e5be4a4cb9958201e3e763cb2f2392a04d9a8dc440d683042f0"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/stream/Crc32Probe.js",
+      "sha256": "8e186e5e0ab42fff35907666a90266420751613c28266e5809b7bfa2d55a3a9a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/stream/DataLengthProbe.js",
+      "sha256": "638e65360b0fbe1f4e0b2628fd3a1782a4df59c477d454007fa52b1a2587b93f"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/stream/DataWorker.js",
+      "sha256": "aa6fff0e6cf6e02ca8dcd18ca630611523da4c9c6c90815ae382ca2021639f88"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/stream/GenericWorker.js",
+      "sha256": "ae76cecd1d728ca41dd6ae0665b258f442da64d9b25ff94785dcb80a501b8be1"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/stream/StreamHelper.js",
+      "sha256": "aebc6518b4871d106e799f90139d55620d02e9413ef2a7b0f953a9cea7bda124"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/support.js",
+      "sha256": "7629a6ef610030595e4c2211249f487e44cfbe4b8299105d64b5491d87fd3a51"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/utf8.js",
+      "sha256": "5bdfe3666fe57640bc791b4d6d2fc00853f4d954596260138bf488054fa9df5a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/utils.js",
+      "sha256": "c58704c6a6ef17f3e78a1ef4dd6e7aa20712fe673a929eb4c08fc86fcc9341cd"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/zipEntries.js",
+      "sha256": "83b485d550e52140ad0ecbdd3bc70da531f029fb348a81b47499d3b7587de41a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/zipEntry.js",
+      "sha256": "863711ba3e747ce64d7f983118afd2391a13b8f620a7ef12c9667e77ce3ec468"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+jszip@3.12.0/node_modules/@turbowarp/jszip/lib/zipObject.js",
+      "sha256": "18871af92fac75d015ba7d4d3105c0746839ab089f78670cb86d76bfa53b1ce6"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/dist/node-ponyfill.js",
+      "sha256": "3866b630fc1f86be456d58a3a6a59239652fd82c417ec0a7ff15c231535679bc"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/lib/index.js",
+      "sha256": "5010821fbd9a88136517267b28c6346aa66994cded5fc66b17d7357304c05d68"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/lib/URL-impl.js",
+      "sha256": "e60103ff74b8bfc4001f5c05eea482f554de610cb5fc4e7ccbfc5aef9e443706"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/lib/URL.js",
+      "sha256": "3bd67335fc72b50924fa35523c2b0b73dce9cb814f6bae82644ccb1f22560706"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/lib/public-api.js",
+      "sha256": "0cbda6401c6179c4fb2ef0cebeccfb127485fee6f0ed5c129a8a539d4cd29018"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/lib/url-state-machine.js",
+      "sha256": "e038db71d8a2313d7d20ad6dd1116a2fcb34b41e39f7a2364c70ff1aff548850"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/lib/utils.js",
+      "sha256": "96b941934b9050815f9397bc6796ea8611bfa00c5886587d81da64a23841e3b9"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/node_modules/tr46/index.js",
+      "sha256": "8194f9425ce9ab06ea9aebcd64a85ec064d95d61bb349f8f1c98762ad256638e"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/node_modules/tr46/lib/mappingTable.json",
+      "sha256": "b6b39724dca9011113a08d9d6910204062b58169e98952acdfbd19bf2c31bbff"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/node_modules/cross-fetch/node_modules/node-fetch/node_modules/whatwg-url/node_modules/webidl-conversions/lib/index.js",
+      "sha256": "0b29621626c38ddda2a8e20787c32d09db10dd031ea743c5e270b59d46754a84"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/Asset.js",
+      "sha256": "fa8b6548bf8e39c366c34fd0ac714b8df128cdad87ddeabd3b98b6318d7f9d0e"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/AssetType.js",
+      "sha256": "5efc1916452ab574775af9bf50509d6e4da234db82ba25cb4e96d3a139ac8736"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/BuiltinHelper.js",
+      "sha256": "352e2346ac526668c5ece737bb2b148d0d548c814a4ee11a669fb556075cf74a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/DataFormat.js",
+      "sha256": "52981eec1810c7d158b85c23ce586b43dee38298a070bb4e36cc8c7bfaddbedd"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/FetchTool.js",
+      "sha256": "be3ce5486b6c8dff18f81e2b0045ea98b8ad510bb7a9452341f060feea18cbba"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/FetchWorkerTool.js",
+      "sha256": "28a8c6e4b8118073fc51c38ae8f0528647f41930b024a338cc87d2b9f99804c6"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/FetchWorkerTool.worker.js",
+      "sha256": "6a08c50491663a00f1893b8a206149502b813bd46c1636d05a55bfb8e97d260b"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/Helper.js",
+      "sha256": "25d4ffff7c83380594f41558d545a5e5270eb42359ad4c47bb45b689ac54185a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/ProxyTool.js",
+      "sha256": "7b523a27d35025267f6aaad75b387e07ae699d4d058bc5caef40b92c32a38a5e"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/ScratchStorage.js",
+      "sha256": "898babd29dd7158b7bdd64d4b56a46601230b5ba434239cb44e2a4c12dde3d31"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/WebHelper.js",
+      "sha256": "91900a58d65922c5b85c80bcbeddca2f762d4ae6a19e191c77adb10c1eac686a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/builtins/defaultBitmap.png",
+      "sha256": "52965408b16acbffd5dacc53d37d75d62f87a76b76dd02b7174acbb96d4da32a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/builtins/defaultSound.wav",
+      "sha256": "bf3e2006c07d1c47471e4d45e61cb30d7f8f2d8430e0fde95f8c3e6082029a33"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/builtins/defaultVector.svg",
+      "sha256": "4d6a76d6a857b0d98925a3371ffcce4fe6ebb6db2d3fb83265582a69b76ebb6a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/index.js",
+      "sha256": "38509e79340a0703d70bf77e2182c63340abc33359cf24696d121e8bef3b80e5"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/isNullResponse.js",
+      "sha256": "7efff0a8d68352c713f05d7a360bd2b0bb480b2adce31d44f56addff806cb4f9"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/safer-fetch.js",
+      "sha256": "9d59be883d95eab2e1b536a214a740d458c5b44e2227196f6c611078cae83580"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-storage@0.0.202505311821+470ba061f0322128/node_modules/@turbowarp/scratch-storage/src/scratchFetch.js",
+      "sha256": "3abdb202c424010d15be25b23b773fa20371f96fefc4360e33435662d14373dc"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/node_modules/base64-js/index.js",
+      "sha256": "b9b616f7c880c4b28d3638a32cb099a3ae6f3c4aca2607dc743c3d5420668539"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/bitmap-adapter.js",
+      "sha256": "be5ede9fa3a5df591a0f32dcd744da08032538e0b51b64db29444c1d8402e35d"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/fixup-svg-string.js",
+      "sha256": "782cb3d6e499088ec8cfbbe218ac5e3546dd6485b0d8590a89ff30d10c43d1de"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/font-converter.js",
+      "sha256": "eab1182ff04071c13a167352fd59145d880fa870501a18fb47500f66fa5df276"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/font-inliner.js",
+      "sha256": "cb00b0d6313eb32f827b4db69f38df12eae8673a45a0d4aa892874fb652c5c5b"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/index.js",
+      "sha256": "df1430b455d0a471500930a9d6b3c0e1c03667c030baa63d6a49e2b40f5df285"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/load-svg-string.js",
+      "sha256": "4668d08e426ec4fe4c4a98ce170d1f7845e4152d022dd0f3c38fa908b52ccf0f"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/sanitize-svg.js",
+      "sha256": "1b246b668fd43514908e2a0bdd9766793faa48c3b08585d75239d689be8fef4f"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/serialize-svg-to-string.js",
+      "sha256": "7d888bb42727eda31cdeca9f805d8ab6012aec6fc8a9ef7e05d7f0326f58d3f5"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/svg-element.js",
+      "sha256": "bb5df95f01b9104050dbf0906412fd0baac03e2d32f498cfb140eb255b3bbe0a"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/svg-renderer.js",
+      "sha256": "7859cad03ee0cb06a3152f6c6eed73ca29d7e53eff1daf3fe1bb55f9e36c7b3f"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/transform-applier.js",
+      "sha256": "05cc4e9ff6e533dc32fb6bc20cd045ee93574f0afb231f2fe12413644ff2fc7e"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/tw-fix-for-vanilla.js",
+      "sha256": "637e7bd15500d53a2191d40ed2595fa60a9384ac0fff25f8b706d15da9674a23"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/tw-svg-sandbox.js",
+      "sha256": "82c6987c750c6a505b0fb704dcbe735394b7778f0b9d244b5c6fccdff2a96033"
+    },
+    {
+      "path": "packager/node_modules/.bun/@turbowarp+scratch-svg-renderer@github+Deep-sea-lab+scratch-svg-renderer+587df0a+6ece098b1cdca7ab/node_modules/@turbowarp/scratch-svg-renderer/src/util/log.js",
+      "sha256": "e317f484c5021e703bfb5d9f4286584395c989921f5d20b408697ea55781d753"
+    },
+    {
+      "path": "packager/node_modules/.bun/babel-loader@8.4.1+b879ea8bb99843a6/node_modules/babel-loader/lib/index.js",
+      "sha256": "db87146b585a41927f65ed2cec0ce092ec2c8db59732983fce55775c8c733858"
+    },
+    {
+      "path": "packager/node_modules/.bun/base64-js@1.3.0/node_modules/base64-js/index.js",
+      "sha256": "3bcee9eda04894ff32f5fd1cdb665a6ebeffa01e0c4512578505eed634bcd9cc"
+    },
+    {
+      "path": "packager/node_modules/.bun/core-util-is@1.0.3/node_modules/core-util-is/lib/util.js",
+      "sha256": "7427f16d9bd9185e409baff3e4b1ed6e3d8dfca84d367f4b8b351eb921618652"
+    },
+    {
+      "path": "packager/node_modules/.bun/dompurify@2.5.9/node_modules/dompurify/dist/purify.cjs.js",
+      "sha256": "b0d6ae46ef80f0f9a283cdb209998b8763c792802b143efa91cce226f7b8be34"
+    },
+    {
+      "path": "packager/node_modules/.bun/immediate@3.0.6/node_modules/immediate/lib/index.js",
+      "sha256": "285c9e2ca232f5d298816680d9f5a29c455daa56356ee3566b556e5dafeb9427"
+    },
+    {
+      "path": "packager/node_modules/.bun/inherits@2.0.4/node_modules/inherits/inherits.js",
+      "sha256": "bb380f32bef5feb18678f0f45f88073fed5d7a0069a309132cb2080cd553d5c7"
+    },
+    {
+      "path": "packager/node_modules/.bun/inherits@2.0.4/node_modules/inherits/inherits_browser.js",
+      "sha256": "ad322a7b1dec60f3d2ebda2091816469efb55b567d241cf3cf0fa4c5a4afe500"
+    },
+    {
+      "path": "packager/node_modules/.bun/isarray@1.0.0/node_modules/isarray/index.js",
+      "sha256": "9b8c691372802da788c9c5f4e1ca2f1ed0b88ab8722176c2aea15e38ec86d249"
+    },
+    {
+      "path": "packager/node_modules/.bun/js-md5@0.7.3/node_modules/js-md5/src/md5.js",
+      "sha256": "c690299cd533422a8773ed03a83a6c92404d950e460481dbbc512ba451bbb857"
+    },
+    {
+      "path": "packager/node_modules/.bun/lie@3.3.0/node_modules/lie/lib/index.js",
+      "sha256": "9408e5a97d3e8a0b14c96aef888e9a1f0b7358fd22c4ee33e9321cc950ade9dc"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/index.js",
+      "sha256": "e7ec4e35d94d01a2e4ee5dca62b8fb08ac7411596edb54b398651f4eb563561d"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/deflate.js",
+      "sha256": "a19a5dee5ac13a5bec54c15629bcd3449a0a7f15410d0ab582c1efc797a01bb0"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/inflate.js",
+      "sha256": "18b7dd3b012a1105f3280737107a5a6f32a97c7036849dba7bd1f1e54cda9f53"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/utils/common.js",
+      "sha256": "6e7878274f7e0f42e7cfb379933b447df3045b9139501f797ed29adf1affde14"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/utils/strings.js",
+      "sha256": "bf827ddd52c2e998196adb640ae1192f7dc49ce5e6e5926e86198feeb94542a8"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/adler32.js",
+      "sha256": "99618eb68a96858148e2dd56f478aa7e4321c434f5f2ee6c57f59c0c568f0596"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/constants.js",
+      "sha256": "e0c4148ed267a27f03aba9f9a34cba4bade2090c0f12905907539e38c842abbc"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/crc32.js",
+      "sha256": "213f85e8b2e52e2cf6f7634897197400f7ddaed587274f160045f0b548ec21da"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/deflate.js",
+      "sha256": "4b9b71ae7f42e506fe1fb134f1c21b944ef2b7ef79667ba1fe59eb963c353d22"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/gzheader.js",
+      "sha256": "8fa0b4995cea477be96b8783a7d6c7cf5fec96765c2108c3bd52e77104bfdbd3"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/inffast.js",
+      "sha256": "b1beb3b55270e8338f23fc397132d179942d5866153ca4e9be264200b00c0d44"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/inflate.js",
+      "sha256": "d31799a23f2ae87f0c52d21241c92278b41d23bb5365b452f2706d41b00c4245"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/inftrees.js",
+      "sha256": "75f75d8ae4a7bed86f90a4a38f70c5d95e807515e9326801f9a073a7f2bf8bc7"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/messages.js",
+      "sha256": "eec5f5d6b8120ada9cd48a3ca0a253c64777906e835477b090e053434d38cf6c"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/trees.js",
+      "sha256": "718adbbf68f4343bf17d61edffd9d0788a96a93e4e191d857459d95257e614cf"
+    },
+    {
+      "path": "packager/node_modules/.bun/pako@1.0.11/node_modules/pako/lib/zlib/zstream.js",
+      "sha256": "5fa10c7a59ca99113cf92d1260e56cbd6282e15afa85dc8a0eb8e8d6d2321298"
+    },
+    {
+      "path": "packager/node_modules/.bun/process-nextick-args@2.0.1/node_modules/process-nextick-args/index.js",
+      "sha256": "90ba524851f721e8aced79870d6d6a733cd3939b293a83e2d04417812a8ba330"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/_stream_duplex.js",
+      "sha256": "fd17d6a92dd9ba004c85f8e364b2771af10d012a83766437447dbae63879fa6b"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/_stream_passthrough.js",
+      "sha256": "bf61450b1ff5f94fea9d46665e931119642034c903e63cc224b4c96472eed4d4"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/_stream_readable.js",
+      "sha256": "216e051224eff89a5d5eec76bef25addac078d9ebd2e88bd0a3d73a0e605091d"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/_stream_transform.js",
+      "sha256": "56220d9dd58b976f1739bfc85948b267d79772ba23672ff402d13b6b3fcf4e40"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/_stream_writable.js",
+      "sha256": "e6359ac652ed97f5f328c586c7a6b8f163782a9ca13da476e609a981c75e0469"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/internal/streams/BufferList.js",
+      "sha256": "387991bfee34bbb7938e0c0a3f345c3e5e4c37d5b0cb600e6d432c9995321fa7"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/internal/streams/destroy.js",
+      "sha256": "a59f90daec030125875a6028b32f93e2e2bc9fafd703991dbc36244f5cb21176"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/lib/internal/streams/stream.js",
+      "sha256": "1e7903927df33aadb3659ecce55266c9c851da65ce6c8b723a60a305c1c5422c"
+    },
+    {
+      "path": "packager/node_modules/.bun/readable-stream@2.3.8/node_modules/readable-stream/readable.js",
+      "sha256": "a1efa3fa06393aff652f3529ea1b1bc32134d49eb794b23272fb0ba13d214550"
+    },
+    {
+      "path": "packager/node_modules/.bun/safe-buffer@5.1.2/node_modules/safe-buffer/index.js",
+      "sha256": "d58af21cb0518864d0c505742d1af71e5b5e1f142f4c0f27353aa0f431a616d4"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/Grand9K-Pixel.woff2",
+      "sha256": "b21a730bb241ba8138879f9f8bc91226e3f9da684b53c30b8374c61908338d4c"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/Griffy-Regular.woff2",
+      "sha256": "865f77a7d5c711c3787d69b4c366213a65be4c3e65b7322fc27b1955ab6025c5"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/Knewave.woff2",
+      "sha256": "4f43bba2c06bb0bd814ae7af5c71e5bc52ace78e1244d9fcff314ff710d7b5c4"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/NotoSans-Medium.woff2",
+      "sha256": "af01ec721b82baf79e15d53f9b946b51ceec09bdc5e255dc9592937ef8eab78a"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/ScratchSavers_b2.woff2",
+      "sha256": "abf9ee76b94a91c716119478bd87165ea4ec66c82ece817ed2d3730663bab389"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/SourceSerifPro-Regular.woff2",
+      "sha256": "0b5899f3dfa276d2e63b61d9df630d9a82df167624be9f0c262027d1334e53b4"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/handlee-regular.woff2",
+      "sha256": "414180bc4775382ee7e7c890b8d7b6fcf87d75bd1a454aeb7318b2fae672a330"
+    },
+    {
+      "path": "packager/node_modules/.bun/scratch-render-fonts@github+02engine+scratch-render-fonts+a5c0296/node_modules/scratch-render-fonts/src/index.js",
+      "sha256": "a6a07df0184e7e2e34678aa570bc57b972e0c5d818f85c345d8331d65af6b9f4"
+    },
+    {
+      "path": "packager/node_modules/.bun/setimmediate@1.0.5/node_modules/setimmediate/setImmediate.js",
+      "sha256": "9dc2eb8ff83f16f42fa5d9721bc15ac5a0b12eca91d185b7840dacf3381b3cd7"
+    },
+    {
+      "path": "packager/node_modules/.bun/string_decoder@1.1.1/node_modules/string_decoder/lib/string_decoder.js",
+      "sha256": "f1d36d47b2c579063392c1a68963467f2d4f51a069af09eb068d974c63ee3b37"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/applyToPoint.js",
+      "sha256": "bdd94fb8b0433aedb80e074cdbea7a3f49e9c6929aecff7d914c3ff661dec7ee"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/fromObject.js",
+      "sha256": "c0b9060a17d1b22e325ac8b939c12fcf5b3bff6b364624a9168eacb941ef85c7"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/fromString.js",
+      "sha256": "b0f6070de1a4993d28e642430fe42cf860cd73e9f06b7514ef474c3407e27778"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/identity.js",
+      "sha256": "3cf5a7d5112a21269ce64786fa9c64dac2d0eab5e6f4825c635cca3771ba0b78"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/index.js",
+      "sha256": "cda6a0cbcd192a5207bda4cb3cae199ecda43544ed1aa42d643bc7c51183c1c6"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/inverse.js",
+      "sha256": "8a48867f006211a282d579a1856b27553ef02bf6aa5434d52c881cc938725ead"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/isAffineMatrix.js",
+      "sha256": "f4d80b5de863e5d18eb27c16254dce4eddb47bcbde045adfef33694bef70c393"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/rotate.js",
+      "sha256": "2ea4b0b8ff3024d6854dd17154064cdf149f09530f80fd7cc9f77c72befbd018"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/scale.js",
+      "sha256": "dd8931545429c647c31a87852a75519d53f8fb51bf86a2f9276b8a217c22628d"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/shear.js",
+      "sha256": "23a36626a29eb2a9d893db51c0bf2f0253ce6c76f77599251e010f25151a9390"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/skew.js",
+      "sha256": "58d02119d3618542c0c152d5d32c0db7d716df71f0abf6530d82dfacad718585"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/toString.js",
+      "sha256": "256169e2a69d38db91682d5656f04dec4d064b07b0cbe7efb47f0d8f01f694b3"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/transform.js",
+      "sha256": "77077cbb9a46e14606b565c534f6c56cce34d160587a5197b1eeb33dc82fbcec"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/translate.js",
+      "sha256": "b5e8d0b0c67952ca5ccb393a7435e3a4b76a8de33962f5ca58937c0f2840746b"
+    },
+    {
+      "path": "packager/node_modules/.bun/transformation-matrix@1.15.0/node_modules/transformation-matrix/build-commonjs/utils.js",
+      "sha256": "1ca8095c384b9babba2034dc560edbc523f93a320e522307aba7512e07e32428"
+    },
+    {
+      "path": "packager/node_modules/.bun/url-loader@4.1.1+1b0a898e5553b606/node_modules/url-loader/dist/cjs.js",
+      "sha256": "856c157806625b40250936a0d964a8c0650ad1371ff961450f3fd73455baa3dc"
+    },
+    {
+      "path": "packager/node_modules/.bun/util-deprecate@1.0.2/node_modules/util-deprecate/node.js",
+      "sha256": "9a86a29fa34a99b861e707345fb1d1e2e55a6c23edb8f992bed57cc607f42d8e"
+    },
+    {
+      "path": "packager/node_modules/.bun/webpack@4.47.0+470ba061f0322128/node_modules/webpack/buildin/amd-options.js",
+      "sha256": "281304b242b4a60f72d64e650d1ca1c0b14c2ae1e67aea69744701f6ed22ab21"
+    },
+    {
+      "path": "packager/node_modules/.bun/worker-loader@2.0.0+470ba061f0322128/node_modules/worker-loader/dist/workers/InlineWorker.js",
+      "sha256": "4f0b1550102d5fe36c8e4a56b03e8770f1c1d1c75e931baf88692984bf40b9c5"
+    },
+    {
+      "path": "packager/node_modules/@turbowarp/nanolog/index.js",
+      "sha256": "541f42a35e1cf71858bff962e1ae70538b1acd21bf373753658379dc258de277"
+    },
+    {
+      "path": "packager/node_modules/@turbowarp/sb3fix/src/sb3fix.js",
+      "sha256": "bd8e5a82c4b227a9cfee29ce0f7edc05956855eb62c65ca0eed174b8128c9fd1"
+    },
+    {
+      "path": "packager/node_modules/arraybuffer-loader/index.js",
+      "sha256": "681501c2ed05e8e34051d5a16e7f00b28db736616b1ceda807e2c53253e35f8a"
+    },
+    {
+      "path": "packager/node_modules/arraybuffer-loader/lib/to-array-buffer.js",
+      "sha256": "d39aff19ca113e764a85ac94d510c7dc05364f9d277484e7ed9cb94f131d799e"
+    },
+    {
+      "path": "packager/node_modules/atob/node-atob.js",
+      "sha256": "5886c287e5b3965d1a75cabf5bb758b06295fe1e2763dc4f58cbc308a7995d2e"
+    },
+    {
+      "path": "packager/node_modules/base64-loader/index.js",
+      "sha256": "424e48d60f51d5f17de2e041ea933a0a25e688beb9303d5355a4baa70b65662f"
+    },
+    {
+      "path": "packager/node_modules/btoa/index.js",
+      "sha256": "ad983946a3a7dc09599277c600d9a50f8ad6ca6b14521a316f1db5bcfcaaa711"
+    },
+    {
+      "path": "packager/node_modules/canvas-toBlob/canvas-toBlob.js",
+      "sha256": "0b7d1758861851b1c24465df56d4ef4fcaeac2253f2e95edeaeaa680cab62ac7"
+    },
+    {
+      "path": "packager/node_modules/decode-html/index.js",
+      "sha256": "dae1cd26d458cab68f1f27f1d49cd61f452f4206391c7ac8796500f7077747ce"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/foreignNames.json",
+      "sha256": "178ef2da902aa9928b78538095d52bd01963e38b4370d821204ae112ef87f2d3"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/index.js",
+      "sha256": "9414f6c6cb44879e43ed01d04ea1063ca9f63ba94539ee7a312d54f63e7add97"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/domelementtype/lib/index.js",
+      "sha256": "4f6fb06c0361627bbb682c125f222ef6aa5b51f7ef6c10581dfd324d6127360d"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/decode.js",
+      "sha256": "bab9d3acac300ca5fe1a6eaaa530e3218f4876a17728cf305cd7cf1d65c47ff4"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/decode_codepoint.js",
+      "sha256": "41779204b0237f7e5d48b26dd4290b579961b92ce2d97c7326be018562a8c919"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/encode.js",
+      "sha256": "c2afa93998607bea8d68b06b4b190f70644139b5a24e700bef95dc88f8471dac"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/index.js",
+      "sha256": "a418de7377d4184c728320b8a5bde831abee19e9007dcbf9632e2e00125ef4c5"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/maps/decode.json",
+      "sha256": "91602f6b4ea48e0c4e8bbdec5848c1a096f3d01f003c5da9b0b1ca1af71d8f4d"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/maps/entities.json",
+      "sha256": "d43e0484a302ac1b84636250ff65cc735811b52bf99525b3d30a81b75436a9a8"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/maps/legacy.json",
+      "sha256": "8e6534b42af11c92375665a8614d05f7d3c0118ad69f201936771f35c8db44ff"
+    },
+    {
+      "path": "packager/node_modules/dom-serializer/node_modules/entities/lib/maps/xml.json",
+      "sha256": "a80b9c83313152339eb77459b32a284d36eb6fd8ca848c0c42c85d25d29a61f0"
+    },
+    {
+      "path": "packager/node_modules/domelementtype/index.js",
+      "sha256": "08ddf0c1c913c7fc2562bd176487c84e29b518eb78daf90459263bd0f3177d6c"
+    },
+    {
+      "path": "packager/node_modules/domhandler/index.js",
+      "sha256": "cc091b1bd63de9a3c541ba8f373b6445d62aaf8dbef4cc62b9af73018ae7303b"
+    },
+    {
+      "path": "packager/node_modules/domhandler/lib/element.js",
+      "sha256": "a056c86c621a8bad3a4b31a13aab0f58b5a027f9b733623224cf366c504a7846"
+    },
+    {
+      "path": "packager/node_modules/domhandler/lib/node.js",
+      "sha256": "f7abd237431765b22380ba529af8eabd05db2bba5dca1a22b2b66c4e80fa095b"
+    },
+    {
+      "path": "packager/node_modules/domutils/index.js",
+      "sha256": "4390fdbf350496a8899645949b150799d2c15b22990eb997aeefde25802f0e98"
+    },
+    {
+      "path": "packager/node_modules/domutils/lib/helpers.js",
+      "sha256": "ebfccd56f15d5255be2eae69d6546ad762f94e84675d013fce15f895ccbb0359"
+    },
+    {
+      "path": "packager/node_modules/domutils/lib/legacy.js",
+      "sha256": "acdbeee26ef6541034a14cc49f75ca87809d4e647103a6cc0ea47b3b82340539"
+    },
+    {
+      "path": "packager/node_modules/domutils/lib/manipulation.js",
+      "sha256": "686892d16d9b82c02132d43e8b6c1752096d4fe4868c4067fc0007f66f8f71be"
+    },
+    {
+      "path": "packager/node_modules/domutils/lib/querying.js",
+      "sha256": "90410a1bd74715f08da3c63d993b59f8fcb14aba9c1a3e84f1aae56c7d5e2ecd"
+    },
+    {
+      "path": "packager/node_modules/domutils/lib/stringify.js",
+      "sha256": "a92bf181cd76a3daa37c4504196b74d3d7f3968985db9847d7c106429caf8995"
+    },
+    {
+      "path": "packager/node_modules/domutils/lib/traversal.js",
+      "sha256": "a3276cd7ee49ab134a0f844e35f2a8b35bd4757a7a74ea38ff31ed661e163626"
+    },
+    {
+      "path": "packager/node_modules/entities/lib/decode_codepoint.js",
+      "sha256": "8f13926bd0712dd5f52b34ff273e54b7c17b6454a7e0ec6efb693646230ae621"
+    },
+    {
+      "path": "packager/node_modules/entities/maps/decode.json",
+      "sha256": "8bae732302c538cb78578a1a1993902f6b4a1748e874702e01297cb2367980ba"
+    },
+    {
+      "path": "packager/node_modules/entities/maps/entities.json",
+      "sha256": "faeaf228b74fa90547cccf84c939924eca20eb54315095af7397e959f584ff80"
+    },
+    {
+      "path": "packager/node_modules/entities/maps/legacy.json",
+      "sha256": "e4634e897eb5248fdee4d1e860ec17a39e80ba673bae7b78e7424a0e1dd26f0b"
+    },
+    {
+      "path": "packager/node_modules/entities/maps/xml.json",
+      "sha256": "a80b9c83313152339eb77459b32a284d36eb6fd8ca848c0c42c85d25d29a61f0"
+    },
+    {
+      "path": "packager/node_modules/fast-json-stable-stringify/index.js",
+      "sha256": "8bf5495e16a363606a21f4903f0213f175dbadfab73eb98382befc7a88f1395b"
+    },
+    {
+      "path": "packager/node_modules/format-message-formats/index.js",
+      "sha256": "e41e90d66d5872bce700ed3b4c49c7a6158e9982a14bad66bbb2243e75ce48cf"
+    },
+    {
+      "path": "packager/node_modules/format-message-interpret/index.js",
+      "sha256": "24c50d25105d616e75d4259183d44b28e73c6ea569534c6fac20ed8eecf76eee"
+    },
+    {
+      "path": "packager/node_modules/format-message-interpret/plurals.js",
+      "sha256": "cadf15f8213fac9b70657443a6acbaa132ffd2293a61d63f56eb9d0253910b3d"
+    },
+    {
+      "path": "packager/node_modules/format-message-parse/index.js",
+      "sha256": "896d1492e4eef504c5c7af6e0c99a98f0c501d5813ad32988609810bd773b2c5"
+    },
+    {
+      "path": "packager/node_modules/format-message/index.js",
+      "sha256": "f6e57f5df74a7a61d05b51df9299f87e56d3d68cb140681e4835e4dbd963cb85"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/CollectingHandler.js",
+      "sha256": "5c5ee0ffa55e23baea4645bd9a6d5bda77b5533da6aba37066010b6b2e07d53f"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/FeedHandler.js",
+      "sha256": "0de90c8ea2627144e8a4d78a27247f7aff823e3faf4d56764f571e646cb3ccc7"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/Parser.js",
+      "sha256": "58596249f034ce860846e4d1d66e19999137488b181c77830ad75ce4d6a4976b"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/ProxyHandler.js",
+      "sha256": "2721065e13c7a27002502ae203a17e22a85d2df83c14454870b4e7975bf649e7"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/Stream.js",
+      "sha256": "3d2f291e35f7aee32aa3ed5d1bb948141cf618d8b727d0c7eff6e005aeafca9a"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/Tokenizer.js",
+      "sha256": "b68c3db3aff52c1aa08cdd49b3d222e38e74aff9f5a8716fd5e48036eab24bf8"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/WritableStream.js",
+      "sha256": "7c67ad1eca7f6499218ebfadc8180e1b2ee52b596acd60874491c2bd7ad3c9fc"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/lib/index.js",
+      "sha256": "a3fdaff5949d0d154c5c6f8c782f3f2f34470295b31ba224cf3d92b452775136"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/errors.js",
+      "sha256": "7028cca95b2f124345bd5b816e0d8184e7b7d208fe0aa76eb38df43e8644fd03"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_duplex.js",
+      "sha256": "e2e55263df344f33d016a3e051de1a86e2206989a2162951e651e5557665954c"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_passthrough.js",
+      "sha256": "af6250df6a49a0148eed8b5f2e28b2f692c3ffa9df538a59dc716a4bd10901e2"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_readable.js",
+      "sha256": "9837de8cae91f9a80da75368855b45c3ada9a858983355fd873d8885cab1c5ab"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_transform.js",
+      "sha256": "a2f6e6d17a74dfa75bc7b34b50546ebcb76eeb2f4aac6d1090f80915aee20342"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_writable.js",
+      "sha256": "0f3f2accecd343dfae91d7daa72f3ad125b6f139d5883ff51362042d8cb65cf6"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/async_iterator.js",
+      "sha256": "56a7dde0d36ee9f55032df01e78229602c6afed6b6915362f33dc65bc0359972"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/buffer_list.js",
+      "sha256": "15b266db6ad5c6ee0309d13ed4ce137d8974d2fd236c1af7f3d602b7028a90df"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/destroy.js",
+      "sha256": "e1c1a185a2cc4bee2be5e7d33b5e294eb0fb55c1a47b61853a8c43e50cb822a4"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/end-of-stream.js",
+      "sha256": "2c35cabc9b279cb81e73d0d14859b2056ea10d9688d16a12199d2ca9904b93ae"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/from.js",
+      "sha256": "b7b5815f476b47a23d094ecfa4f1c53beca69d4f5a42ed452d133b79a1bf28ae"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/pipeline.js",
+      "sha256": "6d51b72e1ae5ee0965f0f549e27ececdb4963605995ffad8b698d5359a9999c2"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/state.js",
+      "sha256": "bf9c5ce1ccde2131d474422bef258dc968d6d19ccac72f9b178e8246faf0c9ed"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/lib/internal/streams/stream.js",
+      "sha256": "1e7903927df33aadb3659ecce55266c9c851da65ce6c8b723a60a305c1c5422c"
+    },
+    {
+      "path": "packager/node_modules/htmlparser2/node_modules/readable-stream/readable.js",
+      "sha256": "2944f1d3c8c5d5c5e07e7c30d6cbef5fc37440b7c73de47aeb37fa8424f04bf1"
+    },
+    {
+      "path": "packager/node_modules/immutable/dist/immutable.js",
+      "sha256": "ff6411bffc07ce63c92d1077e75f9b557623194d9393f6cb7ceb7c5e255c9808"
+    },
+    {
+      "path": "packager/node_modules/inherits/inherits.js",
+      "sha256": "bb380f32bef5feb18678f0f45f88073fed5d7a0069a309132cb2080cd553d5c7"
+    },
+    {
+      "path": "packager/node_modules/inherits/inherits_browser.js",
+      "sha256": "ad322a7b1dec60f3d2ebda2091816469efb55b567d241cf3cf0fa4c5a4afe500"
+    },
+    {
+      "path": "packager/node_modules/js-md5/src/md5.js",
+      "sha256": "c690299cd533422a8773ed03a83a6c92404d950e460481dbbc512ba451bbb857"
+    },
+    {
+      "path": "packager/node_modules/lookup-closest-locale/index.js",
+      "sha256": "e01faba1225845d59f9a6af487d4d6a9c5c13e2701039c302780f42e75ab1dcf"
+    },
+    {
+      "path": "packager/node_modules/safe-buffer/index.js",
+      "sha256": "184d5c4a83512e3f49d4d5b52f7073f601f933bad11f1fbb3ad364ca5e6478e1"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/index.js",
+      "sha256": "1d7cfd0f65ec6cefc2bb4dc73d1d84146108eff1c264469895a69dd03e6c0454"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/parse.js",
+      "sha256": "1667e71b039c5317e5dafe757b5de96064dd22dac50a76f3df5aa132360e46d4"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/sb2_definitions.json",
+      "sha256": "41058e96e3c07ced125e588fdc9aac991d2e904003e0fba57b19e6e2862e2a40"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/sb2_schema.json",
+      "sha256": "3d12ecb5495bbaf2c4c8b12991660bda67f6270d812bd45b77f326dd623011d9"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/sb3_definitions.json",
+      "sha256": "d233759589afd530a0d0e68fd6b1d8c1bf897b70c2fb503e08082404ca61c02a"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/sb3_schema.json",
+      "sha256": "471c37663546e54ede6f7975f58b0e432520c6924195980d4897113bcb246d46"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/sprite2_schema.json",
+      "sha256": "ad57500d5e969aae54f5da2cd7f82614e05da6d7351b8338203114c6832a24f8"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/sprite3_schema.json",
+      "sha256": "821e4c04972af894d42f22ac9d6233eb3de3d9b34ef8fc41b977018132bbeff5"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/unpack.js",
+      "sha256": "a91eefa0e1ff5a66cbad1d81a783488a7e9462ffeb7faef36d7f89ced385787c"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/unzip.js",
+      "sha256": "b5ec52d323ca0c562cc415460ca65beb8772febb0bd081490c378064053bdd9c"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/lib/validate.js",
+      "sha256": "b41273acd42fa485a429b3ce72cdc235bb701b3d100b0421449735f4b48f5e8b"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/ajv.js",
+      "sha256": "300d82a08d474ea7f2984028097ff6a948f8851a0b29c8f655788ecaf01e8e4b"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/cache.js",
+      "sha256": "e46dcc11c6e844f644ca331bf7d5caeb3ad1357ca540215da9668f6c58c6aa89"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/async.js",
+      "sha256": "4bfa8664a637f31818f9a88b5151ed7e8fd986bc0664b674654b610d5e4c80d2"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/error_classes.js",
+      "sha256": "dd1dec6c510cd07e796c6ba1b746cf1efc4eed57c79ef790417d50497ee9af02"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/formats.js",
+      "sha256": "7c3caa01d9267d3927d802fdc43c8953ff0fccebfca1fe02578eed6b3d77cc65"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/index.js",
+      "sha256": "f8ea6f4fbfd0d52f613feac6ca3683219dc4f3062d773adc14a80d21eab701f9"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/resolve.js",
+      "sha256": "a576c2cb44dd9d5ac4ca465dd5bf09e1348fae1dcaa3dbe4d8e4b9c11af01296"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/rules.js",
+      "sha256": "16640af2f616f05d17bf1cb24e35941c3fd79b3e05952394715e85f2bc6b9004"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/schema_obj.js",
+      "sha256": "42e3892ff6d470c9fb601dc7bbde42c6909fcf00c0d86fdbbab0deaf9c37b598"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/ucs2length.js",
+      "sha256": "b60efae2495d93ce8db6eb79c690448038269e720d89b846bae2fc1f7ae764cc"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/compile/util.js",
+      "sha256": "b32f52181e09330b72451f3102204d9bb89bbe82e0775f6c5c2bc8c1fbb624bc"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/data.js",
+      "sha256": "959a14987d25e50938a2ee67a7e0da89f893e29dd9a34f332754886b107f986e"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/_limit.js",
+      "sha256": "d8103b8e55aeb39617707464c618984543369abbabb16d01d02b883f5ef927b2"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/_limitItems.js",
+      "sha256": "2bfc1c632935e9259ce88ab8afe030f8aa19cb65023a94380702cd016b13688b"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/_limitLength.js",
+      "sha256": "0ae5e6921bcbc45de89758efa68a79a40c367139658a984a981ca0ed03e6e830"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/_limitProperties.js",
+      "sha256": "cc0c728a0608d4ae9b3030faa60e2d50184d4c14554b4e4253877d6cd05e11a4"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/allOf.js",
+      "sha256": "6d06d8dbde6fbe308b55ba0a4a081f82b71305375ace50e39500d11e796114cd"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/anyOf.js",
+      "sha256": "80774b38be3c13ce83141d9d1a8351a579c930a84628175399de9220b6ee0bd7"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/comment.js",
+      "sha256": "7f96f44c08b52e9b4658d40fd65382dc89cf4e73116479c6211582147c4b0048"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/const.js",
+      "sha256": "192da4ae2eb81ffa825ababd8bb43fba2bf5cd1f7cb2aa960680cc56861b53d0"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/contains.js",
+      "sha256": "b95c04fca3eead55a4e02ccf02898a734d9c148c63364446a7b21081e20dcbc5"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/custom.js",
+      "sha256": "7d7db0b94815cf0ed3f61cb5f5add991ad2f1acbb383ad3180eb89821cc13fa7"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/dependencies.js",
+      "sha256": "fa16d45b781f94134c77f2c37711c11bb9bd22d6c4b93c56e30d6069efac0a2c"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/enum.js",
+      "sha256": "829bbf7eea1eb99111d9e0a1080480db01789fd2077e571e76fc0eb8814d7331"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/format.js",
+      "sha256": "3016b5f221ab00f34552c506f04be7df712a3de1c4d399ac1270c5e25933d300"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/if.js",
+      "sha256": "f0d99c4f77758c91e9984def7e88d684a2bc4bc3e3ec349051a3c05ed69d9210"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/index.js",
+      "sha256": "5370d6a29859f9eca7e989aabb4a377bc030af34a77960aff373478a30c26c1e"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/items.js",
+      "sha256": "c50d3fa1b08453c0dc0d94f6fabbb0076a30732507a8dc311ca8a153e3b7339f"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/multipleOf.js",
+      "sha256": "337a8dc92159a8499e6dd554018571013337bf0e860a19cff4e608fdb64d9507"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/not.js",
+      "sha256": "99aa8e2f504f1901680db5fed19cfafccaa6245d71cb42ecd4e95e7cfd8545e0"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/oneOf.js",
+      "sha256": "f8d4b38f4e49810b405515b4fc60da58083b029c810fa0f9e955aec7e3f2a476"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/pattern.js",
+      "sha256": "1ff61e816727ad1462a99c5d146740411b33aa1cb7de78402131e00d820a9d64"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/properties.js",
+      "sha256": "892aab3fa68ccc91732933cb360370224981ff8bda92b2988aa12dff5bf15758"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/propertyNames.js",
+      "sha256": "5f4a746023cc0a557b844d927013393ad61f9319512fff8657a1292e47598cde"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/ref.js",
+      "sha256": "ecb011f5a464089d412f466ac8d797e9cebf0a73ffad42b150fd20a3a301012f"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/required.js",
+      "sha256": "b8143c2ea7ba5b777a189063c0f39bc3710b20c81183c2d8d2bd30a5934d3ec8"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/uniqueItems.js",
+      "sha256": "10d543c0e425599d68d444182970c615e2eccaa3125b60856d2754ff486414ae"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/dotjs/validate.js",
+      "sha256": "0a35d2db29a053020b62427296429c0e6a8adc9f20dabbf62c37b176940e54d6"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/keyword.js",
+      "sha256": "c80f8115a4ebe5d4aee42fef525c5fdb911ee4901b270cf4c33e43919cc630d9"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/refs/data.json",
+      "sha256": "8fa2a9d8cea6d76f6bdf3d288367e43cd867daa1ee5736ae65294db1d8c87997"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/lib/refs/json-schema-draft-07.json",
+      "sha256": "7f5fd717194bd954bbb04c833f6116f727d899c7bc977c26abcb2607aa51d66a"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/node_modules/fast-deep-equal/index.js",
+      "sha256": "7791b6d5347503550b02cc6281f98193638510e3332990df391cb8f5e7ace6b3"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/ajv/node_modules/json-schema-traverse/index.js",
+      "sha256": "a00dfd554d0382f89eca7f11ef745fa4b8b22f2f4e458a199390699c6990803a"
+    },
+    {
+      "path": "packager/node_modules/scratch-parser/node_modules/pify/index.js",
+      "sha256": "b0ef75e266ad1643909df3e8d276798d6ada05cd90371c07b538ca24fc0a73a6"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/index.js",
+      "sha256": "bdee6b7fd150a2e8b7e285b1aa1d1bba0044e1f3c0e3b3c2abe97ffa3021bc00"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/adler32.js",
+      "sha256": "b129086bc9e14421926103b32e6f6853991b45e688977fccad48007a17b0bd4a"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/byte-packets.js",
+      "sha256": "c59a164df271f4ef60eda9c0d716befae8914223976a5e1d61704daea5f511fb"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/byte-primitives.js",
+      "sha256": "b440be3ff950f42981028fc4396f6ac843686c8e8792cca29a41e7b79a7d950f"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/byte-stream.js",
+      "sha256": "0e6a95a03f830f4b5341185903227cf47eeafa90d570f681263a1d00930ce9b2"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/crc32.js",
+      "sha256": "433fdbdcd69891e83137d85ece2d1ec89d7df3497b816cb1d3d5442272905b24"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/deflate-packets.js",
+      "sha256": "c9fc69b6a544b0089858f3791b37943b61ae4cf1d13186ff486c1088e62fb559"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/deflate-stream.js",
+      "sha256": "d2c8dff47afdd46bdb468508e576c9191256e1ae0168c57cf6815eacf80ce952"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/png-chunk-stream.js",
+      "sha256": "4a11972694dd0bf1027c8f2364377e938c5a9ab6fe0c8012cc5523465f7f1eab"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/png-file.js",
+      "sha256": "c24d2cd1628290ad0881a9b08eb52cfc7ec08d3df4d774f38d1e34ad92d1d79d"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/png-packets.js",
+      "sha256": "bd7f8e57416972157af6e04183273ec7e1ab910632f92e77c12c6a0845052f32"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/proxy-stream.js",
+      "sha256": "277b1d5039dff6b5fb1227c8e1c6309defb9638a823804554eac729aa9698d35"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/squeak-image.js",
+      "sha256": "bd9ebe4c363ebd3e801cc6ff02b51dba32f873b940bf5e1c2a0fed07a92fc5af"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/squeak-sound.js",
+      "sha256": "5dd0835fa8c01e9e9b1b5fc27818043bad0b587a79afb915d16178af3e22882d"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/wav-file.js",
+      "sha256": "4d9a6fc3477e4a368916736bee3112f8ce0310acf350369cc710be2c3e6d9aab"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/coders/wav-packets.js",
+      "sha256": "919973687a2c6aa41610f46ac84e0d5ae36b247faad75e21c1aeecfa4f393a95"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/sb1-file-packets.js",
+      "sha256": "59866c1890d1d1ed1d55e68270c27d970d37017296bd42bd3e46d7ad190412aa"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/sb1-file.js",
+      "sha256": "1024c9c703b2ed4c53e1ed6f507af03edc8c11ed648c290e7cd568da91865f34"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/byte-primitives.js",
+      "sha256": "801e03ee6bde8bf7f6ca013353062f6a1737c2519280acac619b85e24304bc0d"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/byte-take-iterator.js",
+      "sha256": "18a48094c89f9123ab14b071fed1a4cbd531ff332ac4db3f35099f5da940a6b8"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/field-iterator.js",
+      "sha256": "8697a3a922223c3839dabebc7d6a2433b2f23077e8b897fc3b2799ec718caa48"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/field-object.js",
+      "sha256": "543a0b744896c8ae4938cd8c2d737ee980304efdb17f1374c34e083ced01512e"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/fields.js",
+      "sha256": "c6b1a79281311a79834da1ceae281bf1fe7647762e4f8ca924a4f85777bf409b"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/ids.js",
+      "sha256": "b718f406a9a6c8943546dba1dd12f8781f5ba60634fe37d99b4c7a522399023c"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/reference-fixer.js",
+      "sha256": "71f23ed258b70b53f38267cfecea3bc8ec5399af580c25a01aa53de47f2e0a03"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/type-iterator.js",
+      "sha256": "4f9fb230fa9660b2bee42fad2085d1b4d3ccce9370d0f9e609159039fa2e8266"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/squeak/types.js",
+      "sha256": "3eba90489e0cf710126b0b3abc36dfa7f332b4601a6dba67890ea76fed64cf42"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/to-sb2/fake-zip.js",
+      "sha256": "a2aa32029bab00c48e3671da66cca643b687e83a3c61090011fd91c7a62bb4aa"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/to-sb2/json-generator.js",
+      "sha256": "675bdcb610af0ea3e2011704bb8a3d9ef1bb2acb67de3ae3445ad34b0c8aaecf"
+    },
+    {
+      "path": "packager/node_modules/scratch-sb1-converter/src/util/assert.js",
+      "sha256": "f7ef43650584fc1b8c62eaed182defa070b9ae2dbf5259f292e2bca126db224e"
+    },
+    {
+      "path": "packager/node_modules/scratch-translate-extension-languages/languages.json",
+      "sha256": "43f9137cb8566751e1f62a226e114c2dcc886dbd75e071cad840f5688a1f6beb"
+    },
+    {
+      "path": "packager/node_modules/string_decoder/lib/string_decoder.js",
+      "sha256": "f1d36d47b2c579063392c1a68963467f2d4f51a069af09eb068d974c63ee3b37"
+    },
+    {
+      "path": "packager/node_modules/text-encoding/index.js",
+      "sha256": "f804dcd0e7898fec324bc7983c7803bf552da5ebbb1f66ca2f288a634eacb670"
+    },
+    {
+      "path": "packager/node_modules/text-encoding/lib/encoding-indexes.js",
+      "sha256": "d0fd4fed32adb04570634ef4c50e2fd92b3c7f240b68e4403db1cf5df609663f"
+    },
+    {
+      "path": "packager/node_modules/text-encoding/lib/encoding.js",
+      "sha256": "13d6f5d8d7849ab5525c7b3defc4666d1d53b2a2fbf9777eb47039956ce2d0c7"
+    },
+    {
+      "path": "packager/node_modules/util-deprecate/node.js",
+      "sha256": "9a86a29fa34a99b861e707345fb1d1e2e55a6c23edb8f992bed57cc607f42d8e"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/index.js",
+      "sha256": "069a2230d395723583c8e45a7c0fee2622af2fbd08dc35f81e4d57836122e59f"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/md5.js",
+      "sha256": "6ca6276ff35f19ea462bb8c9d6d290994fa9980fc775deb741811ef947196ced"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/nil.js",
+      "sha256": "7395bd919bd1309bcbced245a59dfc6b077f97992a482af2537343e558795b1f"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/parse.js",
+      "sha256": "1a87ed6a6bb0a3edbe266ca55aaf1c5af8e963ee9486f74b59cfd615280b21b4"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/regex.js",
+      "sha256": "acc4c54d987f100093097f4f156ff245394c39d1332eb2114d7e40db00bd6ddd"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/rng.js",
+      "sha256": "fdde4350fc69c07bfed4178eedf6121a56264744207d9f5c8f3e5b1b913dbb06"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/sha1.js",
+      "sha256": "a9eda407444a3f68a0a4db0373346df18f583abbde2c4bf2b3fbc6d73be2c75e"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/stringify.js",
+      "sha256": "85a70b8982f37ddb434816dcda7628b0319e5a90d46ac6bc9b08d4d15d6a7650"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/v1.js",
+      "sha256": "6dad9c2e6565ad6b478fba7b2ace95350df56a15a72920e72ac64c3a2691d665"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/v3.js",
+      "sha256": "95e0c6fa204355c6ef7dbac5720a3ef5239454ed6820674dfcc143a55ea6c459"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/v35.js",
+      "sha256": "ababd96e6f8b1fca9bb58f43220473f7bd59fbc81b3acb212df924813544283f"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/v4.js",
+      "sha256": "a9e30e8692dde9dec39a3ef716ef8e650e321813fa9d137f16d27666b9ad96ef"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/v5.js",
+      "sha256": "d15c31975f31b9abf6a195e70a3dca0843a9257cb51b49214cf7a9f4ed30fc5a"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/validate.js",
+      "sha256": "5497d9adffd73474cf379d3e1b76b28698e408124a0726d54e88282500378502"
+    },
+    {
+      "path": "packager/node_modules/uuid/dist/version.js",
+      "sha256": "cad5f0ecd518983e310856cafd54d4d0de0b9db3c8e3bd97ec8e773ef63de6e8"
+    },
+    {
+      "path": "packager/src/build/inline-worker-loader/worker-loader.js",
+      "sha256": "4ef12d52d8de10f1e932db4ae8b30577857c19b6f5508587833e54b36bf1dea2"
+    },
+    {
+      "path": "scratch-vm/node_modules/@vernier/godirect/dist/godirect.min.umd.js",
+      "sha256": "5c746ecbe30c7a6e4db22197f140ef61e7fde27b06b5d1950217f59ea217ad6a"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_control.js",
+      "sha256": "99a38761c01c8e2515acaf1b7d8c91b00963e140544ce45143ef576604748093"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_core_example.js",
+      "sha256": "b31c4090dd2be2f71040494fae2181ade3475ce4e741a5af38db7650ad074026"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_data.js",
+      "sha256": "23465ee49ce29c30142da9061296708c264aaac1e4c3a9ceb1e53da9f12ad21a"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_event.js",
+      "sha256": "47a5247c4f755207f98a85a6d39e1bb3e81da909e3b315ac28574ba546132dfb"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_looks.js",
+      "sha256": "467c96a139a26eb174e488c026054599bf998a18efd683f980be264f61886c10"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_motion.js",
+      "sha256": "aa503c336c826c44c093bbfe7b13c4a3218dc05ce4fcf9c68bd6bfd3ef8e4e14"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_operators.js",
+      "sha256": "37dc1a802ffeb6f23e18af6a026cae87a397ba0a89f0975101cdfb48f659f3a2"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_procedures.js",
+      "sha256": "be78d44baa8653ea2cbfcb2cf09b690988f6e22ca668ccb8fcd22b2ddc67ba5f"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_sensing.js",
+      "sha256": "0771c696972fc3ad2de5be124678205e77f51b5938943a277f34faf2d2ccff75"
+    },
+    {
+      "path": "scratch-vm/src/blocks/scratch3_sound.js",
+      "sha256": "7130a5d1d19ffe0a2269727ace79b5804f7a54232eb1278680894abe9afc430f"
+    },
+    {
+      "path": "scratch-vm/src/compiler/compat-block-utility.js",
+      "sha256": "9ded37a8fbbccc45c93e8adb64a9ca529ed0c40762d8c364d633367e523792e0"
+    },
+    {
+      "path": "scratch-vm/src/compiler/compat-blocks.js",
+      "sha256": "0c3f41742adaee4b74ec56d0ab2450986b68fe1c992999c176dd3b15686737ec"
+    },
+    {
+      "path": "scratch-vm/src/compiler/compile.js",
+      "sha256": "727654e4230ae7ad2819bb172467773ee50ab7158ed27d5849a766359485b3a6"
+    },
+    {
+      "path": "scratch-vm/src/compiler/enums.js",
+      "sha256": "90f14fff8dda54d7d81b04da3d1ae9068ae31a178f031cdcbacbc95e46ef3458"
+    },
+    {
+      "path": "scratch-vm/src/compiler/environment.js",
+      "sha256": "e3d42fcf788decc4c4bc15816cf2d6828cc0c22a4589f9e9c8a4b58c62d433c3"
+    },
+    {
+      "path": "scratch-vm/src/compiler/intermediate.js",
+      "sha256": "7ea81d1b7c55d3049570b6e9fcce3a3ce9ab42ceddc863c07ab56b212a9144d6"
+    },
+    {
+      "path": "scratch-vm/src/compiler/irgen.js",
+      "sha256": "465c68bde3f83d75b1c53ae8bacaf3a751218e38153a410f63dd7e6db534eaa9"
+    },
+    {
+      "path": "scratch-vm/src/compiler/iroptimizer.js",
+      "sha256": "6097b5d7d9c72b49865d53507f0158271d037792ab594505848c15425b01867b"
+    },
+    {
+      "path": "scratch-vm/src/compiler/jsexecute.js",
+      "sha256": "ee523267332d3d27a7061f0f7c5a54a055f0301ffceda417c0d02bf27d51518c"
+    },
+    {
+      "path": "scratch-vm/src/compiler/jsgen.js",
+      "sha256": "bd8c64fd4d28250e88666c73ca18eb7470292cdd7ce4e19138e6ef48c2369813"
+    },
+    {
+      "path": "scratch-vm/src/compiler/old-compiler-compatibility.js",
+      "sha256": "3bc54c05c0cc0a06520d1144d04b81a6ecd036ff6b858e8b23d7e54f3a5596d4"
+    },
+    {
+      "path": "scratch-vm/src/compiler/variable-pool.js",
+      "sha256": "4973ef03a1b11b000b54ae6191eff9eb026ed9bdb9fc50460e904150ba102e27"
+    },
+    {
+      "path": "scratch-vm/src/dispatch/central-dispatch.js",
+      "sha256": "a78a2e3b30bccc10c5d5fa3456bd2d6228acf76778f57d44a47d00a6a8da842d"
+    },
+    {
+      "path": "scratch-vm/src/dispatch/shared-dispatch.js",
+      "sha256": "e43df456a87fda00878ddceff9c34de3da8072c352760d3085c871a1395ee010"
+    },
+    {
+      "path": "scratch-vm/src/dispatch/worker-dispatch.js",
+      "sha256": "13931c1772af99c1f85a3ae98b6c4cc499870e30d029ca5c25d828ffc29b21a1"
+    },
+    {
+      "path": "scratch-vm/src/engine/adapter.js",
+      "sha256": "a57cd369fe184ca1b89ef4d3f917abd7627a8b96e5c5419ed27013df4f34a74c"
+    },
+    {
+      "path": "scratch-vm/src/engine/block-utility.js",
+      "sha256": "6e8dc67f41c63ef7b9d6a256c23e99d2ac416f241b8542bec6144f3e59259751"
+    },
+    {
+      "path": "scratch-vm/src/engine/blocks-execute-cache.js",
+      "sha256": "e9a8cad0289f268259b98f7dbcc68b6c6370756550acdd91f7ea68710857b298"
+    },
+    {
+      "path": "scratch-vm/src/engine/blocks-runtime-cache.js",
+      "sha256": "ed7b6ae8b737485a2f6f30e15bd3a9383f8eb500fd694d542de15ab13e2becf1"
+    },
+    {
+      "path": "scratch-vm/src/engine/blocks.js",
+      "sha256": "c7a268094a2d2f265b86e9e5aae7d3dc1d8227baacbd3a85eb5e556644dc4470"
+    },
+    {
+      "path": "scratch-vm/src/engine/comment.js",
+      "sha256": "5b16564d403072235ec48a0f88b8061254c9c499aaacfda5fd45b537e86ecb42"
+    },
+    {
+      "path": "scratch-vm/src/engine/execute.js",
+      "sha256": "64d92b9a7cfd1005c60b5261d72e17cc58905a5e7d67ed61579ba997bd949eb5"
+    },
+    {
+      "path": "scratch-vm/src/engine/monitor-record.js",
+      "sha256": "77162ece2c0d2789ca7b2de2ba32d69970dcbeed974a40fc0e3ccd0b486bf236"
+    },
+    {
+      "path": "scratch-vm/src/engine/mutation-adapter.js",
+      "sha256": "3f17d427f7795ab1aec23cffebca841f6b7835dbe4c88196b75c26950c90f655"
+    },
+    {
+      "path": "scratch-vm/src/engine/profiler.js",
+      "sha256": "9d634fd3fd95d8c9736176d734186382f99ea486aa2a0f0e7fcd1b9997e49d49"
+    },
+    {
+      "path": "scratch-vm/src/engine/runtime.js",
+      "sha256": "1c37ee3d12305575fe1247807e2828822b38b21c97244f8dc3d7b281f2ad06a3"
+    },
+    {
+      "path": "scratch-vm/src/engine/scratch-blocks-constants.js",
+      "sha256": "4bbc184da65fb78e0a506d3e5f8e08e55a1f0ee34e1990025bbc2e4b8aa251aa"
+    },
+    {
+      "path": "scratch-vm/src/engine/sequencer.js",
+      "sha256": "81aadce9b30dbe9bc1bf1e54324cd12dcba1f45b56f06577871dbacda54b58b3"
+    },
+    {
+      "path": "scratch-vm/src/engine/stage-layering.js",
+      "sha256": "5fbe70394ac96e5f65de67b2faf71ffb8ef5c74f3772a46968399742f884ef66"
+    },
+    {
+      "path": "scratch-vm/src/engine/target.js",
+      "sha256": "20369e2609743095112e20b3a920444a3f13ac03c907b6fb3b3821b140d3cf73"
+    },
+    {
+      "path": "scratch-vm/src/engine/thread.js",
+      "sha256": "3fc417376b4ecb1edb9089966c755c6b73dda61d58bf49e4332b855adfc35c11"
+    },
+    {
+      "path": "scratch-vm/src/engine/tw-font-manager.js",
+      "sha256": "e50d7aa8115911817e819df8b9e8e05f50d1b6f59b0b39fad29bc0d6a96ba865"
+    },
+    {
+      "path": "scratch-vm/src/engine/tw-frame-loop.js",
+      "sha256": "5df4a09e64075df34ad8a00c33df1121f834d13d7e00316f8df02fbdc7f9a9d1"
+    },
+    {
+      "path": "scratch-vm/src/engine/tw-interpolate.js",
+      "sha256": "b1972b922162bd63c2491c3e43f1acde65c595b2590fea18a1fd6c8c58582831"
+    },
+    {
+      "path": "scratch-vm/src/engine/tw-platform.js",
+      "sha256": "334822c5d80f593a77716f2ef82b521b74774654fea4e5da0e1a60c10b22763f"
+    },
+    {
+      "path": "scratch-vm/src/engine/variable.js",
+      "sha256": "b57208f53e574f4be44bc04e769b7f3bc3a82e1647677e671426942ab6f4a1d2"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/argument-type.js",
+      "sha256": "c7a003e948c9652b123c17fe28e8713b580f85479df2b03a587d1872997f5dba"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/block-type.js",
+      "sha256": "cd45fcd5ae35b9e95024840f11bcb7bcf42728747361f122b9cf78925929b0bd"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/extension-manager.js",
+      "sha256": "2fe13533b0faaf9eba872eddb35f285a28bce0bf22d6a2f4744882b030c17cac"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/extension-worker.js",
+      "sha256": "d5bd33109fc7875dd00b0c37d90f4d6b9f53b1ce8936af419287828dd47763d6"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/target-type.js",
+      "sha256": "f58cd43364aa79fd16d1eb1273cd347880348e801f34a53ab7b7a2fb1668ee83"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-block-shape.js",
+      "sha256": "ded9fd133c976f74a9a4bf8990df5f6eff8a5ed0676457ba7bac8606dacabf94"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-default-extension-urls.js",
+      "sha256": "4b1557a567b7538e584284baf258100f10111a86bd369b62a14adc81fa3154bd"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-extension-api-common.js",
+      "sha256": "69752f2b7040444e85e64765ed52fc4bbd71c1601b5ef03faeb2fd7ce0d3400b"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-extension-worker-context.js",
+      "sha256": "a24323c9527c113da259b34feb62701be55bab430a28f0505f56711cede15e03"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-iframe-extension-worker-entry.js",
+      "sha256": "8caabde5ce67dc605c9115864db0bec5c104ac50f2fa1070d96922a6f18c042f"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-iframe-extension-worker.js",
+      "sha256": "82a198f95eeb2eeaea0f94439b6f8bb0176ae1724e3b6a71500fe9adb51c730e"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-l10n.js",
+      "sha256": "889c4e4633e3fe540362c9d084b6ead866a528e9225a03a5365b600213c4959b"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-load-script-as-plain-text.js",
+      "sha256": "019cf728df224dcfc1b1792dae7896b452505fe711bff4c26e21cb487f412d3e"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-scratchx-compatibility-layer.js",
+      "sha256": "38f712f671cb5f95b714019bb007baced4222fc20995f6b916d8c7d85e426fcc"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-scratchx-utilities.js",
+      "sha256": "973a011c29a877d6e3b56720b2ccfd6cb68639bfdd645c9005262edf0c502f84"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-security-manager.js",
+      "sha256": "382f904c2766f36bf6c32b93b929e40912b38182b9ee54962bb661becd48bc03"
+    },
+    {
+      "path": "scratch-vm/src/extension-support/tw-unsandboxed-extension-runner.js",
+      "sha256": "b340b8d3e62d8e6a5767406f86ef6123c93dd6762c67dacb03b7c8494af70b12"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_boost/index.js",
+      "sha256": "8e5c4318e2d492e8081e22f07109567103aaa196a5047d9e2f1ba866d5792cff"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_ev3/index.js",
+      "sha256": "3ec5c21989e43e963cda30b32751bc0719cd62a8689a7f24ce9be879550ee247"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_gdx_for/index.js",
+      "sha256": "1c54a972d2ff16d997106de3a6ee8b973e72c942832a12220240aac5d4d3db5e"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_gdx_for/scratch-link-device-adapter.js",
+      "sha256": "28e5c43954c35d604312eb80eced86a142a82bed8858eefa27934325e2748c7b"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_makeymakey/index.js",
+      "sha256": "5bd8b8e6d2797844c0d93da1abe43690b49d1c45653ba03b7beb9c37c4322d20"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_microbit/index.js",
+      "sha256": "b9271cca548a735803247387946cd834580ebb87921dac2d794d0f39a4d704c0"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/1-snare.mp3",
+      "sha256": "9a196b793863d2cb265e5ed4f3cc41db99cafc58d957adcfe84ff692488d0515"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/10-wood-block.mp3",
+      "sha256": "67d6a6fe2ebce8cbadbdd5d548a5ced6335f9034ea395cd6b8f6f765f200e524"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/11-cowbell.mp3",
+      "sha256": "7f16eec7d97f2e3ed32edc0a6a08e983fd2e14deb4aebc7e432c0f8ad93ecadc"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/12-triangle.mp3",
+      "sha256": "8b4039a81b67afb8342c0020f23d17b8336de129df30d9c2706331a73ce96417"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/13-bongo.mp3",
+      "sha256": "21ed8b8b7bb39104757e4419fc70cf2253dd117fddb50d2ded494fb9971dce3b"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/14-conga.mp3",
+      "sha256": "262c2a3563d0c748b67147ffce6fbb6a806edcfbf1ee4f1e358882e7fd410877"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/15-cabasa.mp3",
+      "sha256": "1b55755a81def628d5d4153c0606686ae2bcdde64706aa4af2ade3f56ed6ccc5"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/16-guiro.mp3",
+      "sha256": "15425361b0b9885d348d5087e516fdf7e9df155509083b0621187ed3a22963be"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/17-vibraslap.mp3",
+      "sha256": "85a781f7e3cba077ff961caa4c04f7859b1413ba43165cbccb96c6f204c77dee"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/18-cuica.mp3",
+      "sha256": "4a0aa09ebdac75d9cd8ee85adc8e0dcfdfec4d55308f6271750077db0fe77629"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/2-bass-drum.mp3",
+      "sha256": "db8218d2431ac7ef5b56964538471a21a408a543b10eaade5b8bec03bdcbfe32"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/3-side-stick.mp3",
+      "sha256": "f563e5b58003dbfd144ef76a46f96dcd1f8791ee12b64d78f03ad4e5c2f391a2"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/4-crash-cymbal.mp3",
+      "sha256": "3147860410f83b8a2ed92f7cfd83e10c3ebed898537962750912e1a9adea8e88"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/5-open-hi-hat.mp3",
+      "sha256": "1219e34dcd6e106eb2bdea5de1d2c971f6d619d8c3124f1776c3ee053991855b"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/6-closed-hi-hat.mp3",
+      "sha256": "48d2ec6f90cf469c5f28ec545af5830a4260082a75ce6a27fa2b28e0db84713e"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/7-tambourine.mp3",
+      "sha256": "012c323edbf9b6d4c81c2e63f29e6b7c64b5d5fc993f6cfa345fb243ad8fdf44"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/8-hand-clap.mp3",
+      "sha256": "1db7568a75d924aa05927b2e3474be49b2829a57f616bfe6c44b18a3e3fff82d"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/drums/9-claves.mp3",
+      "sha256": "4147c8897bf5ef8ea936f49331005f66d752a82a997b97b076967c40b741f14d"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/108.mp3",
+      "sha256": "6b950012316d384afb404a471324a6e15c0a89442f1ada6ba3984f0cf590dfbf"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/24.mp3",
+      "sha256": "f0553cac8b27c10405887502f9583b9e391c8c34a2fddac96a755bc67a25e400"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/36.mp3",
+      "sha256": "5318818707f3350a69022777b050b7b5f57d8107ea6f730c722f9507b2f67585"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/48.mp3",
+      "sha256": "b54d281e14be994cde5521791db06c249370aec575aba4fd067cff001382cb80"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/60.mp3",
+      "sha256": "852b56f96c5d16ef33e25331d85f9b4a53b7451c5f00d76a4d9b1584cee5312a"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/72.mp3",
+      "sha256": "8371c4c3d83c264def21f9d5302d59f3939777c647fe7596089b16aaf8e52014"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/84.mp3",
+      "sha256": "ec2862bbe6ff7a6c9f03f223d42e62d2ffe397c6984fe57f9c01d6ed025e5e78"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/1-piano/96.mp3",
+      "sha256": "32fc998cb87da15c4e32fd04743ecbaeb78e700159d2245a3b1c56b3c0887a32"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/10-clarinet/48.mp3",
+      "sha256": "c67ea02f87c4c2e71edb4fd8239c34ec37055c56da86d791145c8bf682c11ddc"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/10-clarinet/60.mp3",
+      "sha256": "ff3e234c8464b1c7bf00f25d4adf48414ca0121e313d563cd3bd5df236de42ad"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/11-saxophone/36.mp3",
+      "sha256": "2eefd1e3f4f4b97f654fb8e3ffebd29bcafab38578bc6b00e32c6ac4e6941f05"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/11-saxophone/60.mp3",
+      "sha256": "225c55e8c1c14a77f71af82efaf5d5dbc08650d014afbdfd737fa54c30536d85"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/11-saxophone/84.mp3",
+      "sha256": "c351708fd39e3a6b082672f350fb4a5899459da035d29e0f5f037fa8af318304"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/12-flute/60.mp3",
+      "sha256": "e62df6045fa780902a8441bb255b8ec6df6d4822ef7ccfa5e3eead78671e6955"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/12-flute/72.mp3",
+      "sha256": "621efb62743148b0562ea2b58be9800523aee017321ac8db11a5c22320d17233"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/13-wooden-flute/60.mp3",
+      "sha256": "8e2c04c3604ba6be5a2699ac189b2aa1104496e3c80911209f9e8365a71f766a"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/13-wooden-flute/72.mp3",
+      "sha256": "9cb85e6d50d1ef2d8319679c9a9b5e764d9125e4fee2fc0d095e569085a53b26"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/14-bassoon/36.mp3",
+      "sha256": "4d2395e114f95760eeb1ac2aa4cdc1a1833e7918f7fa4769b9e17b7a5f7a18bd"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/14-bassoon/48.mp3",
+      "sha256": "18c38adac98f8b9d33721d158690e3e9d89321ea80cf8f7f125c7d44303a5cb6"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/14-bassoon/60.mp3",
+      "sha256": "9a03c085c7c8433b454b4e0fd8766c1222aa1899842fbcd248dece1563a93467"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/15-choir/48.mp3",
+      "sha256": "23cfb9ff287bcc8cc0adda7602805fb21a75e4df008754c233cd9cc7aeceddad"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/15-choir/60.mp3",
+      "sha256": "184161cf9660a2c349b2b2765d2a2a0b0939812bbdf4615a1fb3a4cabcc8c538"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/15-choir/72.mp3",
+      "sha256": "a7a3d8311e8b6f3e235660687423613c78ae856cda279c03f82d543438378011"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/16-vibraphone/60.mp3",
+      "sha256": "0778febbf85ee1449b47042478ec16cd3456fbb8799ca1fc1c5817627c280ac3"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/16-vibraphone/72.mp3",
+      "sha256": "4d72cd46b1b6b982961c07fa5b97bee17d04dff764edfb6209ec323484c4c1d7"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/17-music-box/60.mp3",
+      "sha256": "33c2354b2713f552712a54c3eeaa8366654a6c660be44c9775d7f46f9ed20664"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/18-steel-drum/60.mp3",
+      "sha256": "8ff87d762a611fda1eff5b7abda2711c1679470292497107109b6ee52b3fbe60"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/19-marimba/60.mp3",
+      "sha256": "9b6e5f2c55fb4bdc0acdbf9e5fb38bb43db23bbc9b4dd0d0352741ae3924e6f6"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/2-electric-piano/60.mp3",
+      "sha256": "f76b9025bf727c3120abece4c9fcb31db3e99702a0cfc7089488e0d2d6013b70"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/20-synth-lead/60.mp3",
+      "sha256": "4a9c6af011be1272a9c5c792237e29375d63f8c559139f6da4338510774507af"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/21-synth-pad/60.mp3",
+      "sha256": "3c9e82829e7a193a590c45203ea08d9e0a4d3e54e81bf1e27957f5e02f4e4302"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/3-organ/60.mp3",
+      "sha256": "a7d6e0f30c1731a62fdb913fb504af7e45e526a7beb8a33b16362ddf323c7630"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/4-guitar/60.mp3",
+      "sha256": "0f50f96605817905fc60e1d607be0ff54ba2f09b89cd3815a6af99ee432c49a9"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/5-electric-guitar/60.mp3",
+      "sha256": "11569780c2f365fc4957fcff4214359f5315b661428c7d78e7558c21bf1f1724"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/6-bass/36.mp3",
+      "sha256": "11e2352364a63c6a6cf1534d8763bd80fd99222f5edcc70a8ecce2b73bdf55d5"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/6-bass/48.mp3",
+      "sha256": "36ffba825e743d097032f119c8382cbd390ea78123d7c713dabb1aa816b9629f"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/7-pizzicato/60.mp3",
+      "sha256": "2d216e46fc0d5e6ef07fdaebf41554a40d5abfb7dd941f93d3b5871a8fbc45fd"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/8-cello/36.mp3",
+      "sha256": "f2f8c225b4c9a3e48e45c1c204b37421cd4bb1c73f4ff2b69c90a18a37093eb1"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/8-cello/48.mp3",
+      "sha256": "87d0a833c85262a59fc983c783461b386b393bcb9e0d17cc752255b6cd9632e2"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/8-cello/60.mp3",
+      "sha256": "2e90d51c9970d5cd7604ba7f594b7c44808f74c7166a55b43af8904060cef841"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/9-trombone/36.mp3",
+      "sha256": "6afbf9ffd8278efe21b23760f09109ebb276d025a03e04edec9e14dec7f8fa1c"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/9-trombone/48.mp3",
+      "sha256": "fc6df03907c28869574ab62373d060a94c8dd62adb46f0ab86246a35b3b83d75"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/assets/instruments/9-trombone/60.mp3",
+      "sha256": "c371fa897001f1c8a2c72308acd3c8cc035c224077a6902ed35a66567bb737d4"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/index.js",
+      "sha256": "9ce983bc904fa7c6965cf27295807fb5ea4a01589502f88299f4db198ef23313"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_music/manifest.js",
+      "sha256": "feb945a6a9f1e2ff7cbcef61f89988eed456855ef3b77b82bd1a837624212f7e"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_pen/index.js",
+      "sha256": "6d389603637311d7f0b634ef0439e939cc9e9a6ab4adc2aab4daded7137fc95e"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_text2speech/index.js",
+      "sha256": "659f23984f4e5be563a5973ecb666e3d3c70e3274d72ad9064e104fe9722a89d"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_translate/index.js",
+      "sha256": "77031a7c300715d37b54313703c38c57b4fc316f3068e537f53a329ac8706538"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_video_sensing/index.js",
+      "sha256": "7e2081ceb40974a4a5052e82271e39fc89a12d35a2ed1b63dfd6cee54c567ce0"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_video_sensing/library.js",
+      "sha256": "fdebe928a282b82332925faaec0b01fa688c0c6bdd07cf027496d1cb4d503e3e"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_video_sensing/math.js",
+      "sha256": "2060ba348af0892d480adec469d19726050d92cdcb221f34aa7c0e3070263ad3"
+    },
+    {
+      "path": "scratch-vm/src/extensions/scratch3_wedo2/index.js",
+      "sha256": "e35288e87f00518198a97ee2090d2494ca5b4681bb2434c8f182bb6c2bfd1979"
+    },
+    {
+      "path": "scratch-vm/src/extensions/tw/index.js",
+      "sha256": "65f2af368efc8fff4f6bba24e11d6233826c1d58f64f69361a32f521f341300a"
+    },
+    {
+      "path": "scratch-vm/src/import/load-costume.js",
+      "sha256": "d13d05b1828994d610733f07286f8d19623f9b94172b61ed4fd5d2b7ba8154a2"
+    },
+    {
+      "path": "scratch-vm/src/import/load-sound.js",
+      "sha256": "6097960a93960df25e45b7e1a2ced522cc7ad14d621209512433400884f81864"
+    },
+    {
+      "path": "scratch-vm/src/index.js",
+      "sha256": "2a505bce8097465b1389d8058e20378c425681818faaa0f7406f5046580ddc67"
+    },
+    {
+      "path": "scratch-vm/src/io/ble.js",
+      "sha256": "d95a156a8e27b2af4da9f60b046eea382a2d7db467c82566d61274490b7ce5bc"
+    },
+    {
+      "path": "scratch-vm/src/io/bt.js",
+      "sha256": "1a9aba4482cd3caa427784a2ba6d98945607f4f080950c891eacab1a842d4e0e"
+    },
+    {
+      "path": "scratch-vm/src/io/clock.js",
+      "sha256": "062a944ace6a3a95ed54f7702eb7acdac686185d58e00bb5822174588c3108d6"
+    },
+    {
+      "path": "scratch-vm/src/io/cloud.js",
+      "sha256": "aea302e7b16d7cbb758b912690ebe7836f9ee51684e35eb60210bcc7dd0aadb2"
+    },
+    {
+      "path": "scratch-vm/src/io/keyboard.js",
+      "sha256": "7ac377192a19465b6cb55242207ac2dddc76acc3323a3aa43d83703913d8a49f"
+    },
+    {
+      "path": "scratch-vm/src/io/mouse.js",
+      "sha256": "357b8922f1795e956e1f993ecb2677d2a3d113ed315be75f54c74f2d4d97130f"
+    },
+    {
+      "path": "scratch-vm/src/io/mouseWheel.js",
+      "sha256": "e135eece2dab3a39e5b7d9e5daba4cb8ad6f5cda79359618581cb513724c68ce"
+    },
+    {
+      "path": "scratch-vm/src/io/userData.js",
+      "sha256": "f64adb75d1a73c1a1e956de3ec426a742a6f1690173a0ef6c116a2dffedc753e"
+    },
+    {
+      "path": "scratch-vm/src/io/video.js",
+      "sha256": "19ab0bc3dac8b6d42b5ec78b3d794b8c87499ff0720ec4d67bf5459753919822"
+    },
+    {
+      "path": "scratch-vm/src/serialization/deserialize-assets.js",
+      "sha256": "4aa5c99fb64a948c9e17aa4a3b88b4c9b8295d085ec166378bbb2082af1acda4"
+    },
+    {
+      "path": "scratch-vm/src/serialization/sb2.js",
+      "sha256": "48b91b7b633be026e67521c5acc132a26457cc454784cb0b5f9fec7439281e38"
+    },
+    {
+      "path": "scratch-vm/src/serialization/sb2_specmap.js",
+      "sha256": "db8246cc353e59486daff0dd2fea4c62b5146059ccb9b51103d431b44660b786"
+    },
+    {
+      "path": "scratch-vm/src/serialization/sb3.js",
+      "sha256": "f61ded8b660982bc30c227bf20184d5614d2964da9d784d1dbe723870adc7d18"
+    },
+    {
+      "path": "scratch-vm/src/serialization/serialize-assets.js",
+      "sha256": "b167874dcfd89f3acbcddab50900ef7d6c719750f83ada86807d3720daf3d680"
+    },
+    {
+      "path": "scratch-vm/src/serialization/tw-compress-sb3.js",
+      "sha256": "4e62f297d887af620fa35c3a46c06ac7059f385cb5601fee0f2994affd667e67"
+    },
+    {
+      "path": "scratch-vm/src/serialization/tw-costume-import-export.js",
+      "sha256": "26da86210b7beec6128a2510933dbd161dde8f9636c135097e85f0e8ce9e9aaa"
+    },
+    {
+      "path": "scratch-vm/src/sprites/rendered-target.js",
+      "sha256": "05a2b105d950660565010013ed5c814dc6d7dffa3cc704b0bbb71c52fd64502e"
+    },
+    {
+      "path": "scratch-vm/src/sprites/sprite.js",
+      "sha256": "b8dea5c0a29bf2a9dbec9dbf18b0786e39484d46459f6bca61dd02d97fb3377d"
+    },
+    {
+      "path": "scratch-vm/src/util/async-limiter.js",
+      "sha256": "aafafe1321138d44ef6318506b9b524f5f5548186e5c242b7ac5e2b36dd1ebcc"
+    },
+    {
+      "path": "scratch-vm/src/util/base64-util.js",
+      "sha256": "2a91b6c8a01d7a7985f7e9d0a7a387e19f8e2315d90ec0d4bbdf316bb7782850"
+    },
+    {
+      "path": "scratch-vm/src/util/cast.js",
+      "sha256": "6b9b60444b93b66c3e3100f1e77634c618abb72bebd35809f5892d03ebd0006b"
+    },
+    {
+      "path": "scratch-vm/src/util/clone.js",
+      "sha256": "3e80d4c448deb86af0dafb63fd25692e46370c1bea02139198f38aa49cc7056f"
+    },
+    {
+      "path": "scratch-vm/src/util/color.js",
+      "sha256": "4769f0d2cd10a2185c7065b02b2dc5ffdc50b7f7a5cfdbc73311bc903a28a35e"
+    },
+    {
+      "path": "scratch-vm/src/util/fetch-with-timeout.js",
+      "sha256": "aef9b38f9c1619aa5217ead10d4f8f3fe070fa67a308dc1bbe6d7ad5ffadd72b"
+    },
+    {
+      "path": "scratch-vm/src/util/get-monitor-id.js",
+      "sha256": "62ef8ce4a8954190270739c16edd4c83c9063e0b35fd6ff5511984d75a4ddcff"
+    },
+    {
+      "path": "scratch-vm/src/util/is-advanced-value.js",
+      "sha256": "dd12a604ac83c3014aeeb632c444896ed1f9e15fc0c4b9b4b3ac35cae01bd191"
+    },
+    {
+      "path": "scratch-vm/src/util/jsonrpc.js",
+      "sha256": "01592c93f684f4a827bfb3bc7cfa37c8f77352ee0b14abcb8d0323a2394c4820"
+    },
+    {
+      "path": "scratch-vm/src/util/log.js",
+      "sha256": "8e1a8078e75842ed8e753ea865b6296547838814b489342a6b880ff869849ddd"
+    },
+    {
+      "path": "scratch-vm/src/util/math-util.js",
+      "sha256": "bfc9ac28a06a294c248dc41059c3d8303c64e28d8f509212efd81cec5888e37c"
+    },
+    {
+      "path": "scratch-vm/src/util/maybe-format-message.js",
+      "sha256": "00b568d92eecbbf740f4a18689d189e57e708152bcd422a5652a8833620de057"
+    },
+    {
+      "path": "scratch-vm/src/util/new-block-ids.js",
+      "sha256": "72b818d3782572558911ec8f048c777d16a1bc053bf8d1726c120d6ec5d45634"
+    },
+    {
+      "path": "scratch-vm/src/util/rateLimiter.js",
+      "sha256": "0edfa0299a5946b98e2538f5f463028f2d7743889e88dbe1ef22f919b93eb9dd"
+    },
+    {
+      "path": "scratch-vm/src/util/scratch-link-websocket.js",
+      "sha256": "a197aa8b2044d5fd4811776d4383abd5d7bb354d6712ae0e1d4f5b731c7149a2"
+    },
+    {
+      "path": "scratch-vm/src/util/string-util.js",
+      "sha256": "52ea91c65a2c725faf15aff12603fb2f24452d4b73b81d7a573ad4f03bb8ca12"
+    },
+    {
+      "path": "scratch-vm/src/util/timer.js",
+      "sha256": "4fb81ae7f8c9a38df76e5a6e2effcb3eb8c44eb1948025873a45f6ae7c36e152"
+    },
+    {
+      "path": "scratch-vm/src/util/tw-asset-util.js",
+      "sha256": "f833635974edadb4f5073d30a24b1d972ec2294a5456dc4afa8e9343d3935e95"
+    },
+    {
+      "path": "scratch-vm/src/util/tw-static-fetch.js",
+      "sha256": "19d14906fdaa44e20515675682537dec54ee8fd2f1c79cd46b06e7c99c31949b"
+    },
+    {
+      "path": "scratch-vm/src/util/uid.js",
+      "sha256": "8c6196aaa33a588c72c627f07e43e03f10e11d6100c08a5854ecaabfd792907f"
+    },
+    {
+      "path": "scratch-vm/src/util/variable-util.js",
+      "sha256": "d12854e631752a31744924526e14bcb96dc65b51668737439de5263c1f054222"
+    },
+    {
+      "path": "scratch-vm/src/util/xml-escape.js",
+      "sha256": "6c5c6ce97f41a10f997d0029422fd334aeadbd105eaf64be1eb6f758a09ba460"
+    },
+    {
+      "path": "scratch-vm/src/virtual-machine.js",
+      "sha256": "3184de84299fb2ceb00e3ebff2c6037187dfe74141aaf26542f1713d0c29a24c"
+    }
+  ],
+  "outputs": {
+    "02-vm.cjs": {
+      "bytes": 7506489,
+      "sha256": "7bf7336754d1103329d90ba4d2a14fd3dfc22d95e95c14b8a94d4b906c7b9bdb"
+    },
+    "02-vm.LICENSES.txt": {
+      "bytes": 317567,
+      "sha256": "2b68baeff0e004f370f0c85ccb7efcfcb15e613bf27b2f729b3844f1b07f642f"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {makeMinimalSb3} from './helpers.mjs';
+import {compileReal02} from './real-02-compiler.mjs';
+import {deobfuscate} from '../src/deobfuscate.mjs';
+import {recoverCompiledCode} from '../src/recover-code.mjs';
+import {validateSb3} from '../src/sb3-validate.mjs';
+import JSZip from '@turbowarp/jszip';
+
+test('真实02 edge帽子完整解析并恢复输入条件，校验及重编译通过', async () => {
+  const fixture = await makeMinimalSb3();
+  fixture.project.targets[1].blocks = {};
+  const stage = fixture.project.targets[0];
+  stage.blocks.a.opcode = 'event_whengreaterthan';
+  stage.blocks.a.fields = {WHENGREATERTHANMENU: ['TIMER', null]};
+  stage.blocks.a.inputs = {VALUE: [1, [4, '1']]};
+  const compiled = await compileReal02(fixture.project, fixture.assets);
+  const bundle = structuredClone(compiled.bundle);
+  assert.equal(bundle.compiledTargets[0].scripts.a.executableHat, true);
+  for (const item of Object.values(bundle.compiledTargets)) for (const script of Object.values(item.scripts)) script.factorySource = deobfuscate(script.factorySource).code;
+  const project = {...fixture.project, targets: structuredClone(bundle.targets)};
+  const result = recoverCompiledCode(project, bundle);
+  assert.equal(result.unresolved.length, 0, JSON.stringify(result.unresolved));
+  assert.equal(project.targets[0].blocks.a.opcode, 'event_whengreaterthan');
+  assert.deepEqual(project.targets[0].blocks.a.fields.WHENGREATERTHANMENU, ['TIMER', null]);
+  assert.ok(project.targets[0].blocks.a.inputs.VALUE);
+  const zip = new JSZip();zip.file('project.json', JSON.stringify(project));
+  for (const [name, bytes] of Object.entries(fixture.assets)) zip.file(name, bytes);
+  const validation = await validateSb3(await zip.generateAsync({type:'uint8array'}));
+  assert.equal(validation.ok, true, validation.errors.join('\n'));
+  const recompiled = await compileReal02(project, fixture.assets);
+  assert.equal(recompiled.bundle.compiledTargets[0].scripts.a.executableHat, true);
+});

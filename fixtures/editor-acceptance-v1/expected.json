@@ -1,0 +1,495 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "varId1": [
+          "分数",
+          0
+        ],
+        "limit": [
+          "次数",
+          3
+        ]
+      },
+      "lists": {
+        "items": [
+          "项目",
+          []
+        ]
+      },
+      "broadcasts": {
+        "ready": "开始游戏"
+      },
+      "blocks": {
+        "a": {
+          "opcode": "event_whenflagclicked",
+          "next": "rf_32498c040f5ddb89c4a9",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 72,
+          "y": 80
+        },
+        "rf_32498c040f5ddb89c4a9": {
+          "opcode": "data_setvariableto",
+          "next": "rf_41d8478532fce2605482",
+          "parent": "a",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_41d8478532fce2605482": {
+          "opcode": "control_repeat",
+          "next": "rf_7a1d914738c65955ba37",
+          "parent": "rf_32498c040f5ddb89c4a9",
+          "inputs": {
+            "TIMES": [
+              2,
+              "rf_2d3cbb25866541174552"
+            ],
+            "SUBSTACK": [
+              2,
+              "rf_0657a2e29de83cb97921"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_2d3cbb25866541174552": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": "rf_41d8478532fce2605482",
+          "inputs": {
+            "NUM1": [
+              3,
+              [
+                12,
+                "次数",
+                "limit"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_0657a2e29de83cb97921": {
+          "opcode": "data_setvariableto",
+          "next": "rf_a097344cedb250f067b2",
+          "parent": "rf_41d8478532fce2605482",
+          "inputs": {
+            "VALUE": [
+              2,
+              "rf_f102bb640fd244aa6add"
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_f102bb640fd244aa6add": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": "rf_0657a2e29de83cb97921",
+          "inputs": {
+            "NUM1": [
+              2,
+              "rf_49e94740363ae3351321"
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_49e94740363ae3351321": {
+          "opcode": "operator_add",
+          "next": null,
+          "parent": "rf_f102bb640fd244aa6add",
+          "inputs": {
+            "NUM1": [
+              3,
+              [
+                12,
+                "分数",
+                "varId1"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "NUM2": [
+              1,
+              [
+                4,
+                "0"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_a097344cedb250f067b2": {
+          "opcode": "data_addtolist",
+          "next": null,
+          "parent": "rf_0657a2e29de83cb97921",
+          "inputs": {
+            "ITEM": [
+              3,
+              [
+                12,
+                "分数",
+                "varId1"
+              ],
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "LIST": [
+              "项目",
+              "items"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_7a1d914738c65955ba37": {
+          "opcode": "control_if_else",
+          "next": "rf_f3b8ceeed10b61f47d78",
+          "parent": "rf_41d8478532fce2605482",
+          "inputs": {
+            "CONDITION": [
+              2,
+              "rf_c37de8b955ffeb287ac3"
+            ],
+            "SUBSTACK": [
+              2,
+              "rf_b3a8187651599e7885b4"
+            ],
+            "SUBSTACK2": [
+              2,
+              "rf_d52255545c10152264b2"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_c37de8b955ffeb287ac3": {
+          "opcode": "operator_gt",
+          "next": null,
+          "parent": "rf_7a1d914738c65955ba37",
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "分数",
+                "varId1"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                4,
+                "5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_b3a8187651599e7885b4": {
+          "opcode": "data_setvariableto",
+          "next": null,
+          "parent": "rf_7a1d914738c65955ba37",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "成功"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_d52255545c10152264b2": {
+          "opcode": "data_setvariableto",
+          "next": null,
+          "parent": "rf_7a1d914738c65955ba37",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "失败"
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_f3b8ceeed10b61f47d78": {
+          "opcode": "event_broadcast",
+          "next": null,
+          "parent": "rf_7a1d914738c65955ba37",
+          "inputs": {
+            "BROADCAST_INPUT": [
+              1,
+              [
+                11,
+                "开始游戏",
+                "ready"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "rf_7781df9ac84242c1e65c": {
+          "blockId": "a",
+          "x": 332,
+          "y": 80,
+          "width": 360,
+          "height": 130,
+          "minimized": false,
+          "text": "还原工厂：模板重构，尚未重编译验证。\n代码置信度 0.85（规则证据分，非概率）。\n内部积木 ID 与布局为重新生成；不能视为原始结构完全一致。\n证据：*.fidelity-report.json / target 0 / script a"
+        }
+      },
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "assetId": "0ac33de9d7138a386563727540d10055",
+          "md5ext": "0ac33de9d7138a386563727540d10055.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {
+        "localScore": [
+          "分数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "c": {
+          "opcode": "event_whenbroadcastreceived",
+          "next": "rf_f490d7c1dc3c729124a0",
+          "parent": null,
+          "inputs": {},
+          "fields": {
+            "BROADCAST_OPTION": [
+              "开始游戏",
+              "ready"
+            ]
+          },
+          "shadow": false,
+          "topLevel": true,
+          "x": 96,
+          "y": 112
+        },
+        "rf_f490d7c1dc3c729124a0": {
+          "opcode": "motion_movesteps",
+          "next": "rf_7f6c055853e6b229ddd0",
+          "parent": "c",
+          "inputs": {
+            "STEPS": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_7f6c055853e6b229ddd0": {
+          "opcode": "motion_turnright",
+          "next": "rf_721af235d8a9c6c04255",
+          "parent": "rf_f490d7c1dc3c729124a0",
+          "inputs": {
+            "DEGREES": [
+              1,
+              [
+                4,
+                "15"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_721af235d8a9c6c04255": {
+          "opcode": "looks_changesizeby",
+          "next": "rf_bda72ebdc1112123f05f",
+          "parent": "rf_7f6c055853e6b229ddd0",
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "rf_bda72ebdc1112123f05f": {
+          "opcode": "data_setvariableto",
+          "next": null,
+          "parent": "rf_721af235d8a9c6c04255",
+          "inputs": {
+            "VALUE": [
+              3,
+              [
+                12,
+                "分数",
+                "varId1"
+              ],
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "localScore"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {
+        "rf_2df42027f8d5fc13d86e": {
+          "blockId": "c",
+          "x": 356,
+          "y": 112,
+          "width": 360,
+          "height": 130,
+          "minimized": false,
+          "text": "还原工厂：模板重构，尚未重编译验证。\n代码置信度 0.85（规则证据分，非概率）。\n内部积木 ID 与布局为重新生成；不能视为原始结构完全一致。\n证据：*.fidelity-report.json / target 1 / script c"
+        }
+      },
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "assetId": "91e42db1c66c0b276abf6234dc50b2eb",
+          "md5ext": "91e42db1c66c0b276abf6234dc50b2eb.png",
+          "dataFormat": "png",
+          "bitmapResolution": 2,
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "2.1.46",
+    "agent": "unpack-factory-fixture"
+  }
+}

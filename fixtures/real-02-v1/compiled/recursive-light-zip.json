@@ -1,0 +1,144 @@
+{
+  "format": "02engine-compiled-project",
+  "version": 1,
+  "projectVersion": 3,
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "varId1": [
+          "分数",
+          0
+        ],
+        "limit": [
+          "次数",
+          3
+        ]
+      },
+      "lists": {
+        "items": [
+          "项目",
+          []
+        ]
+      },
+      "broadcasts": {
+        "ready": "开始游戏"
+      },
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "assetId": "0ac33de9d7138a386563727540d10055",
+          "md5ext": "0ac33de9d7138a386563727540d10055.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {
+        "localScore": [
+          "分数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "assetId": "91e42db1c66c0b276abf6234dc50b2eb",
+          "md5ext": "91e42db1c66c0b276abf6234dc50b2eb.png",
+          "dataFormat": "png",
+          "bitmapResolution": 2,
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "extensionURLs": {},
+  "meta": {
+    "semver": "3.0.0"
+  },
+  "compiledTargets": {
+    "0": {
+      "targetIndex": 0,
+      "name": "Stage",
+      "isStage": true,
+      "scripts": {
+        "h": {
+          "factorySource": "eval(\"function _0x15f7(){const _0x35984a=['1540524FwKAfV','2jqdqCF','push','5zsOyNe','varId1','36JHxWTs','getTargetForStage','8873689ksdOAq','12448YsaTqw','variables','target','135221KQigov','value','6UaKhyE','2409741yQrEwr','8254550qQZKqe','runtime','limit','763ithUYM','开始游戏','1860972RElrcs'];_0x15f7=function(){return _0x35984a;};return _0x15f7();}function _0x223a(_0x2b6312,_0xa9e3b8){_0x2b6312=_0x2b6312-0x1a8;const _0x15f719=_0x15f7();let _0x223a5b=_0x15f719[_0x2b6312];return _0x223a5b;}(function(_0x5335f5,_0x42e547){const _0x2dc9d0=_0x5335f5();function _0x27ec8d(_0x575bf1,_0x2c4980){return _0x223a(_0x2c4980-0x3bb,_0x575bf1);}while(!![]){try{const _0x27ece7=-parseInt(_0x27ec8d(0x56b,0x56b))/0x1*(-parseInt(_0x27ec8d(0x575,0x576))/0x2)+-parseInt(_0x27ec8d(0x568,0x56d))/0x3*(parseInt(_0x27ec8d(0x578,0x575))/0x4)+-parseInt(_0x27ec8d(0x55d,0x563))/0x5*(parseInt(_0x27ec8d(0x56f,0x574))/0x6)+-parseInt(_0x27ec8d(0x56f,0x572))/0x7*(-parseInt(_0x27ec8d(0x565,0x568))/0x8)+-parseInt(_0x27ec8d(0x572,0x56e))/0x9+-parseInt(_0x27ec8d(0x575,0x56f))/0xa+-parseInt(_0x27ec8d(0x56d,0x567))/0xb*(-parseInt(_0x27ec8d(0x566,0x565))/0xc);if(_0x27ece7===_0x42e547)break;else _0x2dc9d0['push'](_0x2dc9d0['shift']());}catch(_0x3b6774){_0x2dc9d0['push'](_0x2dc9d0['shift']());}}}(_0x15f7,0x8697e),((()=>{const _0x5c8824=function _0x443228(_0x340f46){const _0x51564e=_0x340f46[_0x8d2915(0x76,0x74)],_0x4e4e2a=_0x51564e[_0x8d2915(0x7c,0x81)];function _0x8d2915(_0x4246f7,_0xcef28e){return _0x223a(_0x4246f7- -0x139,_0xcef28e);}const _0x17aeb4=_0x4e4e2a[_0x8d2915(0x72,0x70)](),_0x46ff39=_0x51564e[_0x8d2915(0x75,0x72)][_0x8d2915(0x70,0x74)],_0x505713=_0x51564e['variables'][_0x8d2915(0x7d,0x7c)],_0xadd0e5=_0x51564e['variables']['items'];return function*_0x557a98(){_0x46ff39['value']=0x1;function _0x2cc23a(_0x20f37b,_0x15cdfd){return _0x8d2915(_0x20f37b-0x119,_0x15cdfd);}for(var _0x1edb9d=+_0x505713[_0x2cc23a(0x191,0x19c)]||0x0;_0x1edb9d>=0.5;_0x1edb9d--){_0x46ff39[_0x2cc23a(0x191,0x186)]=(+_0x46ff39[_0x2cc23a(0x191,0x187)]||0x0)+0x2,_0xadd0e5[_0x2cc23a(0x191,0x187)][_0x2cc23a(0x19c,0x197)](_0x46ff39['value']),_0xadd0e5['_monitorUpToDate']=![],yield;}compareGreaterThan(_0x46ff39[_0x2cc23a(0x191,0x193)],0x5)?_0x46ff39[_0x2cc23a(0x191,0x195)]='成功':_0x46ff39[_0x2cc23a(0x191,0x192)]='失败';startHats('event_whenbroadcastreceived',{'BROADCAST_OPTION':_0x2cc23a(0x198,0x1a0)}),retire();return;};};return _0x5c8824;})()));\")",
+          "executableHat": false
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "h",
+          "opcode": "event_whenflagclicked",
+          "fieldsOfInputs": {}
+        }
+      ]
+    },
+    "1": {
+      "targetIndex": 1,
+      "name": "Sprite1",
+      "isStage": false,
+      "scripts": {
+        "n": {
+          "factorySource": "eval(\"(function(_0x2b3236,_0x42aec5){const _0x238c65=_0x2b3236();function _0x580e4e(_0x2e3ccd,_0x383cb6){return _0x4e08(_0x2e3ccd- -0x32c,_0x383cb6);}while(!![]){try{const _0x2bb76f=-parseInt(_0x580e4e(-0x15a,-0x15b))/0x1+-parseInt(_0x580e4e(-0x15d,-0x164))/0x2+parseInt(_0x580e4e(-0x150,-0x147))/0x3+parseInt(_0x580e4e(-0x15c,-0x154))/0x4*(parseInt(_0x580e4e(-0x155,-0x15a))/0x5)+-parseInt(_0x580e4e(-0x14e,-0x148))/0x6+parseInt(_0x580e4e(-0x153,-0x14b))/0x7+parseInt(_0x580e4e(-0x14f,-0x14e))/0x8*(parseInt(_0x580e4e(-0x14b,-0x14f))/0x9);if(_0x2bb76f===_0x42aec5)break;else _0x238c65['push'](_0x238c65['shift']());}catch(_0x431756){_0x238c65['push'](_0x238c65['shift']());}}}(_0x1de4,0x7cad5),((()=>{const _0x2995b8=function _0x3e2262(_0x2ce89d){const _0x4f9f9a=_0x2ce89d[_0x170030(0x320,0x328)],_0x2b2c6b=_0x4f9f9a[_0x170030(0x326,0x32a)];function _0x170030(_0xa97546,_0x596fb2){return _0x4e08(_0x596fb2-0x154,_0xa97546);}const _0x17e48a=_0x2b2c6b[_0x170030(0x323,0x327)](),_0x1e4ca7=_0x4f9f9a[_0x170030(0x31b,0x322)][_0x170030(0x331,0x333)],_0x236e44=_0x17e48a[_0x170030(0x322,0x322)][_0x170030(0x32f,0x32f)];return function*_0x36e78a(){_0x2b2c6b[_0x97cee(0x1ab,0x1b2)]['_moveSteps'](0xa,_0x4f9f9a),_0x4f9f9a[_0x97cee(0x1a6,0x19e)](_0x4f9f9a[_0x97cee(0x1a9,0x1b1)]+0xf),_0x4f9f9a[_0x97cee(0x1a2,0x19a)](_0x4f9f9a['size']+0x5),_0x1e4ca7[_0x97cee(0x1b1,0x1b4)]=_0x236e44[_0x97cee(0x1b1,0x1ba)];function _0x97cee(_0x34bed0,_0xe96c7f){return _0x170030(_0xe96c7f,_0x34bed0- -0x183);}retire();return;};};return _0x2995b8;})()));function _0x4e08(_0x357890,_0x4b9063){_0x357890=_0x357890-0x1ce;const _0x1de480=_0x1de4();let _0x4e0805=_0x1de480[_0x357890];return _0x4e0805;}function _0x1de4(){const _0x552855=['value','1014219PgcOfz','variables','1676058RRlMqP','70552UPMJYO','setSize','713119lkZJMe','getTargetForStage','target','setDirection','runtime','260HPwxYg','direction','5258239rTOLhW','ext_scratch3_motion','varId1','227061wsIrXb','32UGYtvN','797874XxXCDY','localScore'];_0x1de4=function(){return _0x552855;};return _0x1de4();}\")",
+          "executableHat": false
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "n",
+          "opcode": "event_whenbroadcastreceived",
+          "fieldsOfInputs": {
+            "BROADCAST_OPTION": {
+              "name": "BROADCAST_OPTION",
+              "value": "开始游戏",
+              "id": "ready",
+              "variableType": "broadcast_msg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "obfuscation": {
+    "mode": "javascript-obfuscator",
+    "version": 2,
+    "level": "light"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "format": "02engine-compiled-project",
+  "version": 1,
+  "projectVersion": 3,
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "varId1": [
+          "分数",
+          0
+        ],
+        "limit": [
+          "次数",
+          3
+        ]
+      },
+      "lists": {
+        "items": [
+          "项目",
+          []
+        ]
+      },
+      "broadcasts": {
+        "ready": "开始游戏"
+      },
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "assetId": "0ac33de9d7138a386563727540d10055",
+          "md5ext": "0ac33de9d7138a386563727540d10055.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {
+        "localScore": [
+          "分数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "assetId": "91e42db1c66c0b276abf6234dc50b2eb",
+          "md5ext": "91e42db1c66c0b276abf6234dc50b2eb.png",
+          "dataFormat": "png",
+          "bitmapResolution": 2,
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "extensionURLs": {},
+  "meta": {
+    "semver": "3.0.0"
+  },
+  "compiledTargets": {
+    "0": {
+      "targetIndex": 0,
+      "name": "Stage",
+      "isStage": true,
+      "scripts": {
+        "h": {
+          "factorySource": "eval(\"function _0xd4ff(_0x20cf47,_0x5700f7){_0x20cf47=_0x20cf47-(-0x9b6+-0x61b+-0x111f*-0x1);const _0x1699b4=_0x2a87();let _0x24c6f4=_0x1699b4[_0x20cf47];if(_0xd4ff['kAzhEd']===undefined){var _0x4d5ad3=function(_0xa52904){const _0x1caaf6='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2c3c74='',_0x55745a='';for(let _0x62b061=0xdc3+0xb35+-0x11*0x178,_0x3d28ff,_0x3fe125,_0x44ca4f=0x2052+-0x267a+0x628;_0x3fe125=_0xa52904['charAt'](_0x44ca4f++);~_0x3fe125&&(_0x3d28ff=_0x62b061%(0x10e+-0x266a+0x2*0x12b0)?_0x3d28ff*(-0x5*-0x363+0x1dd7+-0x2e86)+_0x3fe125:_0x3fe125,_0x62b061++%(0x16*-0x11b+-0x18bc+0x3112))?_0x2c3c74+=String['fromCharCode'](-0x26*-0x7d+-0xca6*0x2+-0x1*-0x7bd&_0x3d28ff>>(-(-0x13b8+-0x194*0x13+-0x3f*-0xca)*_0x62b061&0x4b2*-0x6+0x248a+-0x4*0x216)):0xbbd*-0x1+0x335*-0x9+0x289a){_0x3fe125=_0x1caaf6['indexOf'](_0x3fe125);}for(let _0x49d064=0x1132+0x1*0x1313+-0x2445,_0x5199ea=_0x2c3c74['length'];_0x49d064<_0x5199ea;_0x49d064++){_0x55745a+='%'+('00'+_0x2c3c74['charCodeAt'](_0x49d064)['toString'](-0x8*-0x1b1+0x1ca4+-0x1ea*0x16))['slice'](-(0xb2*-0x25+-0x11dc+0x2b98));}return decodeURIComponent(_0x55745a);};_0xd4ff['cwWyNw']=_0x4d5ad3,_0xd4ff['ikRFqL']={},_0xd4ff['kAzhEd']=!![];}const _0x205297=_0x1699b4[-0x1f40+0x74*0x26+0xe08],_0x54daa8=_0x20cf47+_0x205297,_0x5b58cb=_0xd4ff['ikRFqL'][_0x54daa8];return!_0x5b58cb?(_0x24c6f4=_0xd4ff['cwWyNw'](_0x24c6f4),_0xd4ff['ikRFqL'][_0x54daa8]=_0x24c6f4):_0x24c6f4=_0x5b58cb,_0x24c6f4;}(function(_0x3dab1f,_0x1dad6f){const _0x5f516a=_0x3dab1f();function _0x47ebb8(_0x3afabd,_0x2d14ce){return _0xd4ff(_0x3afabd- -0x3de,_0x2d14ce);}while(!![]){try{const _0x58cff6=parseInt(_0x47ebb8(-0x276,-0x271))/(-0x1*0x2478+-0xfd4*-0x2+0x1*0x4d1)*(-parseInt(_0x47ebb8(-0x287,-0x28e))/(-0x21cf+0x12a*0x4+0x1*0x1d29))+parseInt(_0x47ebb8(-0x290,-0x29e))/(-0xebd*-0x1+0x240a*-0x1+0x1550)+parseInt(_0x47ebb8(-0x277,-0x26b))/(-0xd10+-0x2f*-0x9+0xb6d)*(parseInt(_0x47ebb8(-0x283,-0x28f))/(0x4*0x19d+-0x3bc+-0x2b3))+parseInt(_0x47ebb8(-0x28e,-0x290))/(-0x731+0x33*0x3b+-0x48a)+parseInt(_0x47ebb8(-0x281,-0x28e))/(-0x3a4*0x7+-0x8*-0x417+-0x735)*(parseInt(_0x47ebb8(-0x288,-0x292))/(-0xdd9+0x17b3+-0x9d2))+-parseInt(_0x47ebb8(-0x28f,-0x296))/(-0x4a1*0x8+0x1*0x2d7+0x2*0x111d)*(parseInt(_0x47ebb8(-0x282,-0x278))/(-0x1e64+-0x1510+0x337e))+-parseInt(_0x47ebb8(-0x27e,-0x27f))/(0x8b7+0x625*-0x3+0x11*0x93);if(_0x58cff6===_0x1dad6f)break;else _0x5f516a['push'](_0x5f516a['shift']());}catch(_0x2eeda6){_0x5f516a['push'](_0x5f516a['shift']());}}}(_0x2a87,0x2*-0x3e54b+0x8c555+0x5598d*0x1),((()=>{const _0x3a0a53=function _0xf278ce(_0x57912a){function _0x10eec5(_0x5d07da,_0x1131b4){return _0xd4ff(_0x5d07da- -0x28b,_0x1131b4);}const _0x1b12a6=_0x57912a[_0x10eec5(-0x136,-0x12c)],_0xd4de8b=_0x1b12a6[_0x10eec5(-0x127,-0x12f)],_0x5c4932=_0xd4de8b[_0x10eec5(-0x125,-0x118)+_0x10eec5(-0x133,-0x135)+'e'](),_0x40225a=_0x1b12a6[_0x10eec5(-0x13a,-0x144)+'s'][_0x10eec5(-0x131,-0x133)],_0x4c3000=_0x1b12a6[_0x10eec5(-0x13a,-0x138)+'s'][_0x10eec5(-0x138,-0x12b)],_0x26c5b5=_0x1b12a6[_0x10eec5(-0x13a,-0x13f)+'s'][_0x10eec5(-0x139,-0x13e)];return function*_0x49772f(){_0x40225a[_0x24c7f4(0xf1,0xea)]=-0xc79*-0x1+-0xbe6+-0x92;for(var _0x263910=+_0x4c3000[_0x24c7f4(0xf1,0xe3)]||-0x20a+0x10e+0xfc;_0x263910>=0x1d8b*0x1+-0x1*-0x25f+-0x1fea+0.5;_0x263910--){_0x40225a[_0x24c7f4(0xf1,0xf0)]=(+_0x40225a[_0x24c7f4(0xf1,0xe5)]||-0xb2f+0x16*-0x11b+0x2381)+(-0x198d+-0x26*-0x7d+-0xa3*-0xb),_0x26c5b5[_0x24c7f4(0xf1,0xfb)][_0x24c7f4(0xe9,0xde)](_0x40225a[_0x24c7f4(0xf1,0xfc)]),_0x26c5b5[_0x24c7f4(0xe4,0xe4)+_0x24c7f4(0xf5,0xfb)]=![],yield;}compareGreaterThan(_0x40225a[_0x24c7f4(0xf1,0xe3)],0x152+-0x522+0x3d5)?_0x40225a[_0x24c7f4(0xf1,0xe4)]='成功':_0x40225a[_0x24c7f4(0xf1,0xf6)]='失败';startHats(_0x24c7f4(0xee,0xeb)+_0x24c7f4(0xf2,0xfb)+_0x24c7f4(0xf3,0xe7)+_0x24c7f4(0xf9,0x103),{'BROADCAST_OPTION':_0x24c7f4(0xef,0xf9)}),retire();function _0x24c7f4(_0x10ff13,_0x4bfdaf){return _0x10eec5(_0x10ff13-0x21b,_0x4bfdaf);}return;};};return _0x3a0a53;})()));function _0x2a87(){const _0x1284dd=['DMvK','mtq0odyXm09QCLzTDq','mJm0mffJrwHdyW','mJaZndm1ne9tvMnUuW','DMfYAwfIBgu','AxrLBxm','BgLTAxq','x21VBML0B3i','DgfYz2v0','mtuYqLjoq1jt','nJqXohfNzKXOuW','DezVCLn0ywC','ChvZAa','DMfYswqX','mtK0mJuWnxLvzeHjta','mZeWmffwwxbqAq','mtCZmtG3AhPVBfLg','zxzLBNrFD2G','5BYa5AEl5RI45OIp','mta1nJC2ntzuBvLiq2S','DMfSDwu','zw5ICM9Hzgm','yxn0CMvJzwK','CNvUDgLTzq','vxbuB0rHDgu','z2v0vgfYz2u','offYvvHMCa','mtKXtgDPB0fs'];_0x2a87=function(){return _0x1284dd;};return _0x2a87();}\")",
+          "executableHat": false,
+          "deobfuscation": {
+            "schemaVersion": 1,
+            "status": "partial",
+            "transforms": [],
+            "warnings": [
+              "字符串轮转执行前缀未证明：_0x2a87",
+              "字符串表顺序未证明，保留输入源码及自检文本"
+            ],
+            "residuals": [
+              {
+                "type": "string-array-decoder-bootstrap",
+                "line": 1
+              },
+              {
+                "type": "string-array-decoder-bootstrap",
+                "line": 1
+              },
+              {
+                "type": "string-array-provider",
+                "line": 1
+              },
+              {
+                "type": "string-array-rotation-unresolved"
+              }
+            ],
+            "executesInput": false,
+            "proof": "bounded-static-ast-transformations",
+            "behaviorEquivalenceVerified": false,
+            "builtinEffects": {
+              "aliasModel": "scope-binding-may-set",
+              "bindings": 28,
+              "edges": 2,
+              "processedFacts": 0,
+              "finiteFactLimit": 364,
+              "methodProcessedFacts": 0,
+              "finiteMethodFactLimit": 168,
+              "invocationResolutionSteps": 74,
+              "invocationResolutionLimited": false,
+              "argumentResolutionSteps": 0,
+              "argumentResolutionLimited": false,
+              "aliases": [],
+              "methodAliases": [],
+              "blockedBuiltins": [],
+              "blockedMembers": []
+            },
+            "staticEvaluationSteps": 11
+          }
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "h",
+          "opcode": "event_whenflagclicked",
+          "fieldsOfInputs": {}
+        }
+      ]
+    },
+    "1": {
+      "targetIndex": 1,
+      "name": "Sprite1",
+      "isStage": false,
+      "scripts": {
+        "n": {
+          "factorySource": "eval(\"(function(_0x17e40d,_0x50512b){function _0x106ba4(_0x5552aa,_0x5b989a){return _0x4d73(_0x5b989a- -0x53,_0x5552aa);}const _0x47da1c=_0x17e40d();while(!![]){try{const _0x508c02=parseInt(_0x106ba4(0x17e,0x179))/(0xfaa+0x2040+-0x2fe9)+parseInt(_0x106ba4(0x177,0x171))/(0xf60+-0x198e+-0xa3*-0x10)+parseInt(_0x106ba4(0x183,0x185))/(-0x1a5*0x17+-0x1db0+0x4386)*(-parseInt(_0x106ba4(0x18b,0x17d))/(0xe3*-0x3+-0x210b+-0x18*-0x17d))+-parseInt(_0x106ba4(0x17f,0x172))/(-0x31*0x93+-0xb*0xe9+0x262b)*(-parseInt(_0x106ba4(0x176,0x17f))/(-0x1f5e+0x3e9+-0x1*-0x1b7b))+-parseInt(_0x106ba4(0x16e,0x175))/(0x99e*-0x1+-0x1fd6+-0x1*-0x297b)*(parseInt(_0x106ba4(0x168,0x174))/(0x1c0b+0x2cf*0xd+0x4086*-0x1))+parseInt(_0x106ba4(0x183,0x180))/(0x2585+0xf74+-0x38*0xf2)*(parseInt(_0x106ba4(0x179,0x16b))/(-0x1*0x138b+-0x1*-0x1b69+0x7d4*-0x1))+parseInt(_0x106ba4(0x180,0x17c))/(0xb64+-0x7*0x28c+0x67b);if(_0x508c02===_0x50512b)break;else _0x47da1c['push'](_0x47da1c['shift']());}catch(_0x41ff35){_0x47da1c['push'](_0x47da1c['shift']());}}}(_0x3c3a,-0x77d80+0xc8b*0x13+0xec4e9),((()=>{const _0x4a1b4b=function _0x2ee97c(_0x580e8c){const _0xb808ac=_0x580e8c[_0x59e77d(-0x1a8,-0x1a0)],_0x1cd66b=_0xb808ac[_0x59e77d(-0x1aa,-0x1a2)],_0x5bdc61=_0x1cd66b[_0x59e77d(-0x1ad,-0x19f)+_0x59e77d(-0x1a6,-0x1a1)+'e']();function _0x59e77d(_0x2a66c3,_0x52b5b4){return _0x4d73(_0x52b5b4- -0x376,_0x2a66c3);}const _0x3836bf=_0xb808ac[_0x59e77d(-0x1c0,-0x1b4)+'s'][_0x59e77d(-0x1b7,-0x1ab)+'re'],_0x285a0d=_0x5bdc61[_0x59e77d(-0x1b8,-0x1b4)+'s'][_0x59e77d(-0x1ad,-0x1b5)];return function*_0x269474(){_0x1cd66b[_0x142235(0x318,0x30e)+_0x142235(0x315,0x31e)+_0x142235(0x30f,0x30f)][_0x142235(0x31c,0x31f)+'ps'](0x1bec+-0x73e+-0x14a4,_0xb808ac),_0xb808ac[_0x142235(0x30e,0x316)+_0x142235(0x312,0x309)](_0xb808ac[_0x142235(0x320,0x31f)+'n']+(-0x1f18+-0x26d0+0x45f7)),_0xb808ac[_0x142235(0x31d,0x327)](_0xb808ac[_0x142235(0x30c,0x302)]+(-0x116*0x4+-0x1f*-0x6+0x13*0x31)),_0x3836bf[_0x142235(0x319,0x30e)]=_0x285a0d[_0x142235(0x319,0x31c)];function _0x142235(_0x32badf,_0x38ea41){return _0x59e77d(_0x38ea41,_0x32badf-0x4c5);}retire();return;};};return _0x4a1b4b;})()));function _0x4d73(_0x4a7ca8,_0x2cb52a){_0x4a7ca8=_0x4a7ca8-(-0x2e6*0x1+0x174a+0xbf*-0x19);const _0x4ab6dc=_0x3c3a();let _0x4f2257=_0x4ab6dc[_0x4a7ca8];if(_0x4d73['CEMKrw']===undefined){var _0x47255b=function(_0x3b8104){const _0x485145='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2abfd7='',_0x5276b0='';for(let _0x597fc0=0x6be+-0x1*0x227+-0x497,_0x343533,_0x47ef55,_0x35979a=-0x229a+-0xfa4+0x323e;_0x47ef55=_0x3b8104['charAt'](_0x35979a++);~_0x47ef55&&(_0x343533=_0x597fc0%(-0x1b99+0x3*-0x6b6+0x2fbf)?_0x343533*(0x7*0x4eb+-0x1*0x14e5+-0x154*0xa)+_0x47ef55:_0x47ef55,_0x597fc0++%(-0x2*0x7b9+0x2431+-0x14bb))?_0x2abfd7+=String['fromCharCode'](0x770+-0x4f*-0x3a+-0x1*0x1857&_0x343533>>(-(0x133c*-0x2+0x1afd+-0x11*-0xad)*_0x597fc0&0x1d94+0x1b82+-0x3910)):-0x1e2e*0x1+0x25*0x10c+-0x88e){_0x47ef55=_0x485145['indexOf'](_0x47ef55);}for(let _0x189180=0x9*0x390+0x9*0x3d3+-0x427b,_0x5a5cfb=_0x2abfd7['length'];_0x189180<_0x5a5cfb;_0x189180++){_0x5276b0+='%'+('00'+_0x2abfd7['charCodeAt'](_0x189180)['toString'](0x5*0x771+-0x11*-0xf8+0x359d*-0x1))['slice'](-(-0x2ec+-0x1639+-0x1927*-0x1));}return decodeURIComponent(_0x5276b0);};_0x4d73['SMBHsF']=_0x47255b,_0x4d73['NWZGvR']={},_0x4d73['CEMKrw']=!![];}const _0x47d595=_0x4ab6dc[0x64d+-0x24bb+-0x1e6e*-0x1],_0x520a3d=_0x4a7ca8+_0x47d595,_0x56d786=_0x4d73['NWZGvR'][_0x520a3d];return!_0x56d786?(_0x4f2257=_0x4d73['SMBHsF'](_0x4f2257),_0x4d73['NWZGvR'][_0x520a3d]=_0x4f2257):_0x4f2257=_0x56d786,_0x4f2257;}function _0x3c3a(){const _0x40f15d=['mtmWotC1mKvfr3HzsW','C2L6zq','nZboBePczeS','C2v0rgLYzwm','Aw9U','DMfYswqX','DMfYAwfIBgu','DgLVBG','otG2mtiYt0LIvLDc','mtmWodv5BgX4v2i','DgnOm19TB3q','mtaXnJuYofnwr054uW','mZvpEu9Jtwm','zxH0x3nJCMe','DMfSDwu','Bg9JywXty28','mJa0odyWC21MwLDJ','x21VDMvtDgu','C2v0u2L6zq','mteZnJe4nJDRCuntswG','oenfvNrhwq','zgLYzwn0Aw8','nZHfyMT3s2i','mZyYmtG3v0norg5y','CNvUDgLTzq','DezVCLn0ywC','DgfYz2v0','z2v0vgfYz2u'];_0x3c3a=function(){return _0x40f15d;};return _0x3c3a();}\")",
+          "executableHat": false,
+          "deobfuscation": {
+            "schemaVersion": 1,
+            "status": "partial",
+            "transforms": [],
+            "warnings": [
+              "字符串轮转执行前缀未证明：_0x3c3a",
+              "字符串表顺序未证明，保留输入源码及自检文本"
+            ],
+            "residuals": [
+              {
+                "type": "string-array-decoder-bootstrap",
+                "line": 1
+              },
+              {
+                "type": "string-array-decoder-bootstrap",
+                "line": 1
+              },
+              {
+                "type": "string-array-provider",
+                "line": 1
+              },
+              {
+                "type": "string-array-rotation-unresolved"
+              }
+            ],
+            "executesInput": false,
+            "proof": "bounded-static-ast-transformations",
+            "behaviorEquivalenceVerified": false,
+            "builtinEffects": {
+              "aliasModel": "scope-binding-may-set",
+              "bindings": 26,
+              "edges": 2,
+              "processedFacts": 0,
+              "finiteFactLimit": 338,
+              "methodProcessedFacts": 0,
+              "finiteMethodFactLimit": 156,
+              "invocationResolutionSteps": 66,
+              "invocationResolutionLimited": false,
+              "argumentResolutionSteps": 0,
+              "argumentResolutionLimited": false,
+              "aliases": [],
+              "methodAliases": [],
+              "blockedBuiltins": [],
+              "blockedMembers": []
+            },
+            "staticEvaluationSteps": 11
+          }
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "n",
+          "opcode": "event_whenbroadcastreceived",
+          "fieldsOfInputs": {
+            "BROADCAST_OPTION": {
+              "name": "BROADCAST_OPTION",
+              "value": "开始游戏",
+              "id": "ready",
+              "variableType": "broadcast_msg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "obfuscation": {
+    "mode": "javascript-obfuscator",
+    "version": 2,
+    "level": "balanced"
+  }
+}

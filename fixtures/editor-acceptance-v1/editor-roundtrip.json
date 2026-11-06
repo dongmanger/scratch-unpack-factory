@@ -1,0 +1,13 @@
+{
+  "kind": "real-editor-save-reimport-fixture-acceptance",
+  "editor": "https://turbowarp.org/editor",
+  "input": "recursive.reconstructed.sb3",
+  "api": ["vm.toJSON", "vm.saveProjectSb3('arraybuffer')", "vm.loadProject(savedBytes)"],
+  "savedBytes": 2060,
+  "definitionsOpcodesAssetsEqual": true,
+  "loadingStateAfterReload": "SHOWING_WITHOUT_ID",
+  "targetsAfterReload": [{"name":"Stage","objectBlockCount":13},{"name":"Sprite1","objectBlockCount":5}],
+  "compared": ["target names", "variable/list/broadcast definitions and values", "sorted object block opcode multiset", "costume names/assetId/md5ext"],
+  "limitations": ["Compared metadata and opcode multiset, not byte-identical project JSON or all edge connections", "Only this trusted fixture was checked", "No guarantee about arbitrary inputs, dynamic extensions or all media behavior"],
+  "transientFailure": "Initial request failed after prior local fixture server ended; port availability checked, server restarted, editor refreshed, final result above observed"
+}

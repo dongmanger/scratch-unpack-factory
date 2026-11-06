@@ -1,0 +1,139 @@
+{
+  "format": "02engine-compiled-project",
+  "version": 1,
+  "projectVersion": 3,
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "varId1": [
+          "分数",
+          0
+        ],
+        "limit": [
+          "次数",
+          3
+        ]
+      },
+      "lists": {
+        "items": [
+          "项目",
+          []
+        ]
+      },
+      "broadcasts": {
+        "ready": "开始游戏"
+      },
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "assetId": "0ac33de9d7138a386563727540d10055",
+          "md5ext": "0ac33de9d7138a386563727540d10055.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {
+        "localScore": [
+          "分数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "assetId": "91e42db1c66c0b276abf6234dc50b2eb",
+          "md5ext": "91e42db1c66c0b276abf6234dc50b2eb.png",
+          "dataFormat": "png",
+          "bitmapResolution": 2,
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "extensionURLs": {},
+  "meta": {
+    "semver": "3.0.0"
+  },
+  "compiledTargets": {
+    "0": {
+      "targetIndex": 0,
+      "name": "Stage",
+      "isStage": true,
+      "scripts": {
+        "h": {
+          "factorySource": "(function factory2(thread) { const target = thread.target; const runtime = target.runtime; const stage = runtime.getTargetForStage();\nconst b0 = target.variables[\"varId1\"];\nconst b1 = target.variables[\"limit\"];\nconst b2 = target.variables[\"items\"];\nreturn function* gen2 () {\nb0.value = 1;\nfor (var a0 = (+b1.value || 0); a0 >= 0.5; a0--) {\nb0.value = ((+b0.value || 0) + 2);\nb2.value.push(b0.value);\nb2._monitorUpToDate = false;\nyield;\n}\nif (compareGreaterThan(b0.value, 5)) {\nb0.value = \"成功\";\n} else {\nb0.value = \"失败\";\n}\nstartHats(\"event_whenbroadcastreceived\", { BROADCAST_OPTION: \"开始游戏\" });\nretire(); return;\n}; })",
+          "executableHat": false
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "h",
+          "opcode": "event_whenflagclicked",
+          "fieldsOfInputs": {}
+        }
+      ]
+    },
+    "1": {
+      "targetIndex": 1,
+      "name": "Sprite1",
+      "isStage": false,
+      "scripts": {
+        "n": {
+          "factorySource": "(function factory3(thread) { const target = thread.target; const runtime = target.runtime; const stage = runtime.getTargetForStage();\nconst b0 = target.variables[\"localScore\"];\nconst b1 = stage.variables[\"varId1\"];\nreturn function* gen3 () {\nruntime.ext_scratch3_motion._moveSteps(10, target);\ntarget.setDirection((target.direction + 15));\ntarget.setSize(target.size + 5);\nb0.value = b1.value;\nretire(); return;\n}; })",
+          "executableHat": false
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "n",
+          "opcode": "event_whenbroadcastreceived",
+          "fieldsOfInputs": {
+            "BROADCAST_OPTION": {
+              "name": "BROADCAST_OPTION",
+              "value": "开始游戏",
+              "id": "ready",
+              "variableType": "broadcast_msg"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

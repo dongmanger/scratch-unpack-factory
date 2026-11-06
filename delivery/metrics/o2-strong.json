@@ -1,0 +1,27 @@
+{
+  "candidate": "../work/final/o2-strong/10128407-strong.partial.sb3",
+  "structural": {
+    "truthScripts": 515,
+    "candidateScripts": 451,
+    "matchedScripts": 399,
+    "scriptRecall": 0.7747572815533981,
+    "scriptPrecision": 0.88470066518847,
+    "truthBlocks": 15507,
+    "candidateBlocks": 12939,
+    "matchedBlocks": 10877,
+    "blockRecall": 0.7014251628296898,
+    "blockPrecision": 0.8406368343766907,
+    "inflation": 0.8343973689301606
+  },
+  "broadcasts": {
+    "truth": 47,
+    "candidate": 47,
+    "extra": 0,
+    "missing": 0
+  },
+  "validation": {
+    "ok": true,
+    "errors": 0,
+    "warnings": 0
+  }
+}

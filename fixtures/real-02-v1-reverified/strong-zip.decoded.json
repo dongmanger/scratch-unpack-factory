@@ -1,0 +1,314 @@
+{
+  "format": "02engine-compiled-project",
+  "version": 1,
+  "projectVersion": 3,
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "varId1": [
+          "分数",
+          0
+        ],
+        "limit": [
+          "次数",
+          3
+        ]
+      },
+      "lists": {
+        "items": [
+          "项目",
+          []
+        ]
+      },
+      "broadcasts": {
+        "ready": "开始游戏"
+      },
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "assetId": "0ac33de9d7138a386563727540d10055",
+          "md5ext": "0ac33de9d7138a386563727540d10055.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {
+        "localScore": [
+          "分数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "assetId": "91e42db1c66c0b276abf6234dc50b2eb",
+          "md5ext": "91e42db1c66c0b276abf6234dc50b2eb.png",
+          "dataFormat": "png",
+          "bitmapResolution": 2,
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "extensionURLs": {},
+  "meta": {
+    "semver": "3.0.0"
+  },
+  "compiledTargets": {
+    "0": {
+      "targetIndex": 0,
+      "name": "Stage",
+      "isStage": true,
+      "scripts": {
+        "h": {
+          "factorySource": "(function _0x315a31(thread) {\n  const target = thread.target;\n  const runtime = target.runtime;\n  const stage = runtime.getTargetForStage();\n  const _0xf23d78 = target.variables.varId1;\n  const _0x53d8e6 = target.variables.limit;\n  const _0xd4de86 = target.variables.items;\n  return function* _0x5eae59() {\n    {\n      _0xf23d78.value = 1;\n      for (var _0x5d3fd3 = +_0x53d8e6.value || 0; _0x5d3fd3 >= 0.5; _0x5d3fd3--) {\n        _0xf23d78.value = (+_0xf23d78.value || 0) + 2;\n        _0xd4de86.value.push(_0xf23d78.value);\n        _0xd4de86._monitorUpToDate = false;\n        yield;\n      }\n      compareGreaterThan(_0xf23d78.value, 5) ? _0xf23d78.value = '成功' : _0xf23d78.value = '失败';\n      startHats(\"event_whenbroadcastreceived\", {\n        'BROADCAST_OPTION': \"\\u5F00\\u59CB\\u6E38\\u620F\"\n      });\n      retire();\n      return;\n    }\n  };\n});",
+          "executableHat": false,
+          "deobfuscation": {
+            "schemaVersion": 1,
+            "status": "transformed",
+            "transforms": [
+              {
+                "pass": "literal-eval-unwrapping"
+              },
+              {
+                "pass": "decoder-discovery",
+                "encoding": "rc4",
+                "name": "_0xa976",
+                "entries": 71
+              },
+              {
+                "pass": "string-array-rotation",
+                "provider": "_0x1db5",
+                "proof": "generated-top-level-bootstrap-prefix"
+              },
+              {
+                "pass": "bounded-static-evaluation",
+                "count": 133
+              },
+              {
+                "pass": "object-proxy-inlining",
+                "count": 1
+              },
+              {
+                "pass": "property-normalization",
+                "count": 87
+              },
+              {
+                "pass": "structural-unwrapping",
+                "count": 16
+              },
+              {
+                "pass": "constant-switch-dispatcher-unflattening",
+                "steps": 6,
+                "terminal": true
+              },
+              {
+                "pass": "unused-decoder-component-removal",
+                "count": 13
+              },
+              {
+                "pass": "object-proxy-inlining",
+                "count": 3
+              },
+              {
+                "pass": "recognized-self-defending-prologue-removal",
+                "count": 2,
+                "equivalenceScope": "application-results-without-source-string-introspection"
+              },
+              {
+                "pass": "unreferenced-pure-binding-removal",
+                "count": 1
+              },
+              {
+                "pass": "structural-unwrapping",
+                "count": 1
+              }
+            ],
+            "warnings": [],
+            "residuals": [],
+            "executesInput": false,
+            "proof": "bounded-static-ast-transformations",
+            "behaviorEquivalenceVerified": false,
+            "builtinEffects": {
+              "aliasModel": "scope-binding-may-set",
+              "bindings": 51,
+              "edges": 2,
+              "processedFacts": 0,
+              "finiteFactLimit": 663,
+              "methodProcessedFacts": 0,
+              "finiteMethodFactLimit": 306,
+              "invocationResolutionSteps": 131,
+              "invocationResolutionLimited": false,
+              "argumentResolutionSteps": 0,
+              "argumentResolutionLimited": false,
+              "aliases": [],
+              "methodAliases": [],
+              "blockedBuiltins": [],
+              "blockedMembers": []
+            },
+            "staticEvaluationSteps": 15328
+          }
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "h",
+          "opcode": "event_whenflagclicked",
+          "fieldsOfInputs": {}
+        }
+      ]
+    },
+    "1": {
+      "targetIndex": 1,
+      "name": "Sprite1",
+      "isStage": false,
+      "scripts": {
+        "n": {
+          "factorySource": "(function _0x224c1f(thread) {\n  const target = thread.target;\n  const runtime = target.runtime;\n  const stage = runtime.getTargetForStage();\n  const _0xadcae5 = target.variables.localScore;\n  const _0x3de744 = stage.variables.varId1;\n  return function* _0x148747() {\n    {\n      runtime.ext_scratch3_motion._moveSteps(10, target);\n      target.setDirection(target.direction + 15);\n      target.setSize(target.size + 5);\n      _0xadcae5.value = _0x3de744.value;\n      retire();\n      return;\n    }\n  };\n});",
+          "executableHat": false,
+          "deobfuscation": {
+            "schemaVersion": 1,
+            "status": "transformed",
+            "transforms": [
+              {
+                "pass": "literal-eval-unwrapping"
+              },
+              {
+                "pass": "decoder-discovery",
+                "encoding": "rc4",
+                "name": "_0x2c6d",
+                "entries": 65
+              },
+              {
+                "pass": "string-array-rotation",
+                "provider": "_0x4073",
+                "proof": "generated-top-level-bootstrap-prefix"
+              },
+              {
+                "pass": "bounded-static-evaluation",
+                "count": 92
+              },
+              {
+                "pass": "object-proxy-inlining",
+                "count": 1
+              },
+              {
+                "pass": "property-normalization",
+                "count": 80
+              },
+              {
+                "pass": "structural-unwrapping",
+                "count": 16
+              },
+              {
+                "pass": "constant-switch-dispatcher-unflattening",
+                "steps": 6,
+                "terminal": true
+              },
+              {
+                "pass": "unused-decoder-component-removal",
+                "count": 13
+              },
+              {
+                "pass": "object-proxy-inlining",
+                "count": 1
+              },
+              {
+                "pass": "recognized-self-defending-prologue-removal",
+                "count": 2,
+                "equivalenceScope": "application-results-without-source-string-introspection"
+              },
+              {
+                "pass": "unreferenced-pure-binding-removal",
+                "count": 1
+              },
+              {
+                "pass": "structural-unwrapping",
+                "count": 1
+              }
+            ],
+            "warnings": [],
+            "residuals": [],
+            "executesInput": false,
+            "proof": "bounded-static-ast-transformations",
+            "behaviorEquivalenceVerified": false,
+            "builtinEffects": {
+              "aliasModel": "scope-binding-may-set",
+              "bindings": 49,
+              "edges": 2,
+              "processedFacts": 0,
+              "finiteFactLimit": 637,
+              "methodProcessedFacts": 0,
+              "finiteMethodFactLimit": 294,
+              "invocationResolutionSteps": 124,
+              "invocationResolutionLimited": false,
+              "argumentResolutionSteps": 0,
+              "argumentResolutionLimited": false,
+              "aliases": [],
+              "methodAliases": [],
+              "blockedBuiltins": [],
+              "blockedMembers": []
+            },
+            "staticEvaluationSteps": 8282
+          }
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "n",
+          "opcode": "event_whenbroadcastreceived",
+          "fieldsOfInputs": {
+            "BROADCAST_OPTION": {
+              "name": "BROADCAST_OPTION",
+              "value": "开始游戏",
+              "id": "ready",
+              "variableType": "broadcast_msg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "obfuscation": {
+    "mode": "javascript-obfuscator",
+    "version": 2,
+    "level": "strong"
+  }
+}

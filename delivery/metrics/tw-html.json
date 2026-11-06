@@ -1,0 +1,27 @@
+{
+  "candidate": "../work/final/tw-html/437419376-html.sb3",
+  "structural": {
+    "truthScripts": 2,
+    "candidateScripts": 2,
+    "matchedScripts": 2,
+    "scriptRecall": 1,
+    "scriptPrecision": 1,
+    "truthBlocks": 8,
+    "candidateBlocks": 8,
+    "matchedBlocks": 8,
+    "blockRecall": 1,
+    "blockPrecision": 1,
+    "inflation": 1
+  },
+  "broadcasts": {
+    "truth": 0,
+    "candidate": 0,
+    "extra": 0,
+    "missing": 0
+  },
+  "validation": {
+    "ok": true,
+    "errors": 0,
+    "warnings": 0
+  }
+}

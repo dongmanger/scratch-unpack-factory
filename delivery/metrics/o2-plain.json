@@ -1,0 +1,27 @@
+{
+  "candidate": "../work/final/o2-plain/10128407-plain.partial.sb3",
+  "structural": {
+    "truthScripts": 515,
+    "candidateScripts": 451,
+    "matchedScripts": 400,
+    "scriptRecall": 0.7766990291262136,
+    "scriptPrecision": 0.8869179600886918,
+    "truthBlocks": 15507,
+    "candidateBlocks": 12945,
+    "matchedBlocks": 11088,
+    "blockRecall": 0.7150319210679048,
+    "blockPrecision": 0.8565469293163384,
+    "inflation": 0.8347842909653704
+  },
+  "broadcasts": {
+    "truth": 47,
+    "candidate": 47,
+    "extra": 0,
+    "missing": 0
+  },
+  "validation": {
+    "ok": true,
+    "errors": 0,
+    "warnings": 0
+  }
+}

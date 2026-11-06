@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Generated output
+out/
+out-*/
+unpacked/
+delivery/staging/
+delivery/*.zip
+*.log
+
+# Large generated acceptance artifacts. The suite writes these itself
+# (`test/asset-acceptance-server.mjs` regenerates them); committing them would add
+# ~111 MB for no benefit. Verified: all 1195 tests pass without this directory.
+fixtures/asset-acceptance/
+
+# Per-run scratch output from the fixture builders
+fixtures/out/
+fixtures/out-real/
+fixtures/out-real-dyn/
+fixtures/out-dyn/
+fixtures/out-hybrid/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local scratch scripts
+_*.mjs
+tmp/

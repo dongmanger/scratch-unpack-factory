@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "status": "refused",
+  "matched": false,
+  "originalSourceVerified": false,
+  "execution": {
+    "allowed": false,
+    "started": false,
+    "isolation": "worker_threads",
+    "securitySandbox": false,
+    "timeoutMs": 10000,
+    "maxSteps": 1000,
+    "inputLimitBytes": 268435456,
+    "totalInputLimitBytes": 402653184,
+    "resourceLimits": {
+      "maxOldGenerationSizeMb": 256,
+      "maxYoungGenerationSizeMb": 64,
+      "codeRangeSizeMb": 64,
+      "stackSizeMb": 4
+    },
+    "terminationRequested": false,
+    "terminated": false,
+    "terminationExitCode": null,
+    "terminationVerified": false
+  },
+  "scenario": {
+    "trigger": "greenFlag",
+    "scheduling": "bounded runtime._step followed by setImmediate",
+    "maxStepsPerRun": 1000,
+    "manualTriggers": false,
+    "headless": true
+  },
+  "hashes": {
+    "algorithm": "sha256",
+    "originalInput": null,
+    "recoveredInput": null
+  },
+  "engine": {
+    "module": "vendor/02-vm.cjs",
+    "node": "v22.22.2",
+    "v8": "12.4.254.21-node.39",
+    "version": null,
+    "revision": null,
+    "sha256": null
+  },
+  "adapters": {
+    "storage": false,
+    "renderer": false,
+    "audio": false,
+    "video": false,
+    "cloud": false,
+    "userInput": false,
+    "network": false
+  },
+  "structural": {
+    "original": null,
+    "recovered": null,
+    "compiledTargets": null
+  },
+  "recompile": {
+    "original": {
+      "status": "not-run"
+    },
+    "recovered": {
+      "status": "not-run"
+    }
+  },
+  "runs": {
+    "original": null,
+    "recovered": null
+  },
+  "behavior": {
+    "status": "not-run",
+    "matched": false,
+    "scenarioOnly": true,
+    "snapshotsEqual": null,
+    "broadcastsEqual": null,
+    "traceEqual": null,
+    "traceComparison": null,
+    "differences": [],
+    "blockers": []
+  },
+  "limitations": [
+    "Only the bounded green-flag scenario and recorded final state/broadcasts are compared; other inputs, events and schedules are untested.",
+    "A scenario match does not establish original source identity or universal behavioral equivalence.",
+    "Renderer, audio, video, cloud and user input adapters are absent; adapter-dependent operations and unknown extensions cannot establish a match.",
+    "The real VM may prune broadcast variables when loading stripped blocks; snapshots retain declared broadcast IDs and label whether each exists in runtime.",
+    "Compiled factorySource and SB3 #code comments may execute arbitrary JavaScript. Worker termination, V8 heap limits and network guards are best effort, not a security sandbox; filesystem access and native/external memory are not contained."
+  ],
+  "error": {
+    "code": "EXECUTION_NOT_ALLOWED",
+    "message": "Verification requires allowExecute === true for trusted artifacts because compiledFactory/factorySource may execute hostile arbitrary JavaScript"
+  }
+}

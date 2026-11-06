@@ -1,0 +1,222 @@
+{
+  "format": "02engine-compiled-project",
+  "version": 1,
+  "projectVersion": 3,
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "varId1": [
+          "分数",
+          0
+        ],
+        "limit": [
+          "次数",
+          3
+        ]
+      },
+      "lists": {
+        "items": [
+          "项目",
+          []
+        ]
+      },
+      "broadcasts": {
+        "ready": "开始游戏"
+      },
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "assetId": "0ac33de9d7138a386563727540d10055",
+          "md5ext": "0ac33de9d7138a386563727540d10055.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {
+        "localScore": [
+          "分数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {},
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "assetId": "91e42db1c66c0b276abf6234dc50b2eb",
+          "md5ext": "91e42db1c66c0b276abf6234dc50b2eb.png",
+          "dataFormat": "png",
+          "bitmapResolution": 2,
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "extensionURLs": {},
+  "meta": {
+    "semver": "3.0.0"
+  },
+  "compiledTargets": {
+    "0": {
+      "targetIndex": 0,
+      "name": "Stage",
+      "isStage": true,
+      "scripts": {
+        "h": {
+          "factorySource": "eval(\"function _0x2679(){const _0x3cd63c=['target','36TAvUSP','81415iBENIY','4feguCD','4386PrwtPE','开始游戏','_monitorUpToDate','varId1','983568xhTxeh','items','210580cRpgKY','2391830WIEQLc','414rHhUhk','variables','191405MBtRFK','4255867SbSbxX','push','8lnasil','getTargetForStage','value'];_0x2679=function(){return _0x3cd63c;};return _0x2679();}function _0x4d09(_0x172846,_0x4eba2c){_0x172846=_0x172846-0xe1;const _0x2679a8=_0x2679();let _0x4d0937=_0x2679a8[_0x172846];return _0x4d0937;}(function(_0x2fbb73,_0x3568c7){function _0xfcf9bb(_0x478504,_0x5686d7){return _0x4d09(_0x478504- -0x21c,_0x5686d7);}const _0x341be5=_0x2fbb73();while(!![]){try{const _0x5bc27e=-parseInt(_0xfcf9bb(-0x131,-0x12c))/0x1+-parseInt(_0xfcf9bb(-0x13b,-0x132))/0x2*(-parseInt(_0xfcf9bb(-0x12f,-0x130))/0x3)+parseInt(_0xfcf9bb(-0x130,-0x128))/0x4*(parseInt(_0xfcf9bb(-0x139,-0x143))/0x5)+parseInt(_0xfcf9bb(-0x12b,-0x121))/0x6+-parseInt(_0xfcf9bb(-0x128,-0x11f))/0x7*(-parseInt(_0xfcf9bb(-0x136,-0x12f))/0x8)+parseInt(_0xfcf9bb(-0x132,-0x133))/0x9*(-parseInt(_0xfcf9bb(-0x129,-0x124))/0xa)+-parseInt(_0xfcf9bb(-0x138,-0x13d))/0xb;if(_0x5bc27e===_0x3568c7)break;else _0x341be5['push'](_0x341be5['shift']());}catch(_0x16962c){_0x341be5['push'](_0x341be5['shift']());}}}(_0x2679,0x47c65),((()=>{const _0x208fb9=function _0x16c4f1(_0x44cb12){const _0x148027=_0x44cb12[_0x58c361(-0x2d1,-0x2d5)],_0x22379b=_0x148027['runtime'],_0x313b8d=_0x22379b[_0x58c361(-0x2d7,-0x2d7)](),_0x142519=_0x148027[_0x58c361(-0x2d4,-0x2dc)][_0x58c361(-0x2c4,-0x2ce)],_0x517659=_0x148027[_0x58c361(-0x2df,-0x2dc)]['limit'],_0x1c8a33=_0x148027[_0x58c361(-0x2d7,-0x2dc)][_0x58c361(-0x2c6,-0x2cc)];function _0x58c361(_0xb71e3f,_0x18729c){return _0x4d09(_0x18729c- -0x3be,_0xb71e3f);}return function*_0x43ed5d(){_0x142519[_0x13c079(-0x62,-0x68)]=0x1;for(var _0x42773c=+_0x517659[_0x13c079(-0x62,-0x5f)]||0x0;_0x42773c>=0.5;_0x42773c--){_0x142519['value']=(+_0x142519[_0x13c079(-0x62,-0x6c)]||0x0)+0x2,_0x1c8a33['value'][_0x13c079(-0x65,-0x5d)](_0x142519[_0x13c079(-0x62,-0x58)]),_0x1c8a33[_0x13c079(-0x5b,-0x56)]=![],yield;}compareGreaterThan(_0x142519['value'],0x5)?_0x142519[_0x13c079(-0x62,-0x5d)]='成功':_0x142519[_0x13c079(-0x62,-0x61)]='失败';startHats('event_whenbroadcastreceived',{'BROADCAST_OPTION':_0x13c079(-0x5c,-0x62)}),retire();function _0x13c079(_0x2d6264,_0x1e4df0){return _0x58c361(_0x1e4df0,_0x2d6264-0x274);}return;};};return _0x208fb9;})()));\")",
+          "executableHat": false,
+          "deobfuscation": {
+            "schemaVersion": 1,
+            "status": "partial",
+            "transforms": [],
+            "warnings": [
+              "字符串轮转执行前缀未证明：_0x2679",
+              "字符串表顺序未证明，保留输入源码及自检文本"
+            ],
+            "residuals": [
+              {
+                "type": "string-array-provider",
+                "line": 1
+              },
+              {
+                "type": "string-array-rotation-unresolved"
+              }
+            ],
+            "executesInput": false,
+            "proof": "bounded-static-ast-transformations",
+            "behaviorEquivalenceVerified": false,
+            "builtinEffects": {
+              "aliasModel": "scope-binding-may-set",
+              "bindings": 15,
+              "edges": 0,
+              "processedFacts": 0,
+              "finiteFactLimit": 195,
+              "methodProcessedFacts": 0,
+              "finiteMethodFactLimit": 90,
+              "invocationResolutionSteps": 55,
+              "invocationResolutionLimited": false,
+              "argumentResolutionSteps": 0,
+              "argumentResolutionLimited": false,
+              "aliases": [],
+              "methodAliases": [],
+              "blockedBuiltins": [],
+              "blockedMembers": []
+            },
+            "staticEvaluationSteps": 1
+          }
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "h",
+          "opcode": "event_whenflagclicked",
+          "fieldsOfInputs": {}
+        }
+      ]
+    },
+    "1": {
+      "targetIndex": 1,
+      "name": "Sprite1",
+      "isStage": false,
+      "scripts": {
+        "n": {
+          "factorySource": "eval(\"function _0x59e0(){const _0x79f05=['10EZzeyy','16EswAqJ','744735ulYQkK','runtime','varId1','4gHQUgB','26736UkppzW','value','12qGwauP','size','direction','2472jxTXSH','4862405avclNW','ext_scratch3_motion','getTargetForStage','4614174GWoEln','24080529JXLcPa','setDirection','755622ogpGcI','_moveSteps','variables','1561XxReNW'];_0x59e0=function(){return _0x79f05;};return _0x59e0();}function _0x2aab(_0x14d72a,_0x2a6b96){_0x14d72a=_0x14d72a-0x177;const _0x59e072=_0x59e0();let _0x2aab36=_0x59e072[_0x14d72a];return _0x2aab36;}(function(_0x394af0,_0x39d108){const _0x5d6856=_0x394af0();function _0x34cb60(_0x4835da,_0x2b5b5b){return _0x2aab(_0x4835da-0x96,_0x2b5b5b);}while(!![]){try{const _0x4601bb=-parseInt(_0x34cb60(0x21b,0x218))/0x1*(parseInt(_0x34cb60(0x216,0x218))/0x2)+parseInt(_0x34cb60(0x217,0x21f))/0x3+-parseInt(_0x34cb60(0x21a,0x211))/0x4*(parseInt(_0x34cb60(0x221,0x21d))/0x5)+-parseInt(_0x34cb60(0x20e,0x214))/0x6+-parseInt(_0x34cb60(0x214,0x20e))/0x7*(parseInt(_0x34cb60(0x220,0x222))/0x8)+-parseInt(_0x34cb60(0x211,0x20a))/0x9*(-parseInt(_0x34cb60(0x215,0x20f))/0xa)+parseInt(_0x34cb60(0x20f,0x214))/0xb*(parseInt(_0x34cb60(0x21d,0x223))/0xc);if(_0x4601bb===_0x39d108)break;else _0x5d6856['push'](_0x5d6856['shift']());}catch(_0xacf595){_0x5d6856['push'](_0x5d6856['shift']());}}}(_0x59e0,0x7958d),((()=>{const _0x3b9a3b=function _0x5f0492(_0x2527f9){const _0x3ab336=_0x2527f9['target'];function _0x5341a3(_0x41d66f,_0x5ae2a5){return _0x2aab(_0x41d66f-0x7d,_0x5ae2a5);}const _0x46449a=_0x3ab336[_0x5341a3(0x1ff,0x206)],_0x1356fe=_0x46449a[_0x5341a3(0x1f4,0x1fd)](),_0x28e7dc=_0x3ab336[_0x5341a3(0x1fa,0x203)]['localScore'],_0x50f0ee=_0x1356fe[_0x5341a3(0x1fa,0x1f1)][_0x5341a3(0x200,0x1fa)];return function*_0x59bbac(){_0x46449a[_0x244f07(0x43c,0x434)][_0x244f07(0x42c,0x425)](0xa,_0x3ab336),_0x3ab336[_0x244f07(0x42a,0x432)](_0x3ab336[_0x244f07(0x439,0x42f)]+0xf),_0x3ab336['setSize'](_0x3ab336[_0x244f07(0x438,0x435)]+0x5),_0x28e7dc[_0x244f07(0x436,0x440)]=_0x50f0ee[_0x244f07(0x436,0x431)];function _0x244f07(_0x4480f2,_0x1bf591){return _0x5341a3(_0x4480f2-0x233,_0x1bf591);}retire();return;};};return _0x3b9a3b;})()));\")",
+          "executableHat": false,
+          "deobfuscation": {
+            "schemaVersion": 1,
+            "status": "partial",
+            "transforms": [],
+            "warnings": [
+              "字符串轮转执行前缀未证明：_0x59e0",
+              "字符串表顺序未证明，保留输入源码及自检文本"
+            ],
+            "residuals": [
+              {
+                "type": "string-array-provider",
+                "line": 1
+              },
+              {
+                "type": "string-array-rotation-unresolved"
+              }
+            ],
+            "executesInput": false,
+            "proof": "bounded-static-ast-transformations",
+            "behaviorEquivalenceVerified": false,
+            "builtinEffects": {
+              "aliasModel": "scope-binding-may-set",
+              "bindings": 13,
+              "edges": 0,
+              "processedFacts": 0,
+              "finiteFactLimit": 169,
+              "methodProcessedFacts": 0,
+              "finiteMethodFactLimit": 78,
+              "invocationResolutionSteps": 53,
+              "invocationResolutionLimited": false,
+              "argumentResolutionSteps": 0,
+              "argumentResolutionLimited": false,
+              "aliases": [],
+              "methodAliases": [],
+              "blockedBuiltins": [],
+              "blockedMembers": []
+            },
+            "staticEvaluationSteps": 1
+          }
+        }
+      },
+      "procedures": {},
+      "hats": [
+        {
+          "topBlockId": "n",
+          "opcode": "event_whenbroadcastreceived",
+          "fieldsOfInputs": {
+            "BROADCAST_OPTION": {
+              "name": "BROADCAST_OPTION",
+              "value": "开始游戏",
+              "id": "ready",
+              "variableType": "broadcast_msg"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "obfuscation": {
+    "mode": "javascript-obfuscator",
+    "version": 2,
+    "level": "light"
+  }
+}

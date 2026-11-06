@@ -1,0 +1,407 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "varId1": [
+          "分数",
+          0
+        ],
+        "limit": [
+          "次数",
+          3
+        ]
+      },
+      "lists": {
+        "items": [
+          "项目",
+          []
+        ]
+      },
+      "broadcasts": {
+        "ready": "开始游戏"
+      },
+      "blocks": {
+        "a": {
+          "opcode": "event_whenflagclicked",
+          "parent": null,
+          "next": "set",
+          "fields": {},
+          "inputs": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 20,
+          "y": 20
+        },
+        "set": {
+          "opcode": "data_setvariableto",
+          "parent": "a",
+          "next": "repeat",
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "1"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "repeat": {
+          "opcode": "control_repeat",
+          "parent": "set",
+          "next": "condition",
+          "fields": {},
+          "inputs": {
+            "TIMES": [
+              3,
+              [
+                12,
+                "次数",
+                "limit"
+              ],
+              [
+                4,
+                "3"
+              ]
+            ],
+            "SUBSTACK": [
+              2,
+              "change"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "change": {
+          "opcode": "data_changevariableby",
+          "parent": "repeat",
+          "next": "append",
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "2"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "append": {
+          "opcode": "data_addtolist",
+          "parent": "change",
+          "next": null,
+          "fields": {
+            "LIST": [
+              "项目",
+              "items"
+            ]
+          },
+          "inputs": {
+            "ITEM": [
+              3,
+              [
+                12,
+                "分数",
+                "varId1"
+              ],
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "condition": {
+          "opcode": "control_if_else",
+          "parent": "repeat",
+          "next": "send",
+          "fields": {},
+          "inputs": {
+            "CONDITION": [
+              2,
+              "compare"
+            ],
+            "SUBSTACK": [
+              2,
+              "success"
+            ],
+            "SUBSTACK2": [
+              2,
+              "failure"
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "compare": {
+          "opcode": "operator_gt",
+          "parent": "condition",
+          "next": null,
+          "fields": {},
+          "inputs": {
+            "OPERAND1": [
+              3,
+              [
+                12,
+                "分数",
+                "varId1"
+              ],
+              [
+                10,
+                ""
+              ]
+            ],
+            "OPERAND2": [
+              1,
+              [
+                10,
+                "5"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "success": {
+          "opcode": "data_setvariableto",
+          "parent": "condition",
+          "next": null,
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "成功"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "failure": {
+          "opcode": "data_setvariableto",
+          "parent": "condition",
+          "next": null,
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "varId1"
+            ]
+          },
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                10,
+                "失败"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "send": {
+          "opcode": "event_broadcast",
+          "parent": "condition",
+          "next": null,
+          "fields": {},
+          "inputs": {
+            "BROADCAST_INPUT": [
+              1,
+              [
+                11,
+                "开始游戏",
+                "ready"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "backdrop1",
+          "assetId": "0ac33de9d7138a386563727540d10055",
+          "md5ext": "0ac33de9d7138a386563727540d10055.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 240,
+          "rotationCenterY": 180
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {
+        "localScore": [
+          "分数",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "c": {
+          "opcode": "event_whenbroadcastreceived",
+          "parent": null,
+          "next": "move",
+          "fields": {
+            "BROADCAST_OPTION": [
+              "开始游戏",
+              "ready"
+            ]
+          },
+          "inputs": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 20,
+          "y": 20
+        },
+        "move": {
+          "opcode": "motion_movesteps",
+          "parent": "c",
+          "next": "turn",
+          "fields": {},
+          "inputs": {
+            "STEPS": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "turn": {
+          "opcode": "motion_turnright",
+          "parent": "move",
+          "next": "size",
+          "fields": {},
+          "inputs": {
+            "DEGREES": [
+              1,
+              [
+                4,
+                "15"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "size": {
+          "opcode": "looks_changesizeby",
+          "parent": "turn",
+          "next": "copy",
+          "fields": {},
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "5"
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        },
+        "copy": {
+          "opcode": "data_setvariableto",
+          "parent": "size",
+          "next": null,
+          "fields": {
+            "VARIABLE": [
+              "分数",
+              "localScore"
+            ]
+          },
+          "inputs": {
+            "VALUE": [
+              3,
+              [
+                12,
+                "分数",
+                "varId1"
+              ],
+              [
+                10,
+                ""
+              ]
+            ]
+          },
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "name": "costume1",
+          "assetId": "91e42db1c66c0b276abf6234dc50b2eb",
+          "md5ext": "91e42db1c66c0b276abf6234dc50b2eb.png",
+          "dataFormat": "png",
+          "bitmapResolution": 2,
+          "rotationCenterX": 0,
+          "rotationCenterY": 0
+        }
+      ],
+      "sounds": [],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 0,
+      "y": 0,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "2.1.46",
+    "agent": "unpack-factory-fixture"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "actual-02engine-vm-compiler",
+  "api": "VirtualMachine.compileProjectFromJSON",
+  "vmRoot": "D:\\rebuild&unpack\\research\\02engine\\scratch-vm",
+  "vmVersion": "2.1.46",
+  "node": "v22.22.2",
+  "inputSb3Sha256": "c4c1956443accc3ad410058053ac32f0bade7fa553e544da1ccae6a7ebb419fe",
+  "sourceSha256": {
+    "src/virtual-machine.js": "3184de84299fb2ceb00e3ebff2c6037187dfe74141aaf26542f1713d0c29a24c",
+    "src/compiler/compile.js": "727654e4230ae7ad2819bb172467773ee50ab7158ed27d5849a766359485b3a6",
+    "src/compiler/irgen.js": "465c68bde3f83d75b1c53ae8bacaf3a751218e38153a410f63dd7e6db534eaa9",
+    "src/compiler/iroptimizer.js": "6097b5d7d9c72b49865d53507f0158271d037792ab594505848c15425b01867b",
+    "src/compiler/jsgen.js": "bd8c64fd4d28250e88666c73ca18eb7470292cdd7ce4e19138e6ef48c2369813",
+    "src/compiler/jsexecute.js": "ee523267332d3d27a7061f0f7c5a54a055f0301ffceda417c0d02bf27d51518c"
+  },
+  "compilerOptions": {
+    "enabled": true,
+    "warpTimer": false
+  },
+  "adapters": {
+    "renderer": false,
+    "audio": false,
+    "storage": false
+  },
+  "packager": false
+}

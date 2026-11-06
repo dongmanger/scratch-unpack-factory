@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {staticUnpack} from '../../src/static-unpack.mjs';
+import {deobfuscate} from '../../src/deobfuscate.mjs';
+const [, , key, kind, id, which] = process.argv;
+const rel = which === 'plain' ? '../../compiled/o2/10128407-plain.html' : '../../compiled/o2/10128407-strong.html';
+const un = await staticUnpack(new Uint8Array(fs.readFileSync(new URL(rel, import.meta.url))));
+const c = JSON.parse(un.compiledProject);
+const src = c.compiledTargets[key][kind][id].factorySource;
+console.log('RAW length', src.length);
+const t = Date.now();
+const d = deobfuscate(src);
+console.log('deobf ms', Date.now() - t, 'status', d.status, 'len', d.code.length);
+console.log(d.code.slice(0, Number(process.argv[6] || 2500)));

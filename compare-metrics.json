@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-10-25T14:53:22.812Z",
+  "input": "compiled/o2/10128407-strong.html",
+  "truth": {
+    "targets": 30,
+    "blocks": 17455,
+    "topLevelScripts": 515
+  },
+  "cases": [
+    {
+      "name": "我们 factory（模板恢复）",
+      "path": "out-method-demo/10128407-strong-pretty/10128407-strong.partial.sb3",
+      "structuralValidation": {
+        "ok": true,
+        "errors": 0,
+        "warnings": 0,
+        "firstErrors": [],
+        "firstWarnings": []
+      },
+      "recall": 4.1,
+      "precision": 94.6,
+      "hit": 718,
+      "outputBlocks": 759,
+      "truthBlocks": 17455,
+      "vmLoad": {
+        "ok": true,
+        "targets": 30,
+        "stage": null,
+        "blocks": null
+      },
+      "targets": 30,
+      "blocks": 759,
+      "topLevelScripts": 206,
+      "variables": 413,
+      "lists": 47,
+      "broadcasts": 47
+    },
+    {
+      "name": "朋友 o2-unpackager（重编译式反解）",
+      "path": "../02engine-unpackager-main/out-strong/rebuilt.sb3",
+      "structuralValidation": {
+        "ok": false,
+        "errors": 48,
+        "warnings": 19,
+        "firstErrors": [
+          "targets[2].blocks[\"_kx9c0\"].fields[\"BROADCAST_OPTION\"] 名称与 ID 定义不一致: \"fill random\" != \"FILL RANDOM\"",
+          "targets[2].blocks[\"_1r50658\"].fields[\"BROADCAST_OPTION\"] 名称与 ID 定义不一致: \"change background\" != \"CHANGE BACKGROUND\"",
+          "targets[2].blocks[\"_1r8hnm6\"].fields[\"BROADCAST_OPTION\"] 名称与 ID 定义不一致: \"fill random\" != \"FILL RANDOM\"",
+          "targets[3].blocks[\"_1rhvu5r\"].fields[\"BROADCAST_OPTION\"] 名称与 ID 定义不一致: \"paused\" != \"PAUSED\"",
+          "targets[3].blocks[\"_1rqwsg2\"].fields[\"BROADCAST_OPTION\"] 名称与 ID 定义不一致: \"talk\" != \"TALK\""
+        ],
+        "firstWarnings": [
+          "targets[15].blocks[\"_bqmgxqe\"].fields.VALUE argument \"QfaNkTax\" is unbound outside a procedure; the VM returns 0",
+          "targets[15].blocks[\"_bqvtm4j\"].fields.VALUE argument \"QfaNkTax\" is unbound outside a procedure; the VM returns 0",
+          "targets[15].blocks[\"_bqyt11t\"].fields.VALUE argument \"QfaNkTax\" is unbound outside a procedure; the VM returns 0"
+        ]
+      },
+      "recall": 77.3,
+      "precision": 50.4,
+      "hit": 13488,
+      "outputBlocks": 26769,
+      "truthBlocks": 17455,
+      "vmLoad": {
+        "ok": true,
+        "targets": 31,
+        "stage": null,
+        "blocks": null
+      },
+      "targets": 31,
+      "blocks": 26769,
+      "topLevelScripts": 448,
+      "variables": 413,
+      "lists": 47,
+      "broadcasts": 80
+    }
+  ]
+}

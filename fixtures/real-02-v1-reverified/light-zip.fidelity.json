@@ -1,0 +1,835 @@
+{
+  "schemaVersion": 1,
+  "input": {
+    "sha256": "9d697ca552bfce62ab3044ce7feea74393a0ab284f3468583359bd10c43257bc",
+    "format": "unknown"
+  },
+  "priority": [
+    "variable-names-and-scope-ids",
+    "broadcast-names-and-ids",
+    "block-code-and-links"
+  ],
+  "status": "reconstructed-unverified",
+  "canClaimComplete": false,
+  "acceptance": {
+    "structural": true,
+    "originalStatePreserved": true,
+    "codeCompleteAndVerified": false,
+    "browserEditorLoadVerified": false,
+    "roundTripRecompilationVerified": false,
+    "behaviorEquivalenceVerified": false
+  },
+  "confidencePolicy": {
+    "kind": "rule-based-evidence-score",
+    "calibratedProbability": false,
+    "meaning": "证据分而非统计正确率；复制原始积木=1，metadata帽子=0.98，封闭AST模板=0.85，唯一名称回退=0.65，未恢复=0。无缺失不能替代重编译/行为验证。",
+    "originalSourceGuarantee": "被优化或删除的信息不能保证恢复；未知操作绝不伪装为完整脚本"
+  },
+  "confidence": {
+    "variableNames": {
+      "score": 1,
+      "basis": "container",
+      "calibratedProbability": false
+    },
+    "broadcastNames": {
+      "score": 1,
+      "basis": "container",
+      "calibratedProbability": false
+    },
+    "code": {
+      "score": 0.85,
+      "basis": "partial-or-unverified-compiled-code-recovery",
+      "calibratedProbability": false
+    },
+    "originalBlockStructure": {
+      "score": 0,
+      "basis": "original-block-graph-stripped",
+      "calibratedProbability": false
+    }
+  },
+  "targets": [
+    {
+      "targetIndex": 0,
+      "name": "Stage",
+      "isStage": true,
+      "variables": [
+        {
+          "id": "varId1",
+          "name": "分数",
+          "initialValue": 0,
+          "cloud": false
+        },
+        {
+          "id": "limit",
+          "name": "次数",
+          "initialValue": 3,
+          "cloud": false
+        }
+      ],
+      "lists": [
+        {
+          "id": "items",
+          "name": "项目",
+          "initialValue": []
+        }
+      ],
+      "broadcasts": [
+        {
+          "id": "ready",
+          "name": "开始游戏"
+        }
+      ]
+    },
+    {
+      "targetIndex": 1,
+      "name": "Sprite1",
+      "isStage": false,
+      "variables": [
+        {
+          "id": "localScore",
+          "name": "分数",
+          "initialValue": 0,
+          "cloud": false
+        }
+      ],
+      "lists": [],
+      "broadcasts": []
+    }
+  ],
+  "code": {
+    "scripts": [
+      {
+        "targetIndex": 0,
+        "scriptId": "h",
+        "source": "compiled-project",
+        "status": "reconstructed-unverified",
+        "body": {
+          "status": "template-reconstructed",
+          "confidence": {
+            "score": 0.85,
+            "basis": "closed-ast-template-no-roundtrip-verification",
+            "calibratedProbability": false
+          },
+          "operations": 4,
+          "recoveredBlocks": 12,
+          "grammar": "recursive-02-compiler-templates",
+          "analysisSteps": 26
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "compiler-optimizations-and-original-internal-ids-not-reversible",
+          "calibratedProbability": false
+        },
+        "sourceSha256": "f4668c7ca465a938559a7850cfcfce9f607156633264859b1127725a58ddeb44",
+        "deobfuscation": {
+          "schemaVersion": 1,
+          "status": "transformed",
+          "transforms": [
+            {
+              "pass": "literal-eval-unwrapping"
+            },
+            {
+              "pass": "decoder-discovery",
+              "encoding": "plain",
+              "name": "_0x223a",
+              "entries": 21
+            },
+            {
+              "pass": "string-array-rotation",
+              "provider": "_0x15f7",
+              "proof": "generated-top-level-bootstrap-prefix"
+            },
+            {
+              "pass": "bounded-static-evaluation",
+              "count": 17
+            },
+            {
+              "pass": "property-normalization",
+              "count": 24
+            },
+            {
+              "pass": "structural-unwrapping",
+              "count": 6
+            },
+            {
+              "pass": "unused-decoder-component-removal",
+              "count": 5
+            }
+          ],
+          "warnings": [],
+          "residuals": [],
+          "executesInput": false,
+          "proof": "bounded-static-ast-transformations",
+          "behaviorEquivalenceVerified": false,
+          "builtinEffects": {
+            "aliasModel": "scope-binding-may-set",
+            "bindings": 15,
+            "edges": 0,
+            "processedFacts": 0,
+            "finiteFactLimit": 195,
+            "methodProcessedFacts": 0,
+            "finiteMethodFactLimit": 90,
+            "invocationResolutionSteps": 56,
+            "invocationResolutionLimited": false,
+            "argumentResolutionSteps": 0,
+            "argumentResolutionLimited": false,
+            "aliases": [],
+            "methodAliases": [],
+            "blockedBuiltins": [],
+            "blockedMembers": []
+          },
+          "staticEvaluationSteps": 1295
+        },
+        "hat": {
+          "blockId": "h",
+          "opcode": "event_whenflagclicked",
+          "confidence": {
+            "score": 0.98,
+            "basis": "original-event-metadata-and-id-resolved-definition",
+            "calibratedProbability": false
+          }
+        }
+      },
+      {
+        "targetIndex": 1,
+        "scriptId": "n",
+        "source": "compiled-project",
+        "status": "reconstructed-unverified",
+        "body": {
+          "status": "template-reconstructed",
+          "confidence": {
+            "score": 0.85,
+            "basis": "closed-ast-template-no-roundtrip-verification",
+            "calibratedProbability": false
+          },
+          "operations": 4,
+          "recoveredBlocks": 4,
+          "grammar": "recursive-02-compiler-templates",
+          "analysisSteps": 9
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "compiler-optimizations-and-original-internal-ids-not-reversible",
+          "calibratedProbability": false
+        },
+        "sourceSha256": "f1c15a3714e521ca1aaced60569fe92186d2c33b1ec4edfc9bfcaece65913915",
+        "deobfuscation": {
+          "schemaVersion": 1,
+          "status": "transformed",
+          "transforms": [
+            {
+              "pass": "literal-eval-unwrapping"
+            },
+            {
+              "pass": "decoder-discovery",
+              "encoding": "plain",
+              "name": "_0x4e08",
+              "entries": 20
+            },
+            {
+              "pass": "string-array-rotation",
+              "provider": "_0x1de4",
+              "proof": "generated-top-level-bootstrap-prefix"
+            },
+            {
+              "pass": "bounded-static-evaluation",
+              "count": 14
+            },
+            {
+              "pass": "property-normalization",
+              "count": 19
+            },
+            {
+              "pass": "structural-unwrapping",
+              "count": 5
+            },
+            {
+              "pass": "unused-decoder-component-removal",
+              "count": 5
+            }
+          ],
+          "warnings": [],
+          "residuals": [],
+          "executesInput": false,
+          "proof": "bounded-static-ast-transformations",
+          "behaviorEquivalenceVerified": false,
+          "builtinEffects": {
+            "aliasModel": "scope-binding-may-set",
+            "bindings": 13,
+            "edges": 0,
+            "processedFacts": 0,
+            "finiteFactLimit": 169,
+            "methodProcessedFacts": 0,
+            "finiteMethodFactLimit": 78,
+            "invocationResolutionSteps": 48,
+            "invocationResolutionLimited": false,
+            "argumentResolutionSteps": 0,
+            "argumentResolutionLimited": false,
+            "aliases": [],
+            "methodAliases": [],
+            "blockedBuiltins": [],
+            "blockedMembers": []
+          },
+          "staticEvaluationSteps": 920
+        },
+        "hat": {
+          "blockId": "n",
+          "opcode": "event_whenbroadcastreceived",
+          "confidence": {
+            "score": 0.98,
+            "basis": "original-event-metadata-and-id-resolved-definition",
+            "calibratedProbability": false
+          }
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "targetIndex": 0,
+        "blockId": "h",
+        "opcode": "event_whenflagclicked",
+        "source": "hat-metadata",
+        "confidence": {
+          "score": 0.98,
+          "basis": "original-event-metadata-and-id-resolved-definition",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.5,
+          "basis": "hat-opcode-preserved-layout-regenerated",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_0fa64749c2ed26c698dd",
+        "opcode": "data_setvariableto",
+        "sourceSpan": [
+          311,
+          333
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_cee90fc1afaaf61919e0",
+        "opcode": "control_repeat",
+        "sourceSpan": [
+          338,
+          579
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_9a0f7aa8150e42d14e91",
+        "opcode": "operator_add",
+        "sourceSpan": [
+          338,
+          579
+        ],
+        "kind": "reporter",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_5f9d0a6bb7d7f6647ea8",
+        "opcode": "data_setvariableto",
+        "sourceSpan": [
+          423,
+          473
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_18460d0e7ff2ed6adaa7",
+        "opcode": "operator_add",
+        "sourceSpan": [
+          423,
+          473
+        ],
+        "kind": "reporter",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_565eeae7162ca1c289dd",
+        "opcode": "operator_add",
+        "sourceSpan": [
+          423,
+          473
+        ],
+        "kind": "reporter",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_89a3e1e715273f8b1fcb",
+        "opcode": "data_addtolist",
+        "sourceSpan": [
+          480,
+          560
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_80c6d94586c3a3d53920",
+        "opcode": "control_if_else",
+        "sourceSpan": [
+          584,
+          675
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_139476a9e31f54dbea90",
+        "opcode": "operator_gt",
+        "sourceSpan": [
+          584,
+          675
+        ],
+        "kind": "reporter",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_19060c14511562064121",
+        "opcode": "data_setvariableto",
+        "sourceSpan": [
+          627,
+          649
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_2b10ce46a99782ec6876",
+        "opcode": "data_setvariableto",
+        "sourceSpan": [
+          652,
+          674
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 0,
+        "blockId": "rf_cee7813e1830f9bd298d",
+        "opcode": "event_broadcast",
+        "sourceSpan": [
+          680,
+          783
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 1,
+        "blockId": "n",
+        "opcode": "event_whenbroadcastreceived",
+        "source": "hat-metadata",
+        "confidence": {
+          "score": 0.98,
+          "basis": "original-event-metadata-and-id-resolved-definition",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.5,
+          "basis": "hat-opcode-preserved-layout-regenerated",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 1,
+        "blockId": "rf_b7973532936fd92bc374",
+        "opcode": "motion_movesteps",
+        "sourceSpan": [
+          271,
+          323
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 1,
+        "blockId": "rf_77baf73197b069083857",
+        "opcode": "motion_turnright",
+        "sourceSpan": [
+          328,
+          372
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 1,
+        "blockId": "rf_d0f8f1f7979a1d15ae63",
+        "opcode": "looks_changesizeby",
+        "sourceSpan": [
+          377,
+          411
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 1,
+        "blockId": "rf_545b66a65ccdb7d6af7c",
+        "opcode": "data_setvariableto",
+        "sourceSpan": [
+          416,
+          450
+        ],
+        "kind": "stack",
+        "source": "compiled-ast-template",
+        "confidence": {
+          "score": 0.85,
+          "basis": "resolved-symbols-and-closed-recursive-compiler-template",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.4,
+          "basis": "semantic-reconstruction-not-original-block-graph",
+          "calibratedProbability": false
+        }
+      }
+    ],
+    "procedures": [],
+    "unresolved": [],
+    "knownCompiledScripts": 2,
+    "counts": {
+      "preservedScripts": 0,
+      "templateReconstructedScripts": 2,
+      "unresolvedScripts": 0,
+      "unresolvedProcedures": 0
+    }
+  },
+  "runtime": {
+    "available": false,
+    "usedForOriginalState": false,
+    "differences": []
+  },
+  "assets": [
+    {
+      "path": "0ac33de9d7138a386563727540d10055.svg",
+      "bytes": 71,
+      "sha256": "a60bef4da4deb1e5b9d272e9afbd532cc59150bee68149b21d8b5367f4799b97",
+      "source": "container"
+    },
+    {
+      "path": "91e42db1c66c0b276abf6234dc50b2eb.png",
+      "bytes": 68,
+      "sha256": "63ef318d96b5d0d0ceba6e04a4e622b1158335cdc67c49e27839132c6f655058",
+      "source": "container"
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "limitations": [
+    "原始内部block ID、布局、普通注释和被优化结构无法保证恢复",
+    "模板识别未进行真实02编译器重编译差分验证",
+    "解混淆按静态AST支持范围处理；未知动态行为/未覆盖积木语法仍保留原代码与残留报告"
+  ],
+  "notes": [
+    "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+    "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+  ],
+  "projectJsonSha256": "e10b67baf1858b898562addf26740d7bbe4165b613ff1c2080f1f5bde3924799",
+  "deobfuscation": {
+    "engine": "bounded-static-ast",
+    "executesInput": false,
+    "factories": [
+      {
+        "targetKey": "0",
+        "kind": "scripts",
+        "scriptId": "h",
+        "originalSha256": "85f94d30bfd784e18100c03b8c4c5ee52b98429187b5205d4c7ec78c391031e1",
+        "decodedSha256": "f4668c7ca465a938559a7850cfcfce9f607156633264859b1127725a58ddeb44",
+        "schemaVersion": 1,
+        "status": "transformed",
+        "transforms": [
+          {
+            "pass": "literal-eval-unwrapping"
+          },
+          {
+            "pass": "decoder-discovery",
+            "encoding": "plain",
+            "name": "_0x223a",
+            "entries": 21
+          },
+          {
+            "pass": "string-array-rotation",
+            "provider": "_0x15f7",
+            "proof": "generated-top-level-bootstrap-prefix"
+          },
+          {
+            "pass": "bounded-static-evaluation",
+            "count": 17
+          },
+          {
+            "pass": "property-normalization",
+            "count": 24
+          },
+          {
+            "pass": "structural-unwrapping",
+            "count": 6
+          },
+          {
+            "pass": "unused-decoder-component-removal",
+            "count": 5
+          }
+        ],
+        "warnings": [],
+        "residuals": [],
+        "executesInput": false,
+        "proof": "bounded-static-ast-transformations",
+        "behaviorEquivalenceVerified": false,
+        "builtinEffects": {
+          "aliasModel": "scope-binding-may-set",
+          "bindings": 15,
+          "edges": 0,
+          "processedFacts": 0,
+          "finiteFactLimit": 195,
+          "methodProcessedFacts": 0,
+          "finiteMethodFactLimit": 90,
+          "invocationResolutionSteps": 56,
+          "invocationResolutionLimited": false,
+          "argumentResolutionSteps": 0,
+          "argumentResolutionLimited": false,
+          "aliases": [],
+          "methodAliases": [],
+          "blockedBuiltins": [],
+          "blockedMembers": []
+        },
+        "staticEvaluationSteps": 1295
+      },
+      {
+        "targetKey": "1",
+        "kind": "scripts",
+        "scriptId": "n",
+        "originalSha256": "ca99e98941e204ee7cfd55a97ffc6da393389b39139e30e5d07bf1b45257e99a",
+        "decodedSha256": "f1c15a3714e521ca1aaced60569fe92186d2c33b1ec4edfc9bfcaece65913915",
+        "schemaVersion": 1,
+        "status": "transformed",
+        "transforms": [
+          {
+            "pass": "literal-eval-unwrapping"
+          },
+          {
+            "pass": "decoder-discovery",
+            "encoding": "plain",
+            "name": "_0x4e08",
+            "entries": 20
+          },
+          {
+            "pass": "string-array-rotation",
+            "provider": "_0x1de4",
+            "proof": "generated-top-level-bootstrap-prefix"
+          },
+          {
+            "pass": "bounded-static-evaluation",
+            "count": 14
+          },
+          {
+            "pass": "property-normalization",
+            "count": 19
+          },
+          {
+            "pass": "structural-unwrapping",
+            "count": 5
+          },
+          {
+            "pass": "unused-decoder-component-removal",
+            "count": 5
+          }
+        ],
+        "warnings": [],
+        "residuals": [],
+        "executesInput": false,
+        "proof": "bounded-static-ast-transformations",
+        "behaviorEquivalenceVerified": false,
+        "builtinEffects": {
+          "aliasModel": "scope-binding-may-set",
+          "bindings": 13,
+          "edges": 0,
+          "processedFacts": 0,
+          "finiteFactLimit": 169,
+          "methodProcessedFacts": 0,
+          "finiteMethodFactLimit": 78,
+          "invocationResolutionSteps": 48,
+          "invocationResolutionLimited": false,
+          "argumentResolutionSteps": 0,
+          "argumentResolutionLimited": false,
+          "aliases": [],
+          "methodAliases": [],
+          "blockedBuiltins": [],
+          "blockedMembers": []
+        },
+        "staticEvaluationSteps": 920
+      }
+    ],
+    "transformedFactories": 2
+  }
+}

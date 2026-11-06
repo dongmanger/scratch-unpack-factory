@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "input": {
+    "sha256": "e0d1ebc765f82d3542a06f1d7a19ed9b05376d3fea07058552639cd7c3b39e36",
+    "format": "o2-zip-precompile"
+  },
+  "priority": [
+    "variable-names-and-scope-ids",
+    "broadcast-names-and-ids",
+    "block-code-and-links"
+  ],
+  "status": "partial",
+  "canClaimComplete": false,
+  "acceptance": {
+    "structural": true,
+    "originalStatePreserved": true,
+    "codeCompleteAndVerified": false,
+    "browserEditorLoadVerified": false,
+    "roundTripRecompilationVerified": false,
+    "behaviorEquivalenceVerified": false
+  },
+  "confidencePolicy": {
+    "kind": "rule-based-evidence-score",
+    "calibratedProbability": false,
+    "meaning": "证据分而非统计正确率；复制原始积木=1，metadata帽子=0.98，封闭AST模板=0.85，唯一名称回退=0.65，未恢复=0。无缺失不能替代重编译/行为验证。",
+    "originalSourceGuarantee": "被优化或删除的信息不能保证恢复；未知操作绝不伪装为完整脚本"
+  },
+  "confidence": {
+    "variableNames": {
+      "score": 1,
+      "basis": "container",
+      "calibratedProbability": false
+    },
+    "broadcastNames": {
+      "score": 1,
+      "basis": "container",
+      "calibratedProbability": false
+    },
+    "code": {
+      "score": 0,
+      "basis": "partial-or-unverified-compiled-code-recovery",
+      "calibratedProbability": false
+    },
+    "originalBlockStructure": {
+      "score": 0,
+      "basis": "original-block-graph-stripped",
+      "calibratedProbability": false
+    }
+  },
+  "targets": [
+    {
+      "targetIndex": 0,
+      "name": "Stage",
+      "isStage": true,
+      "variables": [
+        {
+          "id": "varId1",
+          "name": "分数",
+          "initialValue": 0,
+          "cloud": false
+        },
+        {
+          "id": "limit",
+          "name": "次数",
+          "initialValue": 3,
+          "cloud": false
+        }
+      ],
+      "lists": [
+        {
+          "id": "items",
+          "name": "项目",
+          "initialValue": []
+        }
+      ],
+      "broadcasts": [
+        {
+          "id": "ready",
+          "name": "开始游戏"
+        }
+      ]
+    },
+    {
+      "targetIndex": 1,
+      "name": "Sprite1",
+      "isStage": false,
+      "variables": [
+        {
+          "id": "localScore",
+          "name": "分数",
+          "initialValue": 0,
+          "cloud": false
+        }
+      ],
+      "lists": [],
+      "broadcasts": []
+    }
+  ],
+  "code": {
+    "scripts": [
+      {
+        "targetIndex": 0,
+        "scriptId": "h",
+        "source": "compiled-project",
+        "status": "unresolved",
+        "body": {
+          "status": "unresolved",
+          "confidence": {
+            "score": 0,
+            "basis": "no-supported-body",
+            "calibratedProbability": false
+          }
+        },
+        "originalStructure": {
+          "score": 0,
+          "basis": "original-block-graph-stripped",
+          "calibratedProbability": false
+        },
+        "sourceSha256": "14e22993b198e82854d5a141737f1d7e317ef2f9bc234b1976448ec4f3a1b98e",
+        "deobfuscation": {
+          "schemaVersion": 1,
+          "status": "partial",
+          "transforms": [],
+          "warnings": [
+            "字符串轮转执行前缀未证明：_0x1db5",
+            "字符串表顺序未证明，保留输入源码及自检文本"
+          ],
+          "residuals": [
+            {
+              "type": "string-array-decoder-bootstrap",
+              "line": 1
+            },
+            {
+              "type": "string-array-decoder-bootstrap",
+              "line": 1
+            },
+            {
+              "type": "string-array-provider",
+              "line": 1
+            },
+            {
+              "type": "switch-dispatcher",
+              "line": 1
+            },
+            {
+              "type": "string-array-rotation-unresolved"
+            }
+          ],
+          "executesInput": false,
+          "proof": "bounded-static-ast-transformations",
+          "behaviorEquivalenceVerified": false,
+          "builtinEffects": {
+            "aliasModel": "scope-binding-may-set",
+            "bindings": 51,
+            "edges": 2,
+            "processedFacts": 0,
+            "finiteFactLimit": 663,
+            "methodProcessedFacts": 0,
+            "finiteMethodFactLimit": 306,
+            "invocationResolutionSteps": 131,
+            "invocationResolutionLimited": false,
+            "argumentResolutionSteps": 0,
+            "argumentResolutionLimited": false,
+            "aliases": [],
+            "methodAliases": [],
+            "blockedBuiltins": [],
+            "blockedMembers": []
+          },
+          "staticEvaluationSteps": 7
+        },
+        "reason": "不是已支持的明文 factory 模板；可能仍有混淆",
+        "hat": {
+          "blockId": "h",
+          "opcode": "event_whenflagclicked",
+          "confidence": {
+            "score": 0.98,
+            "basis": "original-event-metadata-and-id-resolved-definition",
+            "calibratedProbability": false
+          }
+        }
+      },
+      {
+        "targetIndex": 1,
+        "scriptId": "n",
+        "source": "compiled-project",
+        "status": "unresolved",
+        "body": {
+          "status": "unresolved",
+          "confidence": {
+            "score": 0,
+            "basis": "no-supported-body",
+            "calibratedProbability": false
+          }
+        },
+        "originalStructure": {
+          "score": 0,
+          "basis": "original-block-graph-stripped",
+          "calibratedProbability": false
+        },
+        "sourceSha256": "d99b0c98fb3782c7dae7f0fa97fa9fce1e3cee4ba5901007ff5136f0541bf5f1",
+        "deobfuscation": {
+          "schemaVersion": 1,
+          "status": "partial",
+          "transforms": [],
+          "warnings": [
+            "字符串轮转执行前缀未证明：_0x4073",
+            "字符串表顺序未证明，保留输入源码及自检文本"
+          ],
+          "residuals": [
+            {
+              "type": "string-array-provider",
+              "line": 1
+            },
+            {
+              "type": "string-array-decoder-bootstrap",
+              "line": 1
+            },
+            {
+              "type": "string-array-decoder-bootstrap",
+              "line": 1
+            },
+            {
+              "type": "switch-dispatcher",
+              "line": 1
+            },
+            {
+              "type": "string-array-rotation-unresolved"
+            }
+          ],
+          "executesInput": false,
+          "proof": "bounded-static-ast-transformations",
+          "behaviorEquivalenceVerified": false,
+          "builtinEffects": {
+            "aliasModel": "scope-binding-may-set",
+            "bindings": 49,
+            "edges": 2,
+            "processedFacts": 0,
+            "finiteFactLimit": 637,
+            "methodProcessedFacts": 0,
+            "finiteMethodFactLimit": 294,
+            "invocationResolutionSteps": 124,
+            "invocationResolutionLimited": false,
+            "argumentResolutionSteps": 0,
+            "argumentResolutionLimited": false,
+            "aliases": [],
+            "methodAliases": [],
+            "blockedBuiltins": [],
+            "blockedMembers": []
+          },
+          "staticEvaluationSteps": 8
+        },
+        "reason": "不是已支持的明文 factory 模板；可能仍有混淆",
+        "hat": {
+          "blockId": "n",
+          "opcode": "event_whenbroadcastreceived",
+          "confidence": {
+            "score": 0.98,
+            "basis": "original-event-metadata-and-id-resolved-definition",
+            "calibratedProbability": false
+          }
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "targetIndex": 0,
+        "blockId": "h",
+        "opcode": "event_whenflagclicked",
+        "source": "hat-metadata",
+        "confidence": {
+          "score": 0.98,
+          "basis": "original-event-metadata-and-id-resolved-definition",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.5,
+          "basis": "hat-opcode-preserved-layout-regenerated",
+          "calibratedProbability": false
+        }
+      },
+      {
+        "targetIndex": 1,
+        "blockId": "n",
+        "opcode": "event_whenbroadcastreceived",
+        "source": "hat-metadata",
+        "confidence": {
+          "score": 0.98,
+          "basis": "original-event-metadata-and-id-resolved-definition",
+          "calibratedProbability": false
+        },
+        "originalStructure": {
+          "score": 0.5,
+          "basis": "hat-opcode-preserved-layout-regenerated",
+          "calibratedProbability": false
+        }
+      }
+    ],
+    "procedures": [],
+    "unresolved": [
+      {
+        "targetIndex": 0,
+        "scriptId": "h",
+        "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+      },
+      {
+        "targetIndex": 1,
+        "scriptId": "n",
+        "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+      }
+    ],
+    "knownCompiledScripts": 2,
+    "counts": {
+      "preservedScripts": 0,
+      "templateReconstructedScripts": 0,
+      "unresolvedScripts": 2,
+      "unresolvedProcedures": 0
+    }
+  },
+  "runtime": {
+    "available": false,
+    "usedForOriginalState": false,
+    "differences": []
+  },
+  "assets": [
+    {
+      "path": "0ac33de9d7138a386563727540d10055.svg",
+      "bytes": 71,
+      "sha256": "a60bef4da4deb1e5b9d272e9afbd532cc59150bee68149b21d8b5367f4799b97",
+      "source": "container"
+    },
+    {
+      "path": "91e42db1c66c0b276abf6234dc50b2eb.png",
+      "bytes": 68,
+      "sha256": "63ef318d96b5d0d0ceba6e04a4e622b1158335cdc67c49e27839132c6f655058",
+      "source": "container"
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "limitations": [
+    "原始内部block ID、布局、普通注释和被优化结构无法保证恢复",
+    "模板识别未进行真实02编译器重编译差分验证",
+    "解混淆按静态AST支持范围处理；未知动态行为/未覆盖积木语法仍保留原代码与残留报告"
+  ],
+  "notes": [
+    "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+    "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+  ],
+  "projectJsonSha256": "1fe76476e898029027217204c3baa4d11d53aead83bc526c2a2ac9c53e28d80a",
+  "deobfuscation": {
+    "engine": "bounded-static-ast",
+    "executesInput": false,
+    "factories": [
+      {
+        "targetKey": "0",
+        "kind": "scripts",
+        "scriptId": "h",
+        "originalSha256": "14e22993b198e82854d5a141737f1d7e317ef2f9bc234b1976448ec4f3a1b98e",
+        "decodedSha256": "14e22993b198e82854d5a141737f1d7e317ef2f9bc234b1976448ec4f3a1b98e",
+        "schemaVersion": 1,
+        "status": "partial",
+        "transforms": [],
+        "warnings": [
+          "字符串轮转执行前缀未证明：_0x1db5",
+          "字符串表顺序未证明，保留输入源码及自检文本"
+        ],
+        "residuals": [
+          {
+            "type": "string-array-decoder-bootstrap",
+            "line": 1
+          },
+          {
+            "type": "string-array-decoder-bootstrap",
+            "line": 1
+          },
+          {
+            "type": "string-array-provider",
+            "line": 1
+          },
+          {
+            "type": "switch-dispatcher",
+            "line": 1
+          },
+          {
+            "type": "string-array-rotation-unresolved"
+          }
+        ],
+        "executesInput": false,
+        "proof": "bounded-static-ast-transformations",
+        "behaviorEquivalenceVerified": false,
+        "builtinEffects": {
+          "aliasModel": "scope-binding-may-set",
+          "bindings": 51,
+          "edges": 2,
+          "processedFacts": 0,
+          "finiteFactLimit": 663,
+          "methodProcessedFacts": 0,
+          "finiteMethodFactLimit": 306,
+          "invocationResolutionSteps": 131,
+          "invocationResolutionLimited": false,
+          "argumentResolutionSteps": 0,
+          "argumentResolutionLimited": false,
+          "aliases": [],
+          "methodAliases": [],
+          "blockedBuiltins": [],
+          "blockedMembers": []
+        },
+        "staticEvaluationSteps": 7
+      },
+      {
+        "targetKey": "1",
+        "kind": "scripts",
+        "scriptId": "n",
+        "originalSha256": "d99b0c98fb3782c7dae7f0fa97fa9fce1e3cee4ba5901007ff5136f0541bf5f1",
+        "decodedSha256": "d99b0c98fb3782c7dae7f0fa97fa9fce1e3cee4ba5901007ff5136f0541bf5f1",
+        "schemaVersion": 1,
+        "status": "partial",
+        "transforms": [],
+        "warnings": [
+          "字符串轮转执行前缀未证明：_0x4073",
+          "字符串表顺序未证明，保留输入源码及自检文本"
+        ],
+        "residuals": [
+          {
+            "type": "string-array-provider",
+            "line": 1
+          },
+          {
+            "type": "string-array-decoder-bootstrap",
+            "line": 1
+          },
+          {
+            "type": "string-array-decoder-bootstrap",
+            "line": 1
+          },
+          {
+            "type": "switch-dispatcher",
+            "line": 1
+          },
+          {
+            "type": "string-array-rotation-unresolved"
+          }
+        ],
+        "executesInput": false,
+        "proof": "bounded-static-ast-transformations",
+        "behaviorEquivalenceVerified": false,
+        "builtinEffects": {
+          "aliasModel": "scope-binding-may-set",
+          "bindings": 49,
+          "edges": 2,
+          "processedFacts": 0,
+          "finiteFactLimit": 637,
+          "methodProcessedFacts": 0,
+          "finiteMethodFactLimit": 294,
+          "invocationResolutionSteps": 124,
+          "invocationResolutionLimited": false,
+          "argumentResolutionSteps": 0,
+          "argumentResolutionLimited": false,
+          "aliases": [],
+          "methodAliases": [],
+          "blockedBuiltins": [],
+          "blockedMembers": []
+        },
+        "staticEvaluationSteps": 8
+      }
+    ],
+    "transformedFactories": 0
+  }
+}

@@ -1,0 +1,3294 @@
+{
+  "schemaVersion": 1,
+  "kind": "actual-02engine-packager-fixture-corpus",
+  "generatedAt": "2026-10-13T13:00:13.597Z",
+  "provenance": {
+    "api": [
+      "loadProject",
+      "Packager.getCompiledProjectData",
+      "Packager.getCompiledProjectArchiveData",
+      "Packager.package"
+    ],
+    "packagerRoot": "D:\\rebuild&unpack\\research\\02engine\\packager",
+    "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+    "vmRoot": "D:\\rebuild&unpack\\research\\02engine\\scratch-vm",
+    "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+    "lockfileVMRevision": "a1f3a7d",
+    "exactLocalVMAlias": true,
+    "buildRecordPath": "provenance/build-record.json",
+    "buildConfigPath": "provenance/webpack.real-02.cjs",
+    "buildRunnerPath": "provenance/build-real-02.cjs",
+    "upstreamSourcePackageDocsModified": false,
+    "tools": {
+      "node": "v22.22.2",
+      "bun": "1.3.14",
+      "webpack": "4.47.0"
+    },
+    "sourceSha256": {
+      "packager": {
+        "babel.config.js": "d58bd241857182c0574162c3b8e0648c1cb0863ec7a1939609e52d5c0ab14e88",
+        "bun.lock": "1a4bc2fd1c9b0885e1d999068571dc3d9d49b9b49967f34ada64721621c4c140",
+        "package.json": "d1e38efa2b90486e952c53c693aa1153184aa8ef0ebcb7d2f148a8b9deb491fd",
+        "src/addons/gamepad/active.png": "6b7d1485ebd9a9c6e651e07027b9cdfd0b7467fc6f3e1bbf1d2d8aea26a7f523",
+        "src/addons/gamepad/addon.json": "61e269fabe38cebb357de08fe3489a7c8d5f05c53fd1ff26b7629bc322cdc743",
+        "src/addons/gamepad/close.svg": "bc0471614b1df817b3d914bf35e9b77fafc14cb0ac57727e0ca8401d75a4a006",
+        "src/addons/gamepad/cursor.png": "49885677f958ee0c323c1afc8ca97fa54445de5cd7947126642b6c8afe44e08c",
+        "src/addons/gamepad/dot.svg": "d37803814286b62888e0d2aeab98a0d748fc39718ee9063bad595f46ce8209a2",
+        "src/addons/gamepad/gamepad.svg": "965dd074bb0aeaaa99afee2af2a953b434f9edf517ae2578b17a27e69dd182ea",
+        "src/addons/gamepad/gamepadlib.js": "001154bfc7ccb4f1134a305c708776fd44336cd6e83bd73487f9de73c2ca1cf9",
+        "src/addons/gamepad/index.js": "deb18769e7475dee4902b3a2d6db3db7fedf2550a7549978d3e7d02f78fb7310",
+        "src/addons/gamepad/style.css": "ca596ac1869ee4cfb56c77278472b8bbecb23a77b0b12d3f70b43693ba173df5",
+        "src/addons/gamepad/userscript.js": "5c98392e7678db8c9ad5e96a78467be6239c33d860cf0a530f5fab0910241c01",
+        "src/addons/index.js": "3d9bd02afc50b53ab395ed9b68b1d63f602bd1fd9001e40a523ae376fa03aa02",
+        "src/addons/pause.js": "91b6fe28ec00a90606cd23a97f4d7310fc1b442ebb2539e6a70156c6576b6045",
+        "src/addons/pointerlock.js": "fbae3fb3b28b83b89ebbb52de199f0b47ab52da40f00d1b93d2ce0ffa7e2bf81",
+        "src/addons/special-cloud-behaviors.js": "b8623e3b7e10bb11d103a119755e2c4091b11cc45fd0d01d92f68f05135288c8",
+        "src/addons/unsafe-cloud-behaviors.js": "ec072a401f9a4d7034161f2667013665b1e4257cd8eba8283865cf6fbb6020ec",
+        "src/build/add-build-id-to-output-plugin.js": "7a7604561a822c3e749d4fc0897c7d5c987327a777eb5bdfd1263746483dfa0e",
+        "src/build/eager-dynamic-import-plugin.js": "a5f616a918f6048c9fed69a01f5726f0f626847415fc55ff46911bff3967f14d",
+        "src/build/generate-scaffolding-build-id.js": "6547d0fb543936141726cd93e5069d3daf70ebb0ea5323282ea478003dcfe934",
+        "src/build/generate-service-worker-plugin.js": "3b0e87ac11f6a6bbd7f5f38851e9b531c01a1e54e38271f1174eea29f994c8a4",
+        "src/build/generate-standalone.js": "8b9be9d791105cd83d49fd881f06ea6a1aed28b2efa276b16e32d05178b2d4e0",
+        "src/build/inline-worker-loader/worker-loader.js": "4ef12d52d8de10f1e932db4ae8b30577857c19b6f5508587833e54b36bf1dea2",
+        "src/build/nodejs/update-readme.js": "47d4b92fac1065072500e064a3e6d779c92dc8e0c157a85418606b1a9787a8e8",
+        "src/build/noop-loader.js": "8703d5603145df44c485a77156e545d7a00ef9e2b3b456261e0facbe15a02daf",
+        "src/build/unstructure-translations-loader.js": "9a110f7df96d3ed169bd9e777070562491e9e9b7bc9bf4184222b36c6fd747dc",
+        "src/common/errors.js": "40fb227e9f44ef511dce6c8624247e5dbf3e50c4cc56a1f45f168aa58d19ce61",
+        "src/common/escape-xml.js": "1f91421a97ef0ea5026d33cb0e01e93096d01242d42a12628b0ccce68d9eae81",
+        "src/common/event-target.js": "9fa34021881372675b3c79c7bf88a9934a1010d16c06611042a8f220e2001535",
+        "src/common/idb.js": "846398fc74678b78bcc33de7ad7a510651f76be08b756bc4b323b772985d4ce7",
+        "src/common/readers.js": "b730999574a77b68c9a608b943110acca02d4ac3092c47a33291810b10797442",
+        "src/common/request.js": "6128e2ce45678a5fd8128a7400c87cb8513d8d4d0a08781e86840e45ef72a27f",
+        "src/locales/ca.json": "42e7ba7e3dff6eb999abe85052b72001c5b6b1e4093416bce27eee80573584f0",
+        "src/locales/cs.json": "93990bfbf7234d53a0f362f9c36228a3e41c2234d9e8947b4bd0ea564898d834",
+        "src/locales/de.json": "af1e19e17992f6ed99d5cf9ddfc8d82670f1ca93890287b318201b4ec813430a",
+        "src/locales/en.json": "4f7bd7e05b016b4d98c9708e53d42cbf8400f6588eb0e0f68e0362e236a20806",
+        "src/locales/es.json": "563b55cfc2116bf53d6b5c2504caf5a670b2d6e4849bd116090d53429499a46c",
+        "src/locales/fi.json": "4a5e31ed43a253d467e17ce0720e93f15d8c2631283152ed4cf46de87b7b3ef3",
+        "src/locales/fr.json": "255c66bce4b262edd81102750a9e97be07038fcaa128d6979ffdbb05f6639168",
+        "src/locales/hu.json": "df1772ded8e815941d54052bb4e17a9122aa059ce823f94ded8eda7e0f0ecc3e",
+        "src/locales/index.js": "1291d47f4ed5b4243d70dd7735dbd00d50a8591ddf5095841fc04c55f31a9252",
+        "src/locales/it.json": "60199f526fa0d6ff0ee968a970c476bca77918c3886d191adfa59c033e33eab5",
+        "src/locales/ja.json": "42bc79e8736be0b739448798ef26fa314c5527cede1b15dec75d0d3073a36ab2",
+        "src/locales/ko.json": "07ca0d99e6dd9f78e0da3e8bd3bc620ac840762787502f1d258bc8878ad7183c",
+        "src/locales/locale-names.json": "faa44be6c090037424fe93d3815a3c67932b59d66e59047d3bd5838ccb808e8a",
+        "src/locales/lt.json": "0650668a4499097e8773e24b588627a46f36a277f949c339eff455b331da18d8",
+        "src/locales/nb.json": "5c7672b0b1f4f7276bd504c5a201e34878d7f2212e6de63b766dfffe7d412493",
+        "src/locales/nl.json": "afcad36d0296fde2a673f4545efa835ac36d5cb36fd1913d85bbf00ac7bb4cee",
+        "src/locales/pl.json": "120842085879846e848c729668151618c78929907998c26f9cd10b75d50c1c32",
+        "src/locales/pt-br.json": "e6025cdf5c24190cc2b196939d87cc9120049ba6f0baa05e5cb2547917721243",
+        "src/locales/pt.json": "e52fb4636e5677a10aa3819f8d42e9b7b747d9e828009f40a4d345bc3407766a",
+        "src/locales/ru.json": "e77852edf3e3ac0717676d3a66b9f47b6bf2090d9fcdf372b629961d83229adb",
+        "src/locales/sl.json": "52f74d2dc1d92c6f06fa3f819b27fd7d55fd8385500ce7b804c9fcb7a70b6fbc",
+        "src/locales/sv.json": "5306a7a38f19d0fa3ca62fdaf54a3c15eb381fe2374cbbc6dc025bf9cbde9afc",
+        "src/locales/tr.json": "d5d5436211f577059238a5429e9c712108ba4a7d277919c17d57b857093caaac",
+        "src/locales/uk.json": "1091c3b835ae9cbabf2325ca3a533c094cd3be7ecde7f28e7278fa0fa4cb2ecd",
+        "src/locales/zh-cn.json": "c3613368c17dda00784b0f547a2bab8855fe0b037ca70de232fa5c08e63281fa",
+        "src/locales/zh-tw.json": "16824b77b138cb04233da41f0f0893dac0ac1c3b2830dc1a816be0486d3a359a",
+        "src/p4/Button.svelte": "b0d7596ba1cf8d3b83ac967ae15787234331b6f1765b0f53690de2b81dd6d38f",
+        "src/p4/ColorPicker.svelte": "2b2ed05dac80d81eacf39010a945ea3f0c84ca5b471486e65765106234943b82",
+        "src/p4/ComplexMessage.svelte": "7461e4f13d986892c4dc2830d9f46ffab794b8810ea7b364c4fa95e783d93839",
+        "src/p4/CustomExtensions.svelte": "7b287683e5ba298381529a83af3ac2f1cfc4c0da97cde5dfc55a41a107053564",
+        "src/p4/Downloads.svelte": "5d0048f4c327c58e406aa2b2bad6632ae91b5b17d4df9c622e9a0dc2583705d1",
+        "src/p4/DropArea.svelte": "b09706da83633ca76e245d1d660996c464bcf754bf5ccc9a0a4c5f77775b4dd0",
+        "src/p4/ImageInput.svelte": "c9ad62d32d64ab120447d369d34bc544228941ec60b0f77fdfb39d9b3336bb73",
+        "src/p4/ImportProject.svelte": "a3cbbda5cecee7790028b4311fdbc79b54132b63679e1ae8af01fc22ab06af75",
+        "src/p4/LearnMore.svelte": "ea3b084d57a9445f43ffc85a4b923e2aaeb1127774f23cf9e456d6a045ec052b",
+        "src/p4/Modals.svelte": "93e8ad0a50edfda686683198e567d94e212e93e335884652e335cfc48d98e162",
+        "src/p4/News.svelte": "28e783dc56aa7fb8acf89ee630ed41b55e918f5b17e43e2e752505ca8aa5b033",
+        "src/p4/P4.svelte": "cef4827d7f3a3e49e20f5ef0a6908cb555fec8f33b53532750b01acc17d52122",
+        "src/p4/PackagerOptions.svelte": "286121214f54035f90a6fe345145cd89b4f1e678551c1af8874f02137c68be82",
+        "src/p4/Progress.svelte": "a62d0123639d54e075df8f1f220b665db39945d230891927486aefa6c0a5eebd",
+        "src/p4/ResetButton.svelte": "344388b1b21ffbe15535ebb3a40492dec35a77e738316b9c6c9bac628fa53a0e",
+        "src/p4/Section.svelte": "c2fb05e1e04e27ac3dfdd596a169cd62d41ce4172197c73c3ef1d2eac3fe8ea0",
+        "src/p4/SelectLocale.svelte": "9862a3d9fb31f52748b8d2e3b1779b015bc350a120a920c4f2c834b450277317",
+        "src/p4/SelectProject.svelte": "0d3e78722cbd8096ba0af6d73a5ba15d629bc186af2c27b556e571e0bed36ed9",
+        "src/p4/SelectTheme.svelte": "4e1f63906790df03cb3791b37e555c97df76fbbfc6053e56478d76b3d766cfec",
+        "src/p4/base64.js": "6f4738bf25c1e25e4ca8dfd577a17922b8abe43438014b4190bfc16c9209c133",
+        "src/p4/blob-serializer.js": "58c6f84c1dabd628007a3584348f940590ecfba37f676b1c189d51ca880d9009",
+        "src/p4/deep-clone.js": "6ce285f1467f3cc69cea883087efd05ce64e96fc0655372d1d354d4f51cd2f2c",
+        "src/p4/download-url.js": "2c89d21737bd5e0733e3bb8f9fc12c29fa867de0e8dfdee608fb7dc6c24e234c",
+        "src/p4/environment.js": "8b3681b1dfc27f84df57cb358951157ca369a8533258ec43dcbff71cf98e95f6",
+        "src/p4/file-store.js": "adcb5dc727ae3685713c681cb12b02dff59edbfe40adfc754d1b26537acc78a2",
+        "src/p4/get-project-metadata.js": "aae81fd45d97afba1d12baf271d1e6bdd9acefec5a4d9a4ec3ec5c559954e17d",
+        "src/p4/github-uploader.js": "a24cb9e3a1434e5b3b847351750edc3fc91cd52a010beef0532999fde2cc654d",
+        "src/p4/import-external-project.js": "d6fe02c7d1ab4439fae4fdb0a97ce336aad2fd73a9473da4492aa2f651916542",
+        "src/p4/index.js": "80d4682e47cf1d75adf9f1515a719a4cd26d85392badf7bd9aa2df54aeef5628",
+        "src/p4/merge.js": "f2515ba001b0696d8b3a59200562e5af9d29d7584602cab7af970bf502147dbe",
+        "src/p4/persistent-store.js": "64540cde14936923a0842f97b8f79b8f667e392ff84156a803c361242cf63c93",
+        "src/p4/preview.js": "5294e77f6542279d8612f20192970c2798d7a2a252f21a771e385e176e885a34",
+        "src/p4/reset.svg": "0505302113feda7a96e568e0ead8d9668db74e896cf16653da6605ae812712b9",
+        "src/p4/serialize.js": "e07b7052a374bcff29e6d4e1b6bd6e123e022b06e4a0fb55a1f8d6f21e49d022",
+        "src/p4/stores.js": "bb6086339e1c205b7ad530bd2e027225a6aa6a342dcab94b1fc376eeda33671a",
+        "src/p4/sw.js": "b0821f91389a7db21b6085049b6bc5c530350d17f6255154867584bb2ce1cb3e",
+        "src/p4/task.js": "d0da0644de8721f2626a778e15a7b74260d7be1fb27d0eaa514faf8997ea5b9e",
+        "src/p4/template.ejs": "14a7a1d10a4d5b9f9c8546d5291465ed5fcf6dc2b7797037be26d4a8a7acbd42",
+        "src/p4/url-utils.js": "47ba0f2fdb0d95ce515fcf5fbfc78fc6c0b566a0ca87033408f3d15981d1c572",
+        "src/packager/adapter.js": "d9324c52c2f86678b5e8df5cd541eda8ba6f3ddee40ae7d01d3b7a1799113c04",
+        "src/packager/base85.js": "11bc3d8e3e05e83890b7f35e849e48ec0b84a61703991647b496c86192b44c70",
+        "src/packager/brand.js": "66555e45b65b3105e3c0255ed071d6b3a2b0d55db5041937c3e92f683309b5ca",
+        "src/packager/build-id.js": "4efe0f4c94b01c81063b9e3f6184618c4ef069705b2efc03224a21881d0a1e85",
+        "src/packager/colors.js": "b4995a0aa9162924d52dfd9f88288844c84fb253638ec26180202e969953006d",
+        "src/packager/download-project.js": "96a15b39d58488a1148c31184cb9ab288e846327301bec0341583bd8fb93080c",
+        "src/packager/encode-big-string.js": "3a1a0d10e5bc5ea42ca61821c1cfd97de5922dd1d263b06bd59008bc819faf4f",
+        "src/packager/extension-loader.js": "189035bba84ea7c79f481b577c6248e06845b30912ccbdd738c077803f112fad",
+        "src/packager/icns-bundle.js": "ec3b6d8ab598c7659427b4d6ea596bc5f322e7ed3a0ef3c77ad0edcca39d8a3b",
+        "src/packager/icns.js": "7f859a50f17d4cbbbe45e967b7f251aa0dad7d7d5286f1746b49185e664dc899",
+        "src/packager/images/default-icon.ico": "372a929268c594bef07f3b6c485cc6a72454cd0a59560190a2da339168b09fd3",
+        "src/packager/images/default-icon.png": "03c291d67fdff5e6d763a213c620f1acc9570c53721e77facf579218a9600ed4",
+        "src/packager/images/default-icon.svg": "89db199c79e2120ae70fabb2dbfbb2b51ec73aac11649e4c537af6929609e1ef",
+        "src/packager/large-assets.js": "c246d7f1923c67c3c5ac82375877761fad0b6ea1a3e9663c34bc1b4f09bd1a13",
+        "src/packager/load-project.js": "459827f06a37e3aa4c67b73c841a41bb7b1e7dd1576d6fa98d45fa87c7b4638a",
+        "src/packager/minify/sb3.js": "be58cf7d542b94f821733a3a1512290185d0a2f94901dd7fd0a9715b8735e3cf",
+        "src/packager/node/adapter.js": "76b7d3b3dd9f618581424816b25fb6cd5c512fcc4d53ad81495bfccc39b8edd1",
+        "src/packager/node/export.js": "1f38180554f506c3dafa81a6ca12d614e553a3f8bec6fc76150055f36282d9a8",
+        "src/packager/node/image.js": "e010b9955e3861e9b902e71b018c011ab00b9fdea5671f8b34ef8082d74fa128",
+        "src/packager/p4/adapter.js": "0fb27c507845a32778b47581fd699d1d974f3f08e7456101b5bdc1cfc3b9c9d1",
+        "src/packager/packager.js": "ba23ac31975809f381d568d80888b082db540cf9ba1b86c2d5898b297907308c",
+        "src/packager/plist.js": "ec6c60a01075eddedec8c234eccb3ef600c44cbfe5036ea7d2bb9aa202e90e52",
+        "src/packager/sha256.js": "21932c141384594328664c96765b3c6fc241a56399f2a3a12b523576ba2fb2b1",
+        "src/packager/web/adapter.js": "cce19e99789271a89075fd624e07b071de7d761ba603be5e96925d793429e87e",
+        "src/packager/web/cache.js": "7f819d56b6e55f877d2df4cf73899e73ac6f9a93a308214329e69cfd3913f053",
+        "src/packager/web/export.js": "b7a110c16a5c0010009fcb9957f28c1ca45934638878425cbfe232908863bd07",
+        "src/scaffolding/check.svg": "3bfc1599f84a1d34b6889ec24ca1afa53e913c4a05931bf50ff3aeef88a20950",
+        "src/scaffolding/cloud.js": "381fc93a1d0a947a5c0a891bd555fa6506ac69e4abf521aea7413d728cfe1ae5",
+        "src/scaffolding/context-menu.js": "712d61b04476ae10a4920be6d28aa7c24b3997e47ece38a5a912465a35759616",
+        "src/scaffolding/control-bar.js": "e000fd409579218cb0b92a6264e7bbf10eeb4cc8c229ce3592511993078a5028",
+        "src/scaffolding/download.js": "3016873f4c21b8f1833b350e01cbdfe0299e31927609664fb2f173ed2f82735c",
+        "src/scaffolding/drop-area.js": "49bfe6719aa413a295ab432a4aa30128bee6256252de8cfc6a45c99bcbbf751f",
+        "src/scaffolding/export.js": "130af10995e3a65772b5d0ce2f11473988dc7501ea9f536f55f857f217587cc7",
+        "src/scaffolding/htmlparser2/index.js": "ef522ac8eb430c1b5f265b03a47188eccd7ee5ad1ad3760e26c61439d6abfa5a",
+        "src/scaffolding/messages.json": "e25670eb3d42317047a7dc70c1059176e0a77564d934ef0c165c061d03319cf0",
+        "src/scaffolding/monitor.js": "e7afc39dd733c8787f982b7f5cea1bb36defc99ea5ef248e2e148ec9c8389ec4",
+        "src/scaffolding/question.js": "da1933154ac7eba5113f330187b92c274ca9a94638bf3c4282fe39805fbd3424",
+        "src/scaffolding/scaffolding.js": "2ecf6c2cc60804ad13f2aa1c8e080ba7f11712db1cf48978b1d45ea339b67578",
+        "src/scaffolding/scratch-libraries.js": "08460aa889dea2488157b46388737dd271b2948f9bc314dee0470ed5f53867cd",
+        "src/scaffolding/scratch-parser/README": "16f3a26a0b4433cd74eac49add00fbe2361f5ae8501b823b03cc382c42add291",
+        "src/scaffolding/scratch-parser/index.js": "5abf4c8d36e0d7e319c88258fe19f622f977e3cbb9e00035d2ac3cd98cd807b1",
+        "src/scaffolding/scratch-parser/lib/parse.js": "f2149e048cd4af832d2c85c953b9af3647047c2b96ba167951e2789fbfa3fe4f",
+        "src/scaffolding/scratch-parser/lib/unpack.js": "fe8d540e4a4a033eabecc768bd8f096b217ffdb547716df3c2017f2077da9674",
+        "src/scaffolding/scratch-parser/lib/unzip.js": "2b73f5f68b493e147214bd9b62834dc6c9561623915a62071113cd3572141a8b",
+        "src/scaffolding/scratch-parser/lib/validate.js": "4689cf77aed107c93a6985ac1b854cf3538791ae0f4e6b761f88f62bd7371771",
+        "src/scaffolding/scratch-translate-extension-languages/generate.js": "784652c05a325c021943654827bffb3c641cbe7c2bed70852ae62ea01bd0bb02",
+        "src/scaffolding/scratch-translate-extension-languages/languages.json": "6b7b4871e23177a18be4946cc1a486a48e2e9528dc49fb05e16f0dd9cb5e5804",
+        "src/scaffolding/storage.js": "26c27d16c1dc1c2a7dc0480d3fa131a491d80d1b9e260c78561ff92949d3210d",
+        "src/scaffolding/style.css": "0f8f5e799bceedb3d8efd94904c784ce85291dc7b7669d5d6bae597421cf933c",
+        "src/scaffolding/text-encoding/index.js": "fb089195e2a7b5c9feba74e45bb5001b092a36021ec286613abe2872bec06537",
+        "src/scaffolding/verify-value.js": "fa1e05e7a728b6260ec9838264c576b736e1a1e8249ef1d1568e8c9a20103ad6",
+        "src/scaffolding/video.js": "01e3390f3e43edc76613bfafe8eea9f17ba9edbb2cd8a08fc2f4b132f7f98040",
+        "webpack.config.js": "444aae73218c177aa47316ba8b1f0cfcb87a540f03cf582d8bcb3b220c807eab"
+      },
+      "vm": {
+        "package.json": "240612909727b67c4c09b5284975b63b51b407a1170800e5e7bb6f5604eed07d",
+        "src/blocks/scratch3_control.js": "99a38761c01c8e2515acaf1b7d8c91b00963e140544ce45143ef576604748093",
+        "src/blocks/scratch3_core_example.js": "b31c4090dd2be2f71040494fae2181ade3475ce4e741a5af38db7650ad074026",
+        "src/blocks/scratch3_data.js": "23465ee49ce29c30142da9061296708c264aaac1e4c3a9ceb1e53da9f12ad21a",
+        "src/blocks/scratch3_event.js": "47a5247c4f755207f98a85a6d39e1bb3e81da909e3b315ac28574ba546132dfb",
+        "src/blocks/scratch3_looks.js": "467c96a139a26eb174e488c026054599bf998a18efd683f980be264f61886c10",
+        "src/blocks/scratch3_motion.js": "aa503c336c826c44c093bbfe7b13c4a3218dc05ce4fcf9c68bd6bfd3ef8e4e14",
+        "src/blocks/scratch3_operators.js": "37dc1a802ffeb6f23e18af6a026cae87a397ba0a89f0975101cdfb48f659f3a2",
+        "src/blocks/scratch3_procedures.js": "be78d44baa8653ea2cbfcb2cf09b690988f6e22ca668ccb8fcd22b2ddc67ba5f",
+        "src/blocks/scratch3_sensing.js": "0771c696972fc3ad2de5be124678205e77f51b5938943a277f34faf2d2ccff75",
+        "src/blocks/scratch3_sound.js": "7130a5d1d19ffe0a2269727ace79b5804f7a54232eb1278680894abe9afc430f",
+        "src/cli/index.js": "21100ca8a281e28cd1e65849531d3091de562b3ceb300fafbe87c66e21e3def7",
+        "src/compiler/compat-block-utility.js": "9ded37a8fbbccc45c93e8adb64a9ca529ed0c40762d8c364d633367e523792e0",
+        "src/compiler/compat-blocks.js": "0c3f41742adaee4b74ec56d0ab2450986b68fe1c992999c176dd3b15686737ec",
+        "src/compiler/compile.js": "727654e4230ae7ad2819bb172467773ee50ab7158ed27d5849a766359485b3a6",
+        "src/compiler/enums.js": "90f14fff8dda54d7d81b04da3d1ae9068ae31a178f031cdcbacbc95e46ef3458",
+        "src/compiler/environment.js": "e3d42fcf788decc4c4bc15816cf2d6828cc0c22a4589f9e9c8a4b58c62d433c3",
+        "src/compiler/intermediate.js": "7ea81d1b7c55d3049570b6e9fcce3a3ce9ab42ceddc863c07ab56b212a9144d6",
+        "src/compiler/irgen.js": "465c68bde3f83d75b1c53ae8bacaf3a751218e38153a410f63dd7e6db534eaa9",
+        "src/compiler/iroptimizer.js": "6097b5d7d9c72b49865d53507f0158271d037792ab594505848c15425b01867b",
+        "src/compiler/jsexecute.js": "ee523267332d3d27a7061f0f7c5a54a055f0301ffceda417c0d02bf27d51518c",
+        "src/compiler/jsgen.js": "bd8c64fd4d28250e88666c73ca18eb7470292cdd7ce4e19138e6ef48c2369813",
+        "src/compiler/old-compiler-compatibility.js": "3bc54c05c0cc0a06520d1144d04b81a6ecd036ff6b858e8b23d7e54f3a5596d4",
+        "src/compiler/variable-pool.js": "4973ef03a1b11b000b54ae6191eff9eb026ed9bdb9fc50460e904150ba102e27",
+        "src/dispatch/central-dispatch.js": "a78a2e3b30bccc10c5d5fa3456bd2d6228acf76778f57d44a47d00a6a8da842d",
+        "src/dispatch/shared-dispatch.js": "e43df456a87fda00878ddceff9c34de3da8072c352760d3085c871a1395ee010",
+        "src/dispatch/worker-dispatch.js": "13931c1772af99c1f85a3ae98b6c4cc499870e30d029ca5c25d828ffc29b21a1",
+        "src/engine/adapter.js": "a57cd369fe184ca1b89ef4d3f917abd7627a8b96e5c5419ed27013df4f34a74c",
+        "src/engine/block-utility.js": "6e8dc67f41c63ef7b9d6a256c23e99d2ac416f241b8542bec6144f3e59259751",
+        "src/engine/blocks-execute-cache.js": "e9a8cad0289f268259b98f7dbcc68b6c6370756550acdd91f7ea68710857b298",
+        "src/engine/blocks-runtime-cache.js": "ed7b6ae8b737485a2f6f30e15bd3a9383f8eb500fd694d542de15ab13e2becf1",
+        "src/engine/blocks.js": "c7a268094a2d2f265b86e9e5aae7d3dc1d8227baacbd3a85eb5e556644dc4470",
+        "src/engine/comment.js": "5b16564d403072235ec48a0f88b8061254c9c499aaacfda5fd45b537e86ecb42",
+        "src/engine/execute.js": "64d92b9a7cfd1005c60b5261d72e17cc58905a5e7d67ed61579ba997bd949eb5",
+        "src/engine/monitor-record.js": "77162ece2c0d2789ca7b2de2ba32d69970dcbeed974a40fc0e3ccd0b486bf236",
+        "src/engine/mutation-adapter.js": "3f17d427f7795ab1aec23cffebca841f6b7835dbe4c88196b75c26950c90f655",
+        "src/engine/profiler.js": "9d634fd3fd95d8c9736176d734186382f99ea486aa2a0f0e7fcd1b9997e49d49",
+        "src/engine/runtime.js": "1c37ee3d12305575fe1247807e2828822b38b21c97244f8dc3d7b281f2ad06a3",
+        "src/engine/scratch-blocks-constants.js": "4bbc184da65fb78e0a506d3e5f8e08e55a1f0ee34e1990025bbc2e4b8aa251aa",
+        "src/engine/sequencer.js": "81aadce9b30dbe9bc1bf1e54324cd12dcba1f45b56f06577871dbacda54b58b3",
+        "src/engine/stage-layering.js": "5fbe70394ac96e5f65de67b2faf71ffb8ef5c74f3772a46968399742f884ef66",
+        "src/engine/target.js": "20369e2609743095112e20b3a920444a3f13ac03c907b6fb3b3821b140d3cf73",
+        "src/engine/thread.js": "3fc417376b4ecb1edb9089966c755c6b73dda61d58bf49e4332b855adfc35c11",
+        "src/engine/tw-font-manager.js": "e50d7aa8115911817e819df8b9e8e05f50d1b6f59b0b39fad29bc0d6a96ba865",
+        "src/engine/tw-frame-loop.js": "5df4a09e64075df34ad8a00c33df1121f834d13d7e00316f8df02fbdc7f9a9d1",
+        "src/engine/tw-interpolate.js": "b1972b922162bd63c2491c3e43f1acde65c595b2590fea18a1fd6c8c58582831",
+        "src/engine/tw-platform.js": "334822c5d80f593a77716f2ef82b521b74774654fea4e5da0e1a60c10b22763f",
+        "src/engine/variable.js": "b57208f53e574f4be44bc04e769b7f3bc3a82e1647677e671426942ab6f4a1d2",
+        "src/extension-support/argument-type.js": "c7a003e948c9652b123c17fe28e8713b580f85479df2b03a587d1872997f5dba",
+        "src/extension-support/block-type.js": "cd45fcd5ae35b9e95024840f11bcb7bcf42728747361f122b9cf78925929b0bd",
+        "src/extension-support/define-messages.js": "1897cf2d3969f28b45c1d9d121fb8fcfa65a4b907f621e0bd56bec699c7f242d",
+        "src/extension-support/extension-manager.js": "2fe13533b0faaf9eba872eddb35f285a28bce0bf22d6a2f4744882b030c17cac",
+        "src/extension-support/extension-metadata.js": "61752dfbad4cbbae2e0b805836daf856e5d82aa9b1f1d527ed1ea6e002d68375",
+        "src/extension-support/extension-worker.js": "d5bd33109fc7875dd00b0c37d90f4d6b9f53b1ce8936af419287828dd47763d6",
+        "src/extension-support/reporter-scope.js": "6a5431c5264557002ef93dea9dbdcd8ca61dcc9a60b22d755572de542ec70da2",
+        "src/extension-support/target-type.js": "f58cd43364aa79fd16d1eb1273cd347880348e801f34a53ab7b7a2fb1668ee83",
+        "src/extension-support/tw-block-shape.js": "ded9fd133c976f74a9a4bf8990df5f6eff8a5ed0676457ba7bac8606dacabf94",
+        "src/extension-support/tw-default-extension-urls.js": "4b1557a567b7538e584284baf258100f10111a86bd369b62a14adc81fa3154bd",
+        "src/extension-support/tw-extension-api-common.js": "69752f2b7040444e85e64765ed52fc4bbd71c1601b5ef03faeb2fd7ce0d3400b",
+        "src/extension-support/tw-extension-worker-context.js": "a24323c9527c113da259b34feb62701be55bab430a28f0505f56711cede15e03",
+        "src/extension-support/tw-iframe-extension-worker-entry.js": "8caabde5ce67dc605c9115864db0bec5c104ac50f2fa1070d96922a6f18c042f",
+        "src/extension-support/tw-iframe-extension-worker.js": "82a198f95eeb2eeaea0f94439b6f8bb0176ae1724e3b6a71500fe9adb51c730e",
+        "src/extension-support/tw-jquery-shim.js": "3f94100a03f154d7ba48b0355a228c834533ad958a839b573123800d40004c57",
+        "src/extension-support/tw-l10n.js": "889c4e4633e3fe540362c9d084b6ead866a528e9225a03a5365b600213c4959b",
+        "src/extension-support/tw-load-script-as-plain-text.js": "019cf728df224dcfc1b1792dae7896b452505fe711bff4c26e21cb487f412d3e",
+        "src/extension-support/tw-scratchx-compatibility-layer.js": "38f712f671cb5f95b714019bb007baced4222fc20995f6b916d8c7d85e426fcc",
+        "src/extension-support/tw-scratchx-utilities.js": "973a011c29a877d6e3b56720b2ccfd6cb68639bfdd645c9005262edf0c502f84",
+        "src/extension-support/tw-security-manager.js": "382f904c2766f36bf6c32b93b929e40912b38182b9ee54962bb661becd48bc03",
+        "src/extension-support/tw-unsandboxed-extension-runner.js": "b340b8d3e62d8e6a5767406f86ef6123c93dd6762c67dacb03b7c8494af70b12",
+        "src/extensions/scratch3_boost/index.js": "8e5c4318e2d492e8081e22f07109567103aaa196a5047d9e2f1ba866d5792cff",
+        "src/extensions/scratch3_ev3/index.js": "3ec5c21989e43e963cda30b32751bc0719cd62a8689a7f24ce9be879550ee247",
+        "src/extensions/scratch3_gdx_for/index.js": "1c54a972d2ff16d997106de3a6ee8b973e72c942832a12220240aac5d4d3db5e",
+        "src/extensions/scratch3_gdx_for/scratch-link-device-adapter.js": "28e5c43954c35d604312eb80eced86a142a82bed8858eefa27934325e2748c7b",
+        "src/extensions/scratch3_makeymakey/index.js": "5bd8b8e6d2797844c0d93da1abe43690b49d1c45653ba03b7beb9c37c4322d20",
+        "src/extensions/scratch3_microbit/index.js": "b9271cca548a735803247387946cd834580ebb87921dac2d794d0f39a4d704c0",
+        "src/extensions/scratch3_music/assets/drums/1-snare.mp3": "9a196b793863d2cb265e5ed4f3cc41db99cafc58d957adcfe84ff692488d0515",
+        "src/extensions/scratch3_music/assets/drums/10-wood-block.mp3": "67d6a6fe2ebce8cbadbdd5d548a5ced6335f9034ea395cd6b8f6f765f200e524",
+        "src/extensions/scratch3_music/assets/drums/11-cowbell.mp3": "7f16eec7d97f2e3ed32edc0a6a08e983fd2e14deb4aebc7e432c0f8ad93ecadc",
+        "src/extensions/scratch3_music/assets/drums/12-triangle.mp3": "8b4039a81b67afb8342c0020f23d17b8336de129df30d9c2706331a73ce96417",
+        "src/extensions/scratch3_music/assets/drums/13-bongo.mp3": "21ed8b8b7bb39104757e4419fc70cf2253dd117fddb50d2ded494fb9971dce3b",
+        "src/extensions/scratch3_music/assets/drums/14-conga.mp3": "262c2a3563d0c748b67147ffce6fbb6a806edcfbf1ee4f1e358882e7fd410877",
+        "src/extensions/scratch3_music/assets/drums/15-cabasa.mp3": "1b55755a81def628d5d4153c0606686ae2bcdde64706aa4af2ade3f56ed6ccc5",
+        "src/extensions/scratch3_music/assets/drums/16-guiro.mp3": "15425361b0b9885d348d5087e516fdf7e9df155509083b0621187ed3a22963be",
+        "src/extensions/scratch3_music/assets/drums/17-vibraslap.mp3": "85a781f7e3cba077ff961caa4c04f7859b1413ba43165cbccb96c6f204c77dee",
+        "src/extensions/scratch3_music/assets/drums/18-cuica.mp3": "4a0aa09ebdac75d9cd8ee85adc8e0dcfdfec4d55308f6271750077db0fe77629",
+        "src/extensions/scratch3_music/assets/drums/2-bass-drum.mp3": "db8218d2431ac7ef5b56964538471a21a408a543b10eaade5b8bec03bdcbfe32",
+        "src/extensions/scratch3_music/assets/drums/3-side-stick.mp3": "f563e5b58003dbfd144ef76a46f96dcd1f8791ee12b64d78f03ad4e5c2f391a2",
+        "src/extensions/scratch3_music/assets/drums/4-crash-cymbal.mp3": "3147860410f83b8a2ed92f7cfd83e10c3ebed898537962750912e1a9adea8e88",
+        "src/extensions/scratch3_music/assets/drums/5-open-hi-hat.mp3": "1219e34dcd6e106eb2bdea5de1d2c971f6d619d8c3124f1776c3ee053991855b",
+        "src/extensions/scratch3_music/assets/drums/6-closed-hi-hat.mp3": "48d2ec6f90cf469c5f28ec545af5830a4260082a75ce6a27fa2b28e0db84713e",
+        "src/extensions/scratch3_music/assets/drums/7-tambourine.mp3": "012c323edbf9b6d4c81c2e63f29e6b7c64b5d5fc993f6cfa345fb243ad8fdf44",
+        "src/extensions/scratch3_music/assets/drums/8-hand-clap.mp3": "1db7568a75d924aa05927b2e3474be49b2829a57f616bfe6c44b18a3e3fff82d",
+        "src/extensions/scratch3_music/assets/drums/9-claves.mp3": "4147c8897bf5ef8ea936f49331005f66d752a82a997b97b076967c40b741f14d",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/108.mp3": "6b950012316d384afb404a471324a6e15c0a89442f1ada6ba3984f0cf590dfbf",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/24.mp3": "f0553cac8b27c10405887502f9583b9e391c8c34a2fddac96a755bc67a25e400",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/36.mp3": "5318818707f3350a69022777b050b7b5f57d8107ea6f730c722f9507b2f67585",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/48.mp3": "b54d281e14be994cde5521791db06c249370aec575aba4fd067cff001382cb80",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/60.mp3": "852b56f96c5d16ef33e25331d85f9b4a53b7451c5f00d76a4d9b1584cee5312a",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/72.mp3": "8371c4c3d83c264def21f9d5302d59f3939777c647fe7596089b16aaf8e52014",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/84.mp3": "ec2862bbe6ff7a6c9f03f223d42e62d2ffe397c6984fe57f9c01d6ed025e5e78",
+        "src/extensions/scratch3_music/assets/instruments/1-piano/96.mp3": "32fc998cb87da15c4e32fd04743ecbaeb78e700159d2245a3b1c56b3c0887a32",
+        "src/extensions/scratch3_music/assets/instruments/10-clarinet/48.mp3": "c67ea02f87c4c2e71edb4fd8239c34ec37055c56da86d791145c8bf682c11ddc",
+        "src/extensions/scratch3_music/assets/instruments/10-clarinet/60.mp3": "ff3e234c8464b1c7bf00f25d4adf48414ca0121e313d563cd3bd5df236de42ad",
+        "src/extensions/scratch3_music/assets/instruments/11-saxophone/36.mp3": "2eefd1e3f4f4b97f654fb8e3ffebd29bcafab38578bc6b00e32c6ac4e6941f05",
+        "src/extensions/scratch3_music/assets/instruments/11-saxophone/60.mp3": "225c55e8c1c14a77f71af82efaf5d5dbc08650d014afbdfd737fa54c30536d85",
+        "src/extensions/scratch3_music/assets/instruments/11-saxophone/84.mp3": "c351708fd39e3a6b082672f350fb4a5899459da035d29e0f5f037fa8af318304",
+        "src/extensions/scratch3_music/assets/instruments/12-flute/60.mp3": "e62df6045fa780902a8441bb255b8ec6df6d4822ef7ccfa5e3eead78671e6955",
+        "src/extensions/scratch3_music/assets/instruments/12-flute/72.mp3": "621efb62743148b0562ea2b58be9800523aee017321ac8db11a5c22320d17233",
+        "src/extensions/scratch3_music/assets/instruments/13-wooden-flute/60.mp3": "8e2c04c3604ba6be5a2699ac189b2aa1104496e3c80911209f9e8365a71f766a",
+        "src/extensions/scratch3_music/assets/instruments/13-wooden-flute/72.mp3": "9cb85e6d50d1ef2d8319679c9a9b5e764d9125e4fee2fc0d095e569085a53b26",
+        "src/extensions/scratch3_music/assets/instruments/14-bassoon/36.mp3": "4d2395e114f95760eeb1ac2aa4cdc1a1833e7918f7fa4769b9e17b7a5f7a18bd",
+        "src/extensions/scratch3_music/assets/instruments/14-bassoon/48.mp3": "18c38adac98f8b9d33721d158690e3e9d89321ea80cf8f7f125c7d44303a5cb6",
+        "src/extensions/scratch3_music/assets/instruments/14-bassoon/60.mp3": "9a03c085c7c8433b454b4e0fd8766c1222aa1899842fbcd248dece1563a93467",
+        "src/extensions/scratch3_music/assets/instruments/15-choir/48.mp3": "23cfb9ff287bcc8cc0adda7602805fb21a75e4df008754c233cd9cc7aeceddad",
+        "src/extensions/scratch3_music/assets/instruments/15-choir/60.mp3": "184161cf9660a2c349b2b2765d2a2a0b0939812bbdf4615a1fb3a4cabcc8c538",
+        "src/extensions/scratch3_music/assets/instruments/15-choir/72.mp3": "a7a3d8311e8b6f3e235660687423613c78ae856cda279c03f82d543438378011",
+        "src/extensions/scratch3_music/assets/instruments/16-vibraphone/60.mp3": "0778febbf85ee1449b47042478ec16cd3456fbb8799ca1fc1c5817627c280ac3",
+        "src/extensions/scratch3_music/assets/instruments/16-vibraphone/72.mp3": "4d72cd46b1b6b982961c07fa5b97bee17d04dff764edfb6209ec323484c4c1d7",
+        "src/extensions/scratch3_music/assets/instruments/17-music-box/60.mp3": "33c2354b2713f552712a54c3eeaa8366654a6c660be44c9775d7f46f9ed20664",
+        "src/extensions/scratch3_music/assets/instruments/18-steel-drum/60.mp3": "8ff87d762a611fda1eff5b7abda2711c1679470292497107109b6ee52b3fbe60",
+        "src/extensions/scratch3_music/assets/instruments/19-marimba/60.mp3": "9b6e5f2c55fb4bdc0acdbf9e5fb38bb43db23bbc9b4dd0d0352741ae3924e6f6",
+        "src/extensions/scratch3_music/assets/instruments/2-electric-piano/60.mp3": "f76b9025bf727c3120abece4c9fcb31db3e99702a0cfc7089488e0d2d6013b70",
+        "src/extensions/scratch3_music/assets/instruments/20-synth-lead/60.mp3": "4a9c6af011be1272a9c5c792237e29375d63f8c559139f6da4338510774507af",
+        "src/extensions/scratch3_music/assets/instruments/21-synth-pad/60.mp3": "3c9e82829e7a193a590c45203ea08d9e0a4d3e54e81bf1e27957f5e02f4e4302",
+        "src/extensions/scratch3_music/assets/instruments/3-organ/60.mp3": "a7d6e0f30c1731a62fdb913fb504af7e45e526a7beb8a33b16362ddf323c7630",
+        "src/extensions/scratch3_music/assets/instruments/4-guitar/60.mp3": "0f50f96605817905fc60e1d607be0ff54ba2f09b89cd3815a6af99ee432c49a9",
+        "src/extensions/scratch3_music/assets/instruments/5-electric-guitar/60.mp3": "11569780c2f365fc4957fcff4214359f5315b661428c7d78e7558c21bf1f1724",
+        "src/extensions/scratch3_music/assets/instruments/6-bass/36.mp3": "11e2352364a63c6a6cf1534d8763bd80fd99222f5edcc70a8ecce2b73bdf55d5",
+        "src/extensions/scratch3_music/assets/instruments/6-bass/48.mp3": "36ffba825e743d097032f119c8382cbd390ea78123d7c713dabb1aa816b9629f",
+        "src/extensions/scratch3_music/assets/instruments/7-pizzicato/60.mp3": "2d216e46fc0d5e6ef07fdaebf41554a40d5abfb7dd941f93d3b5871a8fbc45fd",
+        "src/extensions/scratch3_music/assets/instruments/8-cello/36.mp3": "f2f8c225b4c9a3e48e45c1c204b37421cd4bb1c73f4ff2b69c90a18a37093eb1",
+        "src/extensions/scratch3_music/assets/instruments/8-cello/48.mp3": "87d0a833c85262a59fc983c783461b386b393bcb9e0d17cc752255b6cd9632e2",
+        "src/extensions/scratch3_music/assets/instruments/8-cello/60.mp3": "2e90d51c9970d5cd7604ba7f594b7c44808f74c7166a55b43af8904060cef841",
+        "src/extensions/scratch3_music/assets/instruments/9-trombone/36.mp3": "6afbf9ffd8278efe21b23760f09109ebb276d025a03e04edec9e14dec7f8fa1c",
+        "src/extensions/scratch3_music/assets/instruments/9-trombone/48.mp3": "fc6df03907c28869574ab62373d060a94c8dd62adb46f0ab86246a35b3b83d75",
+        "src/extensions/scratch3_music/assets/instruments/9-trombone/60.mp3": "c371fa897001f1c8a2c72308acd3c8cc035c224077a6902ed35a66567bb737d4",
+        "src/extensions/scratch3_music/index.js": "9ce983bc904fa7c6965cf27295807fb5ea4a01589502f88299f4db198ef23313",
+        "src/extensions/scratch3_music/manifest.js": "feb945a6a9f1e2ff7cbcef61f89988eed456855ef3b77b82bd1a837624212f7e",
+        "src/extensions/scratch3_pen/index.js": "6d389603637311d7f0b634ef0439e939cc9e9a6ab4adc2aab4daded7137fc95e",
+        "src/extensions/scratch3_speech2text/index.js": "d7a0f3da7cbbc2f17216b3ad7363b453cf857538815f4fefc9145aa7a0886f1a",
+        "src/extensions/scratch3_text2speech/index.js": "659f23984f4e5be563a5973ecb666e3d3c70e3274d72ad9064e104fe9722a89d",
+        "src/extensions/scratch3_translate/index.js": "77031a7c300715d37b54313703c38c57b4fc316f3068e537f53a329ac8706538",
+        "src/extensions/scratch3_video_sensing/debug.js": "c0f34891fb0521e7270975f16122e8d76e6acbdca3cb5339dc57b9812664df8b",
+        "src/extensions/scratch3_video_sensing/index.js": "7e2081ceb40974a4a5052e82271e39fc89a12d35a2ed1b63dfd6cee54c567ce0",
+        "src/extensions/scratch3_video_sensing/library.js": "fdebe928a282b82332925faaec0b01fa688c0c6bdd07cf027496d1cb4d503e3e",
+        "src/extensions/scratch3_video_sensing/math.js": "2060ba348af0892d480adec469d19726050d92cdcb221f34aa7c0e3070263ad3",
+        "src/extensions/scratch3_video_sensing/view.js": "8c110e29b0b1e6a91177a4ae8a331dd8e938c3eaa49216fc3b5a3d20803e8ffe",
+        "src/extensions/scratch3_wedo2/index.js": "e35288e87f00518198a97ee2090d2494ca5b4681bb2434c8f182bb6c2bfd1979",
+        "src/extensions/tw/index.js": "65f2af368efc8fff4f6bba24e11d6233826c1d58f64f69361a32f521f341300a",
+        "src/import/load-costume.js": "d13d05b1828994d610733f07286f8d19623f9b94172b61ed4fd5d2b7ba8154a2",
+        "src/import/load-sound.js": "6097960a93960df25e45b7e1a2ced522cc7ad14d621209512433400884f81864",
+        "src/index.js": "2a505bce8097465b1389d8058e20378c425681818faaa0f7406f5046580ddc67",
+        "src/io/ble.js": "d95a156a8e27b2af4da9f60b046eea382a2d7db467c82566d61274490b7ce5bc",
+        "src/io/bt.js": "1a9aba4482cd3caa427784a2ba6d98945607f4f080950c891eacab1a842d4e0e",
+        "src/io/clock.js": "062a944ace6a3a95ed54f7702eb7acdac686185d58e00bb5822174588c3108d6",
+        "src/io/cloud.js": "aea302e7b16d7cbb758b912690ebe7836f9ee51684e35eb60210bcc7dd0aadb2",
+        "src/io/keyboard.js": "7ac377192a19465b6cb55242207ac2dddc76acc3323a3aa43d83703913d8a49f",
+        "src/io/mouse.js": "357b8922f1795e956e1f993ecb2677d2a3d113ed315be75f54c74f2d4d97130f",
+        "src/io/mouseWheel.js": "e135eece2dab3a39e5b7d9e5daba4cb8ad6f5cda79359618581cb513724c68ce",
+        "src/io/userData.js": "f64adb75d1a73c1a1e956de3ec426a742a6f1690173a0ef6c116a2dffedc753e",
+        "src/io/video.js": "19ab0bc3dac8b6d42b5ec78b3d794b8c87499ff0720ec4d67bf5459753919822",
+        "src/playground/benchmark.css": "0e960392fdca3bed4674df1ee807c428e0f4767895340daed2ab6914ca64cba1",
+        "src/playground/benchmark.js": "c1c324a52938e8b8f1de19fb8ca43c02433a9d712578f2377b8db3baff5c9cd7",
+        "src/playground/index.html": "f10ef9336111aa1d8d8eb156c7bee2c80e19164ae2c794cdc9681c3ff26990b6",
+        "src/playground/suite.css": "76cb5b9604fcc2ce9590c64def9a5261e443a1a6d06cae75826ad932c3c38434",
+        "src/playground/suite.html": "2ba509a5f4a7caf0f40933fe2844766313565cff85f0a0a936760d275254f72e",
+        "src/playground/suite.js": "12b9f6f345f4715d032d4242547ab964e9e26df5de07bf4b39d9e036665d11bf",
+        "src/playground/video-sensing.html": "fd03f94c3c8431d8dfb25be2020884ad3de1edd874078aefce91b20b7c4e5c3b",
+        "src/playground/video-sensing.js": "47d1a2eaa468dce39981d54ffb68917e06e192f3c60422d187edf2f7cd6e6754",
+        "src/serialization/deserialize-assets.js": "4aa5c99fb64a948c9e17aa4a3b88b4c9b8295d085ec166378bbb2082af1acda4",
+        "src/serialization/sb2.js": "48b91b7b633be026e67521c5acc132a26457cc454784cb0b5f9fec7439281e38",
+        "src/serialization/sb2_specmap.js": "db8246cc353e59486daff0dd2fea4c62b5146059ccb9b51103d431b44660b786",
+        "src/serialization/sb3.js": "f61ded8b660982bc30c227bf20184d5614d2964da9d784d1dbe723870adc7d18",
+        "src/serialization/serialize-assets.js": "b167874dcfd89f3acbcddab50900ef7d6c719750f83ada86807d3720daf3d680",
+        "src/serialization/tw-compress-sb3.js": "4e62f297d887af620fa35c3a46c06ac7059f385cb5601fee0f2994affd667e67",
+        "src/serialization/tw-costume-import-export.js": "26da86210b7beec6128a2510933dbd161dde8f9636c135097e85f0e8ce9e9aaa",
+        "src/sprites/rendered-target.js": "05a2b105d950660565010013ed5c814dc6d7dffa3cc704b0bbb71c52fd64502e",
+        "src/sprites/sprite.js": "b8dea5c0a29bf2a9dbec9dbf18b0786e39484d46459f6bca61dd02d97fb3377d",
+        "src/util/async-limiter.js": "aafafe1321138d44ef6318506b9b524f5f5548186e5c242b7ac5e2b36dd1ebcc",
+        "src/util/base64-util.js": "2a91b6c8a01d7a7985f7e9d0a7a387e19f8e2315d90ec0d4bbdf316bb7782850",
+        "src/util/cast.js": "6b9b60444b93b66c3e3100f1e77634c618abb72bebd35809f5892d03ebd0006b",
+        "src/util/clone.js": "3e80d4c448deb86af0dafb63fd25692e46370c1bea02139198f38aa49cc7056f",
+        "src/util/color.js": "4769f0d2cd10a2185c7065b02b2dc5ffdc50b7f7a5cfdbc73311bc903a28a35e",
+        "src/util/fetch-with-timeout.js": "aef9b38f9c1619aa5217ead10d4f8f3fe070fa67a308dc1bbe6d7ad5ffadd72b",
+        "src/util/get-monitor-id.js": "62ef8ce4a8954190270739c16edd4c83c9063e0b35fd6ff5511984d75a4ddcff",
+        "src/util/is-advanced-value.js": "dd12a604ac83c3014aeeb632c444896ed1f9e15fc0c4b9b4b3ac35cae01bd191",
+        "src/util/jsonrpc.js": "01592c93f684f4a827bfb3bc7cfa37c8f77352ee0b14abcb8d0323a2394c4820",
+        "src/util/log.js": "8e1a8078e75842ed8e753ea865b6296547838814b489342a6b880ff869849ddd",
+        "src/util/math-util.js": "bfc9ac28a06a294c248dc41059c3d8303c64e28d8f509212efd81cec5888e37c",
+        "src/util/maybe-format-message.js": "00b568d92eecbbf740f4a18689d189e57e708152bcd422a5652a8833620de057",
+        "src/util/new-block-ids.js": "72b818d3782572558911ec8f048c777d16a1bc053bf8d1726c120d6ec5d45634",
+        "src/util/rateLimiter.js": "0edfa0299a5946b98e2538f5f463028f2d7743889e88dbe1ef22f919b93eb9dd",
+        "src/util/scratch-link-websocket.js": "a197aa8b2044d5fd4811776d4383abd5d7bb354d6712ae0e1d4f5b731c7149a2",
+        "src/util/string-util.js": "52ea91c65a2c725faf15aff12603fb2f24452d4b73b81d7a573ad4f03bb8ca12",
+        "src/util/task-queue.js": "12403abe2462487fe17a13b54c792b2db2eac49e4cca2aaa3c636785124cd5a2",
+        "src/util/timer.js": "4fb81ae7f8c9a38df76e5a6e2effcb3eb8c44eb1948025873a45f6ae7c36e152",
+        "src/util/tw-asset-util.js": "f833635974edadb4f5073d30a24b1d972ec2294a5456dc4afa8e9343d3935e95",
+        "src/util/tw-static-fetch.js": "19d14906fdaa44e20515675682537dec54ee8fd2f1c79cd46b06e7c99c31949b",
+        "src/util/uid.js": "8c6196aaa33a588c72c627f07e43e03f10e11d6100c08a5854ecaabfd792907f",
+        "src/util/variable-util.js": "d12854e631752a31744924526e14bcb96dc65b51668737439de5263c1f054222",
+        "src/util/xml-escape.js": "6c5c6ce97f41a10f997d0029422fd334aeadbd105eaf64be1eb6f758a09ba460",
+        "src/virtual-machine.js": "3184de84299fb2ceb00e3ebff2c6037187dfe74141aaf26542f1713d0c29a24c",
+        "webpack.config.js": "f50c4735fff13d3dc38a8646d3e4e46bb6b05d9e55c6139ae3cf0d608d753315"
+      }
+    },
+    "factorySourceSha256": {
+      "test/make-real-02-artifacts.mjs": "3a78ed787400a9e4c81ebf5da4c1f7218f42e0c7c4e055094e2763e3c270f5e9",
+      "test/real-02-recursive.mjs": "891ae4a5e1ed880b8557bb9dd76f49764df2df1f47e66d4aecc1e69e531d6748",
+      "test/helpers.mjs": "6643cae5e055b23006925f939936e5d707a386449b1a1bde3772802ba897bdfc",
+      "src/static-unpack.mjs": "a80bdd77792374c6323d74c64cd7d71249f1ca70e513c16ee480eee6319a2dc8",
+      "src/restore.mjs": "51b78cbf4d3e04564120dfad48f69ab2206cd716f3be55df535647a3cd9e65f9",
+      "src/deobfuscate.mjs": "94652e6f80a4f98e8a2498f51922f1ef29cc99eb109900aab19c4848158d0d21",
+      "src/static-evaluator.mjs": "ef971965cdafffe55dfdc7011764c85b5a9c2979b49f6f3d4160131235d8039a",
+      "src/recover-code.mjs": "c467a8e1aa1e55f4b9ca206bb7b158441cff26b7c2184022f45ceaae757aef19",
+      "src/compiled-factory.mjs": "40b1599c6c96579577d38eae382c8f0956df53241f217f8a2d4713a432f2ce9b",
+      "src/fidelity.mjs": "b7e8f617911fe9b45b382a31ba9f42f3e66a105aae336962c06f96246945edaa",
+      "src/sb3-validate.mjs": "49d4240c26a5b1c3129a40c73977f652c30d83ee2d22bb3875aed315ed5995e2",
+      "src/recovered-blocks.mjs": "6ecd277252eacb76bb9a5e6302b3892488f99799d8a6f8dc2e7ff0a561d783e2",
+      "src/recovery-opcode-schema.mjs": "ea5890e1f99407c679be16b4a81a8b1abcd1d8618618bd97a497688ec26669cd",
+      "src/recovery-symbols.mjs": "6050e10feb1748a9bb2e48563c0213c1bf8e68a3904636decc15c476aafdc9ae",
+      "src/recovery-procedures.mjs": "cca3ea08b188a76c5ac4ba275719bd946f16645292a3f2f3d5b796452d39cd02"
+    },
+    "compilerEnvironment": {
+      "document": "undefined",
+      "rendererAttached": false,
+      "audioEngineAttached": false,
+      "storageAttached": true,
+      "bitmapAdapterAttached": true,
+      "videoProvider": "upstream CompileTimeVideoProvider"
+    },
+    "downloads": {
+      "scaffolding": "local dist/scaffolding via unchanged NodeAdapter",
+      "nwjs": false,
+      "electron": false
+    },
+    "nondeterminism": [
+      "Upstream javascript-obfuscator has no explicit seed; identifiers and obfuscated bytes may differ between runs",
+      "Upstream VM generates a project signature UUID; JSZip and serialized compiler metadata may also vary"
+    ]
+  },
+  "input": {
+    "path": "trusted-recursive.sb3",
+    "projectPath": "trusted-project.json",
+    "generator": "factory/test/real-02-recursive.mjs:recursiveRealFixture",
+    "extensions": [],
+    "trusted": true,
+    "sha256": "73e9f785f511d963bf69d772fb98f80a2bd85f588f6f37aca2367338c7256231",
+    "validation": {
+      "ok": true,
+      "summary": {
+        "projectType": "sb3",
+        "targets": [
+          {
+            "name": "Stage",
+            "isStage": true,
+            "blocks": 10,
+            "scripts": 1,
+            "costumes": 1,
+            "sounds": 0
+          },
+          {
+            "name": "Sprite1",
+            "isStage": false,
+            "blocks": 5,
+            "scripts": 1,
+            "costumes": 1,
+            "sounds": 0
+          }
+        ],
+        "extensions": [],
+        "variables": 3,
+        "monitors": 0,
+        "broadcasts": 1,
+        "lists": 1,
+        "blocks": 15,
+        "scripts": 2
+      },
+      "issues": [],
+      "errors": [],
+      "warnings": []
+    },
+    "inventory": [
+      {
+        "targetIndex": 0,
+        "name": "Stage",
+        "isStage": true,
+        "variables": [
+          {
+            "id": "varId1",
+            "name": "分数",
+            "initialValue": 0,
+            "cloud": false
+          },
+          {
+            "id": "limit",
+            "name": "次数",
+            "initialValue": 3,
+            "cloud": false
+          }
+        ],
+        "lists": [
+          {
+            "id": "items",
+            "name": "项目",
+            "initialValue": []
+          }
+        ],
+        "broadcasts": [
+          {
+            "id": "ready",
+            "name": "开始游戏"
+          }
+        ]
+      },
+      {
+        "targetIndex": 1,
+        "name": "Sprite1",
+        "isStage": false,
+        "variables": [
+          {
+            "id": "localScore",
+            "name": "分数",
+            "initialValue": 0,
+            "cloud": false
+          }
+        ],
+        "lists": [],
+        "broadcasts": []
+      }
+    ],
+    "opcodes": [
+      {
+        "name": "Stage",
+        "counts": {
+          "control_if_else": 1,
+          "control_repeat": 1,
+          "data_addtolist": 1,
+          "data_changevariableby": 1,
+          "data_setvariableto": 3,
+          "event_broadcast": 1,
+          "event_whenflagclicked": 1,
+          "operator_gt": 1
+        }
+      },
+      {
+        "name": "Sprite1",
+        "counts": {
+          "data_setvariableto": 1,
+          "event_whenbroadcastreceived": 1,
+          "looks_changesizeby": 1,
+          "motion_movesteps": 1,
+          "motion_turnright": 1
+        }
+      }
+    ],
+    "assets": {
+      "0ac33de9d7138a386563727540d10055.svg": {
+        "bytes": 71,
+        "sha256": "a60bef4da4deb1e5b9d272e9afbd532cc59150bee68149b21d8b5367f4799b97"
+      },
+      "91e42db1c66c0b276abf6234dc50b2eb.png": {
+        "bytes": 68,
+        "sha256": "63ef318d96b5d0d0ceba6e04a4e622b1158335cdc67c49e27839132c6f655058"
+      }
+    }
+  },
+  "files": {
+    "trusted-recursive.sb3": {
+      "kind": "trusted-source-sb3",
+      "bytes": 1716,
+      "sha256": "73e9f785f511d963bf69d772fb98f80a2bd85f588f6f37aca2367338c7256231"
+    },
+    "trusted-project.json": {
+      "kind": "trusted-source-project-json",
+      "bytes": 8673,
+      "sha256": "f45fb390242dc6ca6dcd337201e93dd9632ab0a8e8886101b29352b35aa01728"
+    },
+    "provenance/build-record.json": {
+      "kind": "build-provenance",
+      "bytes": 270684,
+      "sha256": "db4446ab307e364804ebae56d13171adb71fdc4b913155b7bc3e50e32954761c"
+    },
+    "provenance/webpack.real-02.cjs": {
+      "kind": "build-provenance",
+      "bytes": 2687,
+      "sha256": "2e2ac6a57058816756e0e16b8def7b0967ae99740056584678cb4e89388ec198"
+    },
+    "provenance/build-real-02.cjs": {
+      "kind": "build-provenance",
+      "bytes": 6217,
+      "sha256": "c1389fb783d832e37c83698f9f38a11de9c6a17c33fe1ef85a88e14682313c5e"
+    },
+    "provenance/build-final.log": {
+      "kind": "build-provenance",
+      "bytes": 6473,
+      "sha256": "088933bea81efd7d90d12a10793af546d7782f5954d03d3da6694c73ffe1cea4"
+    },
+    "provenance/install-attempt-1.log": {
+      "kind": "build-provenance",
+      "bytes": 215,
+      "sha256": "1c7aeeb0039a5273515db36b96285a9a064c817d5b8f08920872ce383ec1682f"
+    },
+    "provenance/install-attempt-2.log": {
+      "kind": "build-provenance",
+      "bytes": 2829,
+      "sha256": "67420497da61add5c5ae22e3380ef6f0c7f4843c25385bd8b5228197752c1e36"
+    },
+    "provenance/install-attempt-3.log": {
+      "kind": "build-provenance",
+      "bytes": 1674,
+      "sha256": "c3801ee89ace7da5a00c5eda739b80e0f87d957a293096dee806bc489c41de6b"
+    },
+    "provenance/install-attempt-4.log": {
+      "kind": "build-provenance",
+      "bytes": 250,
+      "sha256": "316fc7d9ffa8d98a29362e477dd1d1182fab137bae969c154964f0a8bffecb10"
+    },
+    "recursive-none.html": {
+      "kind": "actual-packager-artifact",
+      "bytes": 4235266,
+      "sha256": "cbc907deb48b1ba5b6dcc13c40ae192ffaae296aa9817a657db5223a03205844"
+    },
+    "compiled/recursive-none-html.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 4021,
+      "sha256": "ffe847b854b0d46fb4cbfc42b83d3ce3631aa20224077431f00ad6193c72bdf7"
+    },
+    "compiled/recursive-none-html.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1118,
+      "sha256": "5f1e4230b8d61d0225607dbfd6cecb3d11554dc58d1d027f675e4db56bcb57e8"
+    },
+    "recovery/recursive-none-html.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 2362,
+      "sha256": "5b18b1eba9984c6bb7e116a4dddb96d7a66566262edf69fb6b5751f253495487"
+    },
+    "recovery/recursive-none-html.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 21831,
+      "sha256": "147d8777da8c78b6f487545d4c270b1647c61df2842a6704d5f672ceb9dc8e6b"
+    },
+    "recovery/recursive-none-html.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 6427,
+      "sha256": "cf50e2d9aadb006618913929eab670a98ae94ef4f3c8da697b3e398a1339a1f8"
+    },
+    "recursive-none.zip": {
+      "kind": "actual-packager-artifact",
+      "bytes": 1255871,
+      "sha256": "aa005bd146029b29ea4f217a7db2ef4f04d9847d0b3eac43f6a8ee0f9a5c3a98"
+    },
+    "compiled/recursive-none-zip.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 4021,
+      "sha256": "28d1a57853bcd698764818b411dc7edeabc2f3c050fcbdb552ade02f9a5d924a"
+    },
+    "compiled/recursive-none-zip.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1115,
+      "sha256": "211a86950bd6fac4f9256ea1d25d826b7f59b567bced8e6d04b4f562e9f346ce"
+    },
+    "recovery/recursive-none-zip.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 2362,
+      "sha256": "767510f842fefcd97c23e362a59c945fee317d2501c5194679364c042d46b086"
+    },
+    "recovery/recursive-none-zip.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 21830,
+      "sha256": "348ac57bd810a680e5aa3b7dc7c115116d7efd44fb1e17e7315496e83f3419e8"
+    },
+    "recovery/recursive-none-zip.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 6427,
+      "sha256": "7bebf5a1f76ca697a9311a4c067e377d477c5d2dcb507f2669dcbce78b0cf51f"
+    },
+    "recursive-light.html": {
+      "kind": "actual-packager-artifact",
+      "bytes": 4239327,
+      "sha256": "6cf6e7558d6411a89a55c0bac9f6385a8d3445e3daff16ee15f7b1905774f323"
+    },
+    "compiled/recursive-light-html.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 7595,
+      "sha256": "1ed95ec98785eef7ed32ed61f7d437fc5e4f61a47bc5fc1728056964001dbeb2"
+    },
+    "compiled/recursive-light-html.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1116,
+      "sha256": "988a30d01ef14558895b5d60fac64b4bed8bcaacd0f75d2279b33e48ea46a31d"
+    },
+    "recovery/recursive-light-html.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 1560,
+      "sha256": "6cf55fc4c7d293e8d3f5ac8c6d8e9a32234180886c955b93c69602b598316095"
+    },
+    "recovery/recursive-light-html.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 12862,
+      "sha256": "f13d8e23c72f8479ec43dda83cababac0a2c5cc0f7ad05f53694b29b43a9a7db"
+    },
+    "recovery/recursive-light-html.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 10372,
+      "sha256": "5f495ece0e2980e2d26a29397838a4c779910dfe9e4657fa606ac7a889d563ca"
+    },
+    "recursive-light.zip": {
+      "kind": "actual-packager-artifact",
+      "bytes": 1257166,
+      "sha256": "9d697ca552bfce62ab3044ce7feea74393a0ab284f3468583359bd10c43257bc"
+    },
+    "compiled/recursive-light-zip.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 7492,
+      "sha256": "f722305f6feeb14db221504b1ff9a97f57a1cd0eb3e07c8e3addc4cad375d514"
+    },
+    "compiled/recursive-light-zip.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1115,
+      "sha256": "ff64551cd2ebe454245bc27b51228b8c537c10a0196b1669166bb572fd9c395d"
+    },
+    "recovery/recursive-light-zip.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 1560,
+      "sha256": "9e44940a882bb88018cfb4064ad378cd9ca5b26a6511645fd9c0f7c1fb4f5e95"
+    },
+    "recovery/recursive-light-zip.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 12861,
+      "sha256": "e4c28bb9c28a53639a74d7b6e529538cbc0011fc6578b1dbd766cdbdcbb86d29"
+    },
+    "recovery/recursive-light-zip.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 10269,
+      "sha256": "9d15c1b6276dea9b065ce77e2c927720c16505a83803d1fd005ae5f13cf6213a"
+    },
+    "recursive-balanced.html": {
+      "kind": "actual-packager-artifact",
+      "bytes": 4243988,
+      "sha256": "bb49a0aecba05b815f118650596ee47f3e27a90474fca2d2426fbd05267b0cf1"
+    },
+    "compiled/recursive-balanced-html.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 11420,
+      "sha256": "911686224fc8f599f269644284f44b4205481941bd72459505c2af93b0c0f5fb"
+    },
+    "compiled/recursive-balanced-html.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1117,
+      "sha256": "b789281ec389d2b6df40883acb6d047c5f7cd2ded3879ced0895b0672021b09e"
+    },
+    "recovery/recursive-balanced-html.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 1560,
+      "sha256": "c3cfec09de2567f9e9fb2c42f422c8d1f35d46b2a4af58f7f4b8ef756f2b29f1"
+    },
+    "recovery/recursive-balanced-html.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 13708,
+      "sha256": "64f2cc29c12c1a856441a66c14d6691be14504bbc1fe196cd32fe8feb1d7b486"
+    },
+    "recovery/recursive-balanced-html.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 14668,
+      "sha256": "3a0b388485b7af8761144f159957920bd64096cd73e3c973f9b9a1bbfc13ed7d"
+    },
+    "recursive-balanced.zip": {
+      "kind": "actual-packager-artifact",
+      "bytes": 1259008,
+      "sha256": "3367f6dee1caa0b4f4dc3fef63090ef60584c6da0971eccbff064710466d9ea6"
+    },
+    "compiled/recursive-balanced-zip.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 11627,
+      "sha256": "78eebbda32b092d4efa0fa74ad6fc7c5c78315862b02cf59c6f503fdb3e5c92a"
+    },
+    "compiled/recursive-balanced-zip.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1117,
+      "sha256": "1bd4a72a5527a9c87f0b013df86aa1843ba81d8ac084ddde03f6c935a7a05c1c"
+    },
+    "recovery/recursive-balanced-zip.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 1562,
+      "sha256": "19e5c0612b643a359e6e47b61d610313806f4f469b0e19c6a0510f01674279e4"
+    },
+    "recovery/recursive-balanced-zip.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 13709,
+      "sha256": "e31ee8e3b190e92085c4b949a252b84dfcfb883b2f172e2b505b4d986b31e917"
+    },
+    "recovery/recursive-balanced-zip.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 14876,
+      "sha256": "7d56aec8c7e8671f59b4bdb56dcd06c31f05644298538a77ed6c2208fbafe3b0"
+    },
+    "recursive-strong.html": {
+      "kind": "actual-packager-artifact",
+      "bytes": 4256853,
+      "sha256": "42829f54a37fa3af1c69c2785a89c85fb0a0785a3968b72939e9c3e14734405f"
+    },
+    "compiled/recursive-strong-html.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 21709,
+      "sha256": "5aef71158398accf6cbc8c115f93044196884f3aa23a9454102e1d3de2fd6438"
+    },
+    "compiled/recursive-strong-html.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1117,
+      "sha256": "d57450d49472fe42746f26651ee96bbebf06e22a4df48a8ac2908e45353f7c44"
+    },
+    "recovery/recursive-strong-html.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 1561,
+      "sha256": "6948feb0d168775596a645125ccd01e648a87a8ba51f25d03ab88f951bf97c08"
+    },
+    "recovery/recursive-strong-html.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 13712,
+      "sha256": "6e0d55c1b05fcc0924c7bd075e1dd69ea5b6051a487edad0f14ace1302de76b1"
+    },
+    "recovery/recursive-strong-html.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 24959,
+      "sha256": "5780f661ce6a8deba91bdf5a64a325f1a4a6bd3ca88c4342a2ab142a72aceabc"
+    },
+    "recursive-strong.zip": {
+      "kind": "actual-packager-artifact",
+      "bytes": 1263384,
+      "sha256": "e0d1ebc765f82d3542a06f1d7a19ed9b05376d3fea07058552639cd7c3b39e36"
+    },
+    "compiled/recursive-strong-zip.json": {
+      "kind": "actual-getCompiledProjectData-result",
+      "bytes": 22301,
+      "sha256": "f79b37430b2b60581617ad4162d38f99e95c0970d5eb28516e7010691683e53d"
+    },
+    "compiled/recursive-strong-zip.sb3": {
+      "kind": "actual-getCompiledProjectArchiveData-result",
+      "bytes": 1118,
+      "sha256": "c79af4e1b3d6e99e41d76917e31d08b0167d51d4ce644ead795d5030510ec1c8"
+    },
+    "recovery/recursive-strong-zip.sb3": {
+      "kind": "static-recovery-sb3",
+      "bytes": 1561,
+      "sha256": "c0fd17648202bade9c2355b6ecb982dbb33787a3c5a2d1ef9ecdd8c75fd96d73"
+    },
+    "recovery/recursive-strong-zip.fidelity.json": {
+      "kind": "static-recovery-evidence",
+      "bytes": 14077,
+      "sha256": "53d8d27862179e29359e43c9d34e8f7512c830f918f80d38ff4f4e354c6c452c"
+    },
+    "recovery/recursive-strong-zip.decoded-compiled-project.json": {
+      "kind": "static-deobfuscation-result",
+      "bytes": 25758,
+      "sha256": "ada00c696a35f6285f5fe7c0f052193e691dc4ac96e747593832cca12ef396f6"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "recursive-none.html",
+      "sha256": "cbc907deb48b1ba5b6dcc13c40ae192ffaae296aa9817a657db5223a03205844",
+      "bytes": 4235266,
+      "target": "html",
+      "level": "none",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": false,
+          "obfuscateCompiledProjectLevel": "balanced"
+        },
+        "packagedRuntime": true,
+        "target": "html",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-none",
+          "windowTitle": "recursive-none",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-none.html",
+      "returnedType": "text/html",
+      "compiledProjectPath": "compiled/recursive-none-html.json",
+      "compiledArchivePath": "compiled/recursive-none-html.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "7e5f7760176fdbee12cbc08cda5f7570570e2423e86c27eee2ddeea958c61390"
+        },
+        "1": {
+          "n": "a966045ca125af51852e739c9eb18aab671162f63d595c9ec5bc6d32128e5d78"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-none-html.sb3",
+      "fidelityReportPath": "recovery/recursive-none-html.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-html-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "4f374be1a0e18acf5034970fd7cf5a565df3f32bcefcf0d363fc98e564186c0a",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "reconstructed-unverified",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 13,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 5,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 18,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 2,
+            "unresolvedScripts": 0,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_setvariableto": 4,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_add": 3,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "transformed",
+              "residuals": [],
+              "warnings": []
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "transformed",
+              "residuals": [],
+              "warnings": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "recursive-none.zip",
+      "sha256": "aa005bd146029b29ea4f217a7db2ef4f04d9847d0b3eac43f6a8ee0f9a5c3a98",
+      "bytes": 1255871,
+      "target": "zip",
+      "level": "none",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": false,
+          "obfuscateCompiledProjectLevel": "balanced"
+        },
+        "packagedRuntime": true,
+        "target": "zip",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-none",
+          "windowTitle": "recursive-none",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-none.zip",
+      "returnedType": "application/zip",
+      "compiledProjectPath": "compiled/recursive-none-zip.json",
+      "compiledArchivePath": "compiled/recursive-none-zip.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "f4189fc53f43c88033fa922ce115248a2505a3332907153168b66fdc5f3186be"
+        },
+        "1": {
+          "n": "382b0ebebce79ffedb6524d0f551bb245d0afb4cd17bd259b18c4fda34a16079"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-none-zip.sb3",
+      "fidelityReportPath": "recovery/recursive-none-zip.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-zip-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "12396224a2254e85918743d9c2c11d9e530fc9c32520f12806a89cc40b021f05",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "reconstructed-unverified",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 13,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 5,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 18,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 2,
+            "unresolvedScripts": 0,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_setvariableto": 4,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_add": 3,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "transformed",
+              "residuals": [],
+              "warnings": []
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "transformed",
+              "residuals": [],
+              "warnings": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "recursive-light.html",
+      "sha256": "6cf6e7558d6411a89a55c0bac9f6385a8d3445e3daff16ee15f7b1905774f323",
+      "bytes": 4239327,
+      "target": "html",
+      "level": "light",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": true,
+          "obfuscateCompiledProjectLevel": "light"
+        },
+        "packagedRuntime": true,
+        "target": "html",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-light",
+          "windowTitle": "recursive-light",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-light.html",
+      "returnedType": "text/html",
+      "compiledProjectPath": "compiled/recursive-light-html.json",
+      "compiledArchivePath": "compiled/recursive-light-html.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "1e4fe33f7c360b8de3a1b61a0f0a8a43b2cc80b6814f976546e087c873cf243b"
+        },
+        "1": {
+          "n": "dee922589cb7e55b9bee06721f96e3cb569bd3c7c52bd457c81f493268fae55f"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-light-html.sb3",
+      "fidelityReportPath": "recovery/recursive-light-html.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-html-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "16973c843b4d2a3891d09745f28434017e0210de16144e7618d98f128c3490e9",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "partial",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 2,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 0,
+            "unresolvedScripts": 2,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [
+            {
+              "targetIndex": 0,
+              "scriptId": "h",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            },
+            {
+              "targetIndex": 1,
+              "scriptId": "n",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            }
+          ],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "event_whenflagclicked": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "event_whenbroadcastreceived": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x2679",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x59e0",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "recursive-light.zip",
+      "sha256": "9d697ca552bfce62ab3044ce7feea74393a0ab284f3468583359bd10c43257bc",
+      "bytes": 1257166,
+      "target": "zip",
+      "level": "light",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": true,
+          "obfuscateCompiledProjectLevel": "light"
+        },
+        "packagedRuntime": true,
+        "target": "zip",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-light",
+          "windowTitle": "recursive-light",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-light.zip",
+      "returnedType": "application/zip",
+      "compiledProjectPath": "compiled/recursive-light-zip.json",
+      "compiledArchivePath": "compiled/recursive-light-zip.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "85f94d30bfd784e18100c03b8c4c5ee52b98429187b5205d4c7ec78c391031e1"
+        },
+        "1": {
+          "n": "ca99e98941e204ee7cfd55a97ffc6da393389b39139e30e5d07bf1b45257e99a"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-light-zip.sb3",
+      "fidelityReportPath": "recovery/recursive-light-zip.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-zip-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "e2001b1bad5a24a79a57db44d8a45c885687f7e8c946cb564a6366764f02729f",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "partial",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 2,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 0,
+            "unresolvedScripts": 2,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [
+            {
+              "targetIndex": 0,
+              "scriptId": "h",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            },
+            {
+              "targetIndex": 1,
+              "scriptId": "n",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            }
+          ],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "event_whenflagclicked": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "event_whenbroadcastreceived": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x15f7",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x1de4",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "recursive-balanced.html",
+      "sha256": "bb49a0aecba05b815f118650596ee47f3e27a90474fca2d2426fbd05267b0cf1",
+      "bytes": 4243988,
+      "target": "html",
+      "level": "balanced",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": true,
+          "obfuscateCompiledProjectLevel": "balanced"
+        },
+        "packagedRuntime": true,
+        "target": "html",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-balanced",
+          "windowTitle": "recursive-balanced",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-balanced.html",
+      "returnedType": "text/html",
+      "compiledProjectPath": "compiled/recursive-balanced-html.json",
+      "compiledArchivePath": "compiled/recursive-balanced-html.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "c8e681dcbc226e480b6928666bae9d359e915dac802a78bf086db89138a68a35"
+        },
+        "1": {
+          "n": "5f9ef1b0d702624cb89fdd2f61068e2d8797af72e9fd65fdb7aadacada2f294a"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-balanced-html.sb3",
+      "fidelityReportPath": "recovery/recursive-balanced-html.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-html-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "9ac9ada15e61d56a14edb815fd9e2da20ee50c9dd0a31f101d33ece6d11d0f06",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "partial",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 2,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 0,
+            "unresolvedScripts": 2,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [
+            {
+              "targetIndex": 0,
+              "scriptId": "h",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            },
+            {
+              "targetIndex": 1,
+              "scriptId": "n",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            }
+          ],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "event_whenflagclicked": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "event_whenbroadcastreceived": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x2417",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x1c50",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "recursive-balanced.zip",
+      "sha256": "3367f6dee1caa0b4f4dc3fef63090ef60584c6da0971eccbff064710466d9ea6",
+      "bytes": 1259008,
+      "target": "zip",
+      "level": "balanced",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": true,
+          "obfuscateCompiledProjectLevel": "balanced"
+        },
+        "packagedRuntime": true,
+        "target": "zip",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-balanced",
+          "windowTitle": "recursive-balanced",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-balanced.zip",
+      "returnedType": "application/zip",
+      "compiledProjectPath": "compiled/recursive-balanced-zip.json",
+      "compiledArchivePath": "compiled/recursive-balanced-zip.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "67449366d962a721f3e7902e42ae642aed163b7d5ba9c4c523cb10f09a3e3bf4"
+        },
+        "1": {
+          "n": "c3a1957baea579d744358a90295b6d3362157a2e8cfb4be47bda6e2621df2210"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-balanced-zip.sb3",
+      "fidelityReportPath": "recovery/recursive-balanced-zip.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-zip-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "7fd8a927e4bd10f95ea3f77a9e3f8c10f6ca450e4bcba471a99a1d2f9c09df5d",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "partial",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 2,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 0,
+            "unresolvedScripts": 2,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [
+            {
+              "targetIndex": 0,
+              "scriptId": "h",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            },
+            {
+              "targetIndex": 1,
+              "scriptId": "n",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            }
+          ],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "event_whenflagclicked": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "event_whenbroadcastreceived": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x2a87",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x3c3a",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "recursive-strong.html",
+      "sha256": "42829f54a37fa3af1c69c2785a89c85fb0a0785a3968b72939e9c3e14734405f",
+      "bytes": 4256853,
+      "target": "html",
+      "level": "strong",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": true,
+          "obfuscateCompiledProjectLevel": "strong"
+        },
+        "packagedRuntime": true,
+        "target": "html",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-strong",
+          "windowTitle": "recursive-strong",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-strong.html",
+      "returnedType": "text/html",
+      "compiledProjectPath": "compiled/recursive-strong-html.json",
+      "compiledArchivePath": "compiled/recursive-strong-html.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "7ae12d234ebd09136d34228c614189ab3f026012e11c6ea6db1874c7b70d7e69"
+        },
+        "1": {
+          "n": "3623d67481481077da0c61bf9e6dbf3caa57b658723735e80ea6521ffa6bb4bb"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-strong-html.sb3",
+      "fidelityReportPath": "recovery/recursive-strong-html.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-html-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "e777e267f7189e3faf5fea32798346a709b42943b298400ed646f9a82f30c4e5",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "partial",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 2,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 0,
+            "unresolvedScripts": 2,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [
+            {
+              "targetIndex": 0,
+              "scriptId": "h",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            },
+            {
+              "targetIndex": 1,
+              "scriptId": "n",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            }
+          ],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "event_whenflagclicked": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "event_whenbroadcastreceived": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0xa609",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x3d09",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "recursive-strong.zip",
+      "sha256": "e0d1ebc765f82d3542a06f1d7a19ed9b05376d3fea07058552639cd7c3b39e36",
+      "bytes": 1263384,
+      "target": "zip",
+      "level": "strong",
+      "options": {
+        "turbo": false,
+        "interpolation": false,
+        "framerate": 30,
+        "highQualityPen": false,
+        "maxClones": 300,
+        "fencing": true,
+        "miscLimits": true,
+        "stageWidth": 480,
+        "stageHeight": 360,
+        "resizeMode": "preserve-ratio",
+        "autoplay": false,
+        "username": "player####",
+        "closeWhenStopped": false,
+        "projectId": "",
+        "custom": {
+          "css": "",
+          "js": ""
+        },
+        "appearance": {
+          "background": "#000000",
+          "foreground": "#ffffff",
+          "accent": "#00BAAD"
+        },
+        "loadingScreen": {
+          "progressBar": true,
+          "text": "",
+          "imageMode": "normal",
+          "image": null
+        },
+        "controls": {
+          "greenFlag": {
+            "enabled": false
+          },
+          "stopAll": {
+            "enabled": false
+          },
+          "fullscreen": {
+            "enabled": false
+          },
+          "pause": {
+            "enabled": false
+          }
+        },
+        "monitors": {
+          "editableLists": false,
+          "variableColor": "#ff8c1a",
+          "listColor": "#fc662c"
+        },
+        "compiler": {
+          "enabled": true,
+          "warpTimer": false,
+          "compiledProject": true,
+          "obfuscateCompiledProject": true,
+          "obfuscateCompiledProjectLevel": "strong"
+        },
+        "packagedRuntime": true,
+        "target": "zip",
+        "app": {
+          "icon": null,
+          "packageName": "recursive-strong",
+          "windowTitle": "recursive-strong",
+          "windowMode": "window",
+          "version": "1.0.0",
+          "escapeBehavior": "unfullscreen-only",
+          "windowControls": "default"
+        },
+        "chunks": {
+          "gamepad": false,
+          "pointerlock": false
+        },
+        "cloudVariables": {
+          "mode": "ws",
+          "cloudHost": "wss://clouddata.turbowarp.org",
+          "custom": {},
+          "specialCloudBehaviors": false,
+          "unsafeCloudBehaviors": false
+        },
+        "cursor": {
+          "type": "auto",
+          "custom": null,
+          "center": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "steamworks": {
+          "appId": "480",
+          "onError": "warning"
+        },
+        "nodeCli": {
+          "exposeSystemAPIs": false
+        },
+        "extensions": [],
+        "extensionsPrivateScratchContext": false,
+        "bakeExtensions": true,
+        "maxTextureDimension": 2048
+      },
+      "returnedFilename": "recursive-strong.zip",
+      "returnedType": "application/zip",
+      "compiledProjectPath": "compiled/recursive-strong-zip.json",
+      "compiledArchivePath": "compiled/recursive-strong-zip.sb3",
+      "compiledFactoryHashes": {
+        "0": {
+          "h": "14e22993b198e82854d5a141737f1d7e317ef2f9bc234b1976448ec4f3a1b98e"
+        },
+        "1": {
+          "n": "d99b0c98fb3782c7dae7f0fa97fa9fce1e3cee4ba5901007ff5136f0541bf5f1"
+        }
+      },
+      "resourceEvents": [
+        {
+          "asset": "scaffolding-min",
+          "progress": 0
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 0.5
+        },
+        {
+          "asset": "scaffolding-min",
+          "progress": 1
+        }
+      ],
+      "recoverySb3Path": "recovery/recursive-strong-zip.sb3",
+      "fidelityReportPath": "recovery/recursive-strong-zip.fidelity.json",
+      "comparison": {
+        "extraction": {
+          "format": "o2-zip-precompile",
+          "compiledProjectMatchesAPI": true,
+          "compiledProjectSha256": "554242d5208a781b0bcdb3295196b4d3097c7d6ec53de44e1a14aff16f43e138",
+          "compiledArchiveMatchesAPI": true,
+          "strippedBlockCounts": [
+            0,
+            0
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "targetPropertyDifferencesFromTrustedSource": [],
+          "notes": [
+            "工程包中 targets[].blocks 为空；本步骤未反编译还原积木",
+            "02Engine precompile：工程包及经验证的编译 JSON 已提取（不是积木还原成功）"
+          ],
+          "warnings": [],
+          "metadata": {
+            "precompile": true,
+            "compiledProjectExtracted": true,
+            "sourceBlocksRecovered": false,
+            "projectBlocks": "empty",
+            "compiledProjectVersion": 1
+          }
+        },
+        "recovery": {
+          "mode": "static-only",
+          "executesInput": false,
+          "status": "partial",
+          "canClaimComplete": false,
+          "validation": {
+            "ok": true,
+            "summary": {
+              "projectType": "sb3",
+              "targets": [
+                {
+                  "name": "Stage",
+                  "isStage": true,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                },
+                {
+                  "name": "Sprite1",
+                  "isStage": false,
+                  "blocks": 1,
+                  "scripts": 1,
+                  "costumes": 1,
+                  "sounds": 0
+                }
+              ],
+              "extensions": [],
+              "variables": 3,
+              "monitors": 0,
+              "broadcasts": 1,
+              "lists": 1,
+              "blocks": 2,
+              "scripts": 2
+            },
+            "issues": [],
+            "errors": [],
+            "warnings": []
+          },
+          "counts": {
+            "preservedScripts": 0,
+            "templateReconstructedScripts": 0,
+            "unresolvedScripts": 2,
+            "unresolvedProcedures": 0
+          },
+          "unresolved": [
+            {
+              "targetIndex": 0,
+              "scriptId": "h",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            },
+            {
+              "targetIndex": 1,
+              "scriptId": "n",
+              "reason": "不是已支持的明文 factory 模板；可能仍有混淆"
+            }
+          ],
+          "recoveredOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "event_whenflagclicked": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "event_whenbroadcastreceived": 1
+              }
+            }
+          ],
+          "originalOpcodes": [
+            {
+              "name": "Stage",
+              "counts": {
+                "control_if_else": 1,
+                "control_repeat": 1,
+                "data_addtolist": 1,
+                "data_changevariableby": 1,
+                "data_setvariableto": 3,
+                "event_broadcast": 1,
+                "event_whenflagclicked": 1,
+                "operator_gt": 1
+              }
+            },
+            {
+              "name": "Sprite1",
+              "counts": {
+                "data_setvariableto": 1,
+                "event_whenbroadcastreceived": 1,
+                "looks_changesizeby": 1,
+                "motion_movesteps": 1,
+                "motion_turnright": 1
+              }
+            }
+          ],
+          "variableListBroadcastNamesIdsInitialValuesPreserved": true,
+          "assetsPreserved": true,
+          "sourceGraphExactlyPreserved": false,
+          "behaviorEquivalenceVerified": false,
+          "roundTripRecompilationVerified": false,
+          "deobfuscation": [
+            {
+              "targetKey": "0",
+              "kind": "scripts",
+              "scriptId": "h",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "switch-dispatcher",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x1db5",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            },
+            {
+              "targetKey": "1",
+              "kind": "scripts",
+              "scriptId": "n",
+              "status": "partial",
+              "residuals": [
+                {
+                  "type": "string-array-provider",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-decoder-bootstrap",
+                  "line": 1
+                },
+                {
+                  "type": "switch-dispatcher",
+                  "line": 1
+                },
+                {
+                  "type": "string-array-rotation-unresolved"
+                }
+              ],
+              "warnings": [
+                "字符串轮转执行前缀未证明：_0x4073",
+                "字符串表顺序未证明，保留输入源码及自检文本"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "comparisonPolicy": {
+    "staticExtractionAndRecoveryOnly": true,
+    "generatedHTMLExecuted": false,
+    "compiledFactoryExecuted": false,
+    "originalInternalBlockIdsAndLayoutRecoverable": false,
+    "goalCompletionMarked": false
+  },
+  "generationStatus": "generated-and-statically-compared"
+}

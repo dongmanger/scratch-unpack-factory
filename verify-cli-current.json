@@ -1,0 +1,929 @@
+{
+  "schemaVersion": 1,
+  "status": "unsupported",
+  "matched": false,
+  "originalSourceVerified": false,
+  "execution": {
+    "allowed": true,
+    "started": true,
+    "isolation": "worker_threads",
+    "securitySandbox": false,
+    "timeoutMs": 30000,
+    "maxSteps": 10000,
+    "inputLimitBytes": 268435456,
+    "totalInputLimitBytes": 402653184,
+    "resourceLimits": {
+      "maxOldGenerationSizeMb": 256,
+      "maxYoungGenerationSizeMb": 64,
+      "codeRangeSizeMb": 64,
+      "stackSizeMb": 4
+    },
+    "terminationRequested": true,
+    "terminated": true,
+    "terminationExitCode": 0,
+    "terminationVerified": true,
+    "elapsedMs": 707
+  },
+  "scenario": {
+    "trigger": "greenFlag",
+    "scheduling": "bounded runtime._step followed by setImmediate",
+    "maxStepsPerRun": 10000,
+    "manualTriggers": false,
+    "headless": true,
+    "unsupportedTriggers": [],
+    "originalKind": "sb3",
+    "originalFormat": "zip-sb3"
+  },
+  "hashes": {
+    "algorithm": "sha256",
+    "originalInput": "73e9f785f511d963bf69d772fb98f80a2bd85f588f6f37aca2367338c7256231",
+    "recoveredInput": "ebe7adf8092c7a0984b8fae3e8d78cfed6def712401fe92e146c6b88dc92fbee",
+    "originalSb3": "feb6baa3f8adf1284b26bface323bee80cf1dae6c8ec5d499ede9c309d02aa73",
+    "recoveredSb3": "401d338b3ecd034f4c2b2ef52ec88fa14385b3fc724e241f8d1bcfd13b29b933"
+  },
+  "engine": {
+    "module": "vendor/02-vm.cjs",
+    "version": "2.1.46",
+    "revision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+    "sha256": "7bf7336754d1103329d90ba4d2a14fd3dfc22d95e95c14b8a94d4b906c7b9bdb",
+    "node": "v22.22.2",
+    "v8": "12.4.254.21-node.39",
+    "compilerOptions": {
+      "enabled": true,
+      "warpTimer": false
+    }
+  },
+  "adapters": {
+    "storage": true,
+    "renderer": false,
+    "audio": false,
+    "video": false,
+    "cloud": false,
+    "userInput": false,
+    "network": false
+  },
+  "structural": {
+    "original": {
+      "ok": true,
+      "summary": {
+        "projectType": "sb3",
+        "targets": [
+          {
+            "name": "Stage",
+            "isStage": true,
+            "blocks": 10,
+            "scripts": 1,
+            "costumes": 1,
+            "sounds": 0
+          },
+          {
+            "name": "Sprite1",
+            "isStage": false,
+            "blocks": 5,
+            "scripts": 1,
+            "costumes": 1,
+            "sounds": 0
+          }
+        ],
+        "extensions": [],
+        "variables": 3,
+        "monitors": 0,
+        "broadcasts": 1,
+        "lists": 1,
+        "blocks": 15,
+        "scripts": 2
+      },
+      "issues": [],
+      "errors": [],
+      "warnings": []
+    },
+    "recovered": {
+      "ok": true,
+      "summary": {
+        "projectType": "sb3",
+        "targets": [
+          {
+            "name": "Stage",
+            "isStage": true,
+            "blocks": 13,
+            "scripts": 1,
+            "costumes": 1,
+            "sounds": 0
+          },
+          {
+            "name": "Sprite1",
+            "isStage": false,
+            "blocks": 5,
+            "scripts": 1,
+            "costumes": 1,
+            "sounds": 0
+          }
+        ],
+        "extensions": [],
+        "variables": 3,
+        "monitors": 0,
+        "broadcasts": 1,
+        "lists": 1,
+        "blocks": 18,
+        "scripts": 2
+      },
+      "issues": [],
+      "errors": [],
+      "warnings": []
+    },
+    "compiledTargets": null
+  },
+  "recompile": {
+    "original": {
+      "status": "not-run",
+      "reason": "Original ordinary SB3 is executed as source"
+    },
+    "recovered": {
+      "status": "passed",
+      "bundleSha256": "4f374be1a0e18acf5034970fd7cf5a565df3f32bcefcf0d363fc98e564186c0a"
+    }
+  },
+  "runs": {
+    "original": {
+      "finished": true,
+      "steps": 1,
+      "initialThreads": 1,
+      "remainingThreads": [],
+      "threads": [
+        {
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "a",
+          "compiled": false,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        },
+        {
+          "thread": 1,
+          "targetIndex": 1,
+          "target": "Sprite1",
+          "topBlock": "c",
+          "compiled": false,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        }
+      ],
+      "trace": [
+        {
+          "step": 0,
+          "type": "green-flag"
+        },
+        {
+          "step": 0,
+          "type": "thread-start",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "a",
+          "compiled": false,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "a",
+          "compiled": false,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "a",
+          "compiled": false,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "a",
+          "compiled": false,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "broadcast",
+          "name": "开始游戏",
+          "ids": [
+            "ready"
+          ]
+        },
+        {
+          "step": 1,
+          "type": "thread-start",
+          "thread": 1,
+          "targetIndex": 1,
+          "target": "Sprite1",
+          "topBlock": "c",
+          "compiled": false,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "a",
+          "compiled": false,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 1,
+          "targetIndex": 1,
+          "target": "Sprite1",
+          "topBlock": "c",
+          "compiled": false,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        }
+      ],
+      "traceTruncated": false,
+      "broadcasts": [
+        {
+          "name": "开始游戏",
+          "ids": [
+            "ready"
+          ]
+        }
+      ],
+      "snapshot": [
+        {
+          "scope": {
+            "targetIndex": 0,
+            "name": "Stage",
+            "isStage": true,
+            "isOriginal": true
+          },
+          "properties": {
+            "x": 0,
+            "y": 0,
+            "direction": 90,
+            "size": 100,
+            "visible": true,
+            "draggable": false,
+            "rotationStyle": "all around",
+            "currentCostume": 0,
+            "volume": 100,
+            "tempo": 60,
+            "videoState": "on",
+            "videoTransparency": 50,
+            "textToSpeechLanguage": null,
+            "effects": {
+              "color": 0,
+              "fisheye": 0,
+              "whirl": 0,
+              "pixelate": 0,
+              "mosaic": 0,
+              "brightness": 0,
+              "ghost": 0
+            }
+          },
+          "variables": {
+            "limit": {
+              "name": "次数",
+              "value": 3,
+              "isCloud": false
+            },
+            "varId1": {
+              "name": "分数",
+              "value": "成功",
+              "isCloud": false
+            }
+          },
+          "lists": {
+            "items": {
+              "name": "项目",
+              "value": [
+                3,
+                5,
+                7
+              ],
+              "isCloud": false
+            }
+          },
+          "broadcasts": {
+            "ready": {
+              "name": "开始游戏",
+              "value": "开始游戏",
+              "isCloud": false
+            }
+          }
+        },
+        {
+          "scope": {
+            "targetIndex": 1,
+            "name": "Sprite1",
+            "isStage": false,
+            "isOriginal": true
+          },
+          "properties": {
+            "x": 10,
+            "y": 0,
+            "direction": 105,
+            "size": 105,
+            "visible": true,
+            "draggable": false,
+            "rotationStyle": "all around",
+            "currentCostume": 0,
+            "volume": 100,
+            "tempo": 60,
+            "videoState": "on",
+            "videoTransparency": 50,
+            "textToSpeechLanguage": null,
+            "effects": {
+              "color": 0,
+              "fisheye": 0,
+              "whirl": 0,
+              "pixelate": 0,
+              "mosaic": 0,
+              "brightness": 0,
+              "ghost": 0
+            }
+          },
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "value": "成功",
+              "isCloud": false
+            }
+          },
+          "lists": {},
+          "broadcasts": {}
+        }
+      ],
+      "snapshotSha256": "537dc09ed1ea3b46633ba901050998ba929c08a4b655ffb5f44ecb11178fcb99",
+      "runtimeBroadcastIds": [
+        "ready"
+      ]
+    },
+    "recovered": {
+      "finished": true,
+      "steps": 1,
+      "initialThreads": 1,
+      "remainingThreads": [],
+      "threads": [
+        {
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        },
+        {
+          "thread": 1,
+          "targetIndex": 1,
+          "target": "Sprite1",
+          "topBlock": "n",
+          "compiled": true,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        }
+      ],
+      "trace": [
+        {
+          "step": 0,
+          "type": "green-flag"
+        },
+        {
+          "step": 0,
+          "type": "thread-start",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "yield",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "yield",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "yield",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "broadcast",
+          "name": "开始游戏",
+          "ids": [
+            "ready"
+          ]
+        },
+        {
+          "step": 1,
+          "type": "thread-start",
+          "thread": 1,
+          "targetIndex": 1,
+          "target": "Sprite1",
+          "topBlock": "n",
+          "compiled": true,
+          "status": 0,
+          "statusName": "running",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 0,
+          "targetIndex": 0,
+          "target": "Stage",
+          "topBlock": "h",
+          "compiled": true,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        },
+        {
+          "step": 1,
+          "type": "thread-status",
+          "thread": 1,
+          "targetIndex": 1,
+          "target": "Sprite1",
+          "topBlock": "n",
+          "compiled": true,
+          "status": 4,
+          "statusName": "done",
+          "killed": false
+        }
+      ],
+      "traceTruncated": false,
+      "broadcasts": [
+        {
+          "name": "开始游戏",
+          "ids": [
+            "ready"
+          ]
+        }
+      ],
+      "snapshot": [
+        {
+          "scope": {
+            "targetIndex": 0,
+            "name": "Stage",
+            "isStage": true,
+            "isOriginal": true
+          },
+          "properties": {
+            "x": 0,
+            "y": 0,
+            "direction": 90,
+            "size": 100,
+            "visible": true,
+            "draggable": false,
+            "rotationStyle": "all around",
+            "currentCostume": 0,
+            "volume": 100,
+            "tempo": 60,
+            "videoState": "on",
+            "videoTransparency": 50,
+            "textToSpeechLanguage": null,
+            "effects": {
+              "color": 0,
+              "fisheye": 0,
+              "whirl": 0,
+              "pixelate": 0,
+              "mosaic": 0,
+              "brightness": 0,
+              "ghost": 0
+            }
+          },
+          "variables": {
+            "limit": {
+              "name": "次数",
+              "value": 3,
+              "isCloud": false
+            },
+            "varId1": {
+              "name": "分数",
+              "value": "成功",
+              "isCloud": false
+            }
+          },
+          "lists": {
+            "items": {
+              "name": "项目",
+              "value": [
+                3,
+                5,
+                7
+              ],
+              "isCloud": false
+            }
+          },
+          "broadcasts": {
+            "ready": {
+              "name": "开始游戏",
+              "value": "开始游戏",
+              "isCloud": false
+            }
+          }
+        },
+        {
+          "scope": {
+            "targetIndex": 1,
+            "name": "Sprite1",
+            "isStage": false,
+            "isOriginal": true
+          },
+          "properties": {
+            "x": 10,
+            "y": 0,
+            "direction": 105,
+            "size": 105,
+            "visible": true,
+            "draggable": false,
+            "rotationStyle": "all around",
+            "currentCostume": 0,
+            "volume": 100,
+            "tempo": 60,
+            "videoState": "on",
+            "videoTransparency": 50,
+            "textToSpeechLanguage": null,
+            "effects": {
+              "color": 0,
+              "fisheye": 0,
+              "whirl": 0,
+              "pixelate": 0,
+              "mosaic": 0,
+              "brightness": 0,
+              "ghost": 0
+            }
+          },
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "value": "成功",
+              "isCloud": false
+            }
+          },
+          "lists": {},
+          "broadcasts": {}
+        }
+      ],
+      "snapshotSha256": "537dc09ed1ea3b46633ba901050998ba929c08a4b655ffb5f44ecb11178fcb99",
+      "runtimeBroadcastIds": []
+    }
+  },
+  "behavior": {
+    "status": "unsupported",
+    "matched": false,
+    "scenarioOnly": true,
+    "snapshotsEqual": true,
+    "broadcastsEqual": true,
+    "traceEqual": false,
+    "traceComparison": {
+      "algorithm": "event projection exact sequence",
+      "originalEvents": 9,
+      "recoveredEvents": 12,
+      "originalSha256": "3474fa9623510f99d76684363c267151ee55b3034d9faff822aabb7e2b76427c",
+      "recoveredSha256": "b1b8ecc5d34b474552833840286c2e5881841e2824b34b7fd152037dd1189549"
+    },
+    "differences": [
+      {
+        "path": "$.trace[\"1\"][\"topBlock\"]",
+        "original": "a",
+        "recovered": "h"
+      },
+      {
+        "path": "$.trace[\"1\"][\"compiled\"]",
+        "original": false,
+        "recovered": true
+      },
+      {
+        "path": "$.trace[\"2\"][\"type\"]",
+        "original": "thread-status",
+        "recovered": "yield"
+      },
+      {
+        "path": "$.trace[\"2\"][\"topBlock\"]",
+        "original": "a",
+        "recovered": "h"
+      },
+      {
+        "path": "$.trace[\"2\"][\"compiled\"]",
+        "original": false,
+        "recovered": true
+      },
+      {
+        "path": "$.trace[\"3\"][\"topBlock\"]",
+        "original": "a",
+        "recovered": "h"
+      },
+      {
+        "path": "$.trace[\"3\"][\"compiled\"]",
+        "original": false,
+        "recovered": true
+      },
+      {
+        "path": "$.trace[\"4\"][\"type\"]",
+        "original": "thread-status",
+        "recovered": "yield"
+      },
+      {
+        "path": "$.trace[\"4\"][\"topBlock\"]",
+        "original": "a",
+        "recovered": "h"
+      },
+      {
+        "path": "$.trace[\"4\"][\"compiled\"]",
+        "original": false,
+        "recovered": true
+      },
+      {
+        "path": "$.trace[\"5\"][\"type\"]",
+        "original": "broadcast",
+        "recovered": "thread-status"
+      },
+      {
+        "path": "$.trace[\"5\"][\"name\"]",
+        "original": "开始游戏",
+        "recovered": {
+          "missing": true
+        }
+      },
+      {
+        "path": "$.trace[\"5\"][\"ids\"]",
+        "original": [
+          "ready"
+        ],
+        "recovered": {
+          "missing": true
+        }
+      },
+      {
+        "path": "$.trace[\"5\"][\"targetIndex\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": 0
+      },
+      {
+        "path": "$.trace[\"5\"][\"topBlock\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": "h"
+      },
+      {
+        "path": "$.trace[\"5\"][\"statusName\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": "running"
+      },
+      {
+        "path": "$.trace[\"5\"][\"compiled\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": true
+      },
+      {
+        "path": "$.trace[\"6\"][\"type\"]",
+        "original": "thread-start",
+        "recovered": "yield"
+      },
+      {
+        "path": "$.trace[\"6\"][\"targetIndex\"]",
+        "original": 1,
+        "recovered": 0
+      },
+      {
+        "path": "$.trace[\"6\"][\"topBlock\"]",
+        "original": "c",
+        "recovered": "h"
+      },
+      {
+        "path": "$.trace[\"6\"][\"compiled\"]",
+        "original": false,
+        "recovered": true
+      },
+      {
+        "path": "$.trace[\"7\"][\"topBlock\"]",
+        "original": "a",
+        "recovered": "h"
+      },
+      {
+        "path": "$.trace[\"7\"][\"statusName\"]",
+        "original": "done",
+        "recovered": "running"
+      },
+      {
+        "path": "$.trace[\"7\"][\"compiled\"]",
+        "original": false,
+        "recovered": true
+      },
+      {
+        "path": "$.trace[\"8\"][\"type\"]",
+        "original": "thread-status",
+        "recovered": "broadcast"
+      },
+      {
+        "path": "$.trace[\"8\"][\"targetIndex\"]",
+        "original": 1,
+        "recovered": {
+          "missing": true
+        }
+      },
+      {
+        "path": "$.trace[\"8\"][\"topBlock\"]",
+        "original": "c",
+        "recovered": {
+          "missing": true
+        }
+      },
+      {
+        "path": "$.trace[\"8\"][\"statusName\"]",
+        "original": "done",
+        "recovered": {
+          "missing": true
+        }
+      },
+      {
+        "path": "$.trace[\"8\"][\"compiled\"]",
+        "original": false,
+        "recovered": {
+          "missing": true
+        }
+      },
+      {
+        "path": "$.trace[\"8\"][\"name\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": "开始游戏"
+      },
+      {
+        "path": "$.trace[\"8\"][\"ids\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": [
+          "ready"
+        ]
+      },
+      {
+        "path": "$.trace[\"9\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": {
+          "type": "thread-start",
+          "targetIndex": 1,
+          "topBlock": "n",
+          "statusName": "running",
+          "compiled": true
+        }
+      },
+      {
+        "path": "$.trace[\"10\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": {
+          "type": "thread-status",
+          "targetIndex": 0,
+          "topBlock": "h",
+          "statusName": "done",
+          "compiled": true
+        }
+      },
+      {
+        "path": "$.trace[\"11\"]",
+        "original": {
+          "missing": true
+        },
+        "recovered": {
+          "type": "thread-status",
+          "targetIndex": 1,
+          "topBlock": "n",
+          "statusName": "done",
+          "compiled": true
+        }
+      }
+    ],
+    "blockers": [
+      {
+        "kind": "adapter-dependent-opcode",
+        "side": "recovered",
+        "detail": "looks_changesizeby"
+      },
+      {
+        "kind": "adapter-dependent-opcode",
+        "side": "original",
+        "detail": "looks_changesizeby"
+      }
+    ]
+  },
+  "limitations": [
+    "Only the bounded green-flag scenario and recorded final state/broadcasts are compared; other inputs, events and schedules are untested.",
+    "A scenario match does not establish original source identity or universal behavioral equivalence.",
+    "Renderer, audio, video, cloud and user input adapters are absent; adapter-dependent operations and unknown extensions cannot establish a match.",
+    "The real VM may prune broadcast variables when loading stripped blocks; snapshots retain declared broadcast IDs and label whether each exists in runtime.",
+    "Compiled factorySource and SB3 #code comments may execute arbitrary JavaScript. Worker termination, V8 heap limits and network guards are best effort, not a security sandbox; filesystem access and native/external memory are not contained."
+  ],
+  "error": null
+}

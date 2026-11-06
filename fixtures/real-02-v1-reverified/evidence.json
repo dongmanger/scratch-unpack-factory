@@ -1,0 +1,533 @@
+{
+  "kind": "actual-02-packager-static-recovery-real-vm-differential",
+  "inputManifest": "../real-02-v1/manifest.json",
+  "compilerProvenance": {
+    "kind": "actual-02engine-vm-compiler",
+    "api": "VirtualMachine.compileProjectFromJSON",
+    "vmRoot": "D:\\rebuild&unpack\\research\\02engine\\scratch-vm",
+    "vmVersion": "2.1.46",
+    "node": "v22.22.2",
+    "inputSb3Sha256": "c4c1956443accc3ad410058053ac32f0bade7fa553e544da1ccae6a7ebb419fe",
+    "sourceSha256": {
+      "src/virtual-machine.js": "3184de84299fb2ceb00e3ebff2c6037187dfe74141aaf26542f1713d0c29a24c",
+      "src/compiler/compile.js": "727654e4230ae7ad2819bb172467773ee50ab7158ed27d5849a766359485b3a6",
+      "src/compiler/irgen.js": "465c68bde3f83d75b1c53ae8bacaf3a751218e38153a410f63dd7e6db534eaa9",
+      "src/compiler/iroptimizer.js": "6097b5d7d9c72b49865d53507f0158271d037792ab594505848c15425b01867b",
+      "src/compiler/jsgen.js": "bd8c64fd4d28250e88666c73ca18eb7470292cdd7ce4e19138e6ef48c2369813",
+      "src/compiler/jsexecute.js": "ee523267332d3d27a7061f0f7c5a54a055f0301ffceda417c0d02bf27d51518c"
+    },
+    "compilerOptions": {
+      "enabled": true,
+      "warpTimer": false
+    },
+    "adapters": {
+      "renderer": false,
+      "audio": false,
+      "storage": false
+    },
+    "packager": false
+  },
+  "artifacts": [
+    {
+      "sourceArtifact": "recursive-none.html",
+      "sourceArtifactSha256": "cbc907deb48b1ba5b6dcc13c40ae192ffaae296aa9817a657db5223a03205844",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "none-html.reconstructed.sb3",
+      "outputSha256": "5b18b1eba9984c6bb7e116a4dddb96d7a66566262edf69fb6b5751f253495487",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    },
+    {
+      "sourceArtifact": "recursive-none.zip",
+      "sourceArtifactSha256": "aa005bd146029b29ea4f217a7db2ef4f04d9847d0b3eac43f6a8ee0f9a5c3a98",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "none-zip.reconstructed.sb3",
+      "outputSha256": "767510f842fefcd97c23e362a59c945fee317d2501c5194679364c042d46b086",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    },
+    {
+      "sourceArtifact": "recursive-light.html",
+      "sourceArtifactSha256": "6cf6e7558d6411a89a55c0bac9f6385a8d3445e3daff16ee15f7b1905774f323",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "light-html.reconstructed.sb3",
+      "outputSha256": "fabcac7af2e97f96ccf9044d5f720a295a350d62ccea1926254150f985c9f28c",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    },
+    {
+      "sourceArtifact": "recursive-light.zip",
+      "sourceArtifactSha256": "9d697ca552bfce62ab3044ce7feea74393a0ab284f3468583359bd10c43257bc",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "light-zip.reconstructed.sb3",
+      "outputSha256": "40ec71c5153bc564fa07b4f68b54c42f4765cb67ef398b8ff02afc743c1cd390",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    },
+    {
+      "sourceArtifact": "recursive-balanced.html",
+      "sourceArtifactSha256": "bb49a0aecba05b815f118650596ee47f3e27a90474fca2d2426fbd05267b0cf1",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "balanced-html.reconstructed.sb3",
+      "outputSha256": "5f9e520237cbdb6f6dfcc73cc2c4ce07a7b95800dcec4f52e285a5078af37830",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    },
+    {
+      "sourceArtifact": "recursive-balanced.zip",
+      "sourceArtifactSha256": "3367f6dee1caa0b4f4dc3fef63090ef60584c6da0971eccbff064710466d9ea6",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "balanced-zip.reconstructed.sb3",
+      "outputSha256": "25169613ea4f2e9c07d8e81cc1627bf18ca33ef3a4411ef56dd9edfda99a75b8",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    },
+    {
+      "sourceArtifact": "recursive-strong.html",
+      "sourceArtifactSha256": "42829f54a37fa3af1c69c2785a89c85fb0a0785a3968b72939e9c3e14734405f",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "strong-html.reconstructed.sb3",
+      "outputSha256": "ebe7adf8092c7a0984b8fae3e8d78cfed6def712401fe92e146c6b88dc92fbee",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    },
+    {
+      "sourceArtifact": "recursive-strong.zip",
+      "sourceArtifactSha256": "e0d1ebc765f82d3542a06f1d7a19ed9b05376d3fea07058552639cd7c3b39e36",
+      "packagerRevision": "86819b1028f96f608651c137b02ef37e6f7cb9af",
+      "vmRevision": "57871aba53cf739fd1f9bef2e57797f6a999f294",
+      "output": "strong-zip.reconstructed.sb3",
+      "outputSha256": "d011eca7c7ed73da43630cc53341509ec7f14a6c78a462000ad71f501acc0f5c",
+      "status": "reconstructed-unverified",
+      "unresolved": [],
+      "deobfuscationResiduals": [],
+      "actualVMRecompiled": true,
+      "finalStateMatchesTrustedSource": true,
+      "finalState": [
+        {
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "direction": 90,
+          "size": 100,
+          "visible": true,
+          "variables": {
+            "varId1": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            },
+            "limit": {
+              "name": "次数",
+              "type": "",
+              "value": 3
+            },
+            "items": {
+              "name": "项目",
+              "type": "list",
+              "value": [
+                3,
+                5,
+                7
+              ]
+            }
+          }
+        },
+        {
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 10,
+          "y": 0,
+          "direction": 105,
+          "size": 105,
+          "visible": true,
+          "variables": {
+            "localScore": {
+              "name": "分数",
+              "type": "",
+              "value": "成功"
+            }
+          }
+        }
+      ],
+      "remainingThreads": 0
+    }
+  ],
+  "limitations": [
+    "Fixture-only behavior evidence, not universal equivalence",
+    "Original internal block IDs/layout/comments not uniquely recoverable",
+    "No audio or renderer adapters in VM differential"
+  ]
+}

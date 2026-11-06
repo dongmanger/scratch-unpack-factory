@@ -1,0 +1,20 @@
+{
+  "kind": "manual-agent-real-browser-acceptance",
+  "editor": "https://turbowarp.org/editor",
+  "project": "recursive.reconstructed.sb3",
+  "sourceProvenance": "provenance.json",
+  "fixtureScope": "trusted-real-02-compiled-recursive-project",
+  "loadState": "SHOWING_WITHOUT_ID",
+  "assets": [{"target": "Stage", "name": "backdrop1", "loadedAsset": true}, {"target": "Sprite1", "name": "costume1", "loadedAsset": true}],
+  "workspace": {
+    "spriteAttachedBlocks": 9,
+    "stageAttachedBlocks": 25,
+    "stageOpcodesObserved": ["event_whenflagclicked", "data_setvariableto", "control_repeat", "operator_add", "control_if_else", "data_addtolist", "operator_gt", "event_broadcast"],
+    "spriteOpcodesObserved": ["event_whenbroadcastreceived", "motion_movesteps", "motion_turnright", "looks_changesizeby", "data_setvariableto"]
+  },
+  "initialDefinitionsVerified": {"varId1": ["分数", 0], "limit": ["次数", 3], "items": ["项目", []], "ready": "开始游戏", "localScore": ["分数", 0]},
+  "saveProjectSb3ArrayBufferBytes": 2060,
+  "greenFlagResult": {"threads": 0, "stageScore": "成功", "list": [3, 5, 7], "spriteLocalScore": "成功", "spriteX": 10, "spriteDirection": 105, "spriteSize": 105},
+  "screenshot": "C:/Users/ASUS/.zcode/cli/artifacts/sess_51946499-254b-4bdb-bfd4-69a8cddcc070/call_7efb7f4fefa14da4b9df42e77e6fd3ce-tool-result-0d94e70c-b7b1-439d-93cf-b7547f808085.png",
+  "limitations": ["Evidence is for this fixture only, not all outputs", "Saved archive bytes observed but not re-imported in this browser check", "Does not prove complete opcode or procedure coverage", "Compiler optimization prevents unique original graph recovery"]
+}
